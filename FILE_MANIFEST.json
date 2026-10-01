@@ -4,7 +4,7 @@
   "scope": "GitHub source files; this manifest itself is excluded to avoid a recursive hash",
   "initial_model_version": "9",
   "repository_file_count_excluding_manifest": 203,
-  "repository_bytes_excluding_manifest": 3366515,
+  "repository_bytes_excluding_manifest": 3363081,
   "files": [
     {
       "path": ".dockerignore",
@@ -23,8 +23,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "bytes": 988,
-      "sha256": "e1e80ff37336d2127bbee122e03046cba253d3658b8182808d6190b07470d5dc"
+      "bytes": 903,
+      "sha256": "b6942b4c1d978f8eac9a443e25a5830afebfc7173b0b46531a26231517ae58d7"
     },
     {
       "path": ".gitignore",
@@ -38,8 +38,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13147,
-      "sha256": "8f0463fc9377a80e135f5f336749b9df1b97d58da4a279920abe6eff68663f7a"
+      "bytes": 13038,
+      "sha256": "9adc5b2c5dbeca30115d40eb141464d3d9e2157ef13eee0e2fc9db40ee5c4156"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -768,203 +768,203 @@
     },
     {
       "path": "tests/conftest.py",
-      "bytes": 525,
-      "sha256": "6ee1855e262410fbd2491a31c0953df5a68faa60553460dc5a57dc9738084f1b"
+      "bytes": 803,
+      "sha256": "ded6c991bda8c33364e3430db00c0b77f6927f20d996193160cf0fc9285a71ac"
     },
     {
-      "path": "tests/test_api.py",
+      "path": "tests/core/test_api.py",
       "bytes": 4525,
       "sha256": "9fdd165e552d05c308020938837700743d2b110c294b6401183e544d2c1a15fa"
     },
     {
-      "path": "tests/test_baselines.py",
-      "bytes": 6066,
-      "sha256": "607eebb1f6202e5cdf7ef5aa69502eed376f169e9307a6f12bd2d8dce6639d29"
-    },
-    {
-      "path": "tests/test_dashboard_data.py",
-      "bytes": 6466,
-      "sha256": "4f2e7d5359ef987d4d41cece735f9be6b22eb5426cfa52fa748e5541946cf562"
-    },
-    {
-      "path": "tests/test_ensemble_retrain_api.py",
-      "bytes": 2891,
-      "sha256": "7f2d3490f3857fd1299342092768e314dcdcb28bdd5871a398b17b79432b4340"
-    },
-    {
-      "path": "tests/test_ensemble_retraining.py",
-      "bytes": 6207,
-      "sha256": "27cb95ae512df9acce023dc1646841f25cc4d6100ef23c3d9c9f2527071f498f"
-    },
-    {
-      "path": "tests/test_forecast_report.py",
-      "bytes": 11159,
-      "sha256": "bf11269bd41281b49116a0a3b73ef89b9f32d05b8ea879b032c18613e468a349"
-    },
-    {
-      "path": "tests/test_harvest.py",
-      "bytes": 11245,
-      "sha256": "bf7c18af484fab4feda36a9115cbf17c703bcaf447168ccadbbba972dc0fdac2"
-    },
-    {
-      "path": "tests/test_harvest_context.py",
-      "bytes": 8227,
-      "sha256": "c309968f2105ab888f959b31a3367e1b1798ccbd05717757cb8e70b0155d273f"
-    },
-    {
-      "path": "tests/test_harvest_preferences.py",
-      "bytes": 3975,
-      "sha256": "59958cec78409051f3d2a0320c611bf4fc5656f4c0461cb6d4cb37e7a170a4a2"
-    },
-    {
-      "path": "tests/test_harvest_recommendation.py",
-      "bytes": 3019,
-      "sha256": "022076bac5c908d71db7eaa5931e153612e0ddbeeb0e011e4776883e02508b96"
-    },
-    {
-      "path": "tests/test_horizon_api.py",
-      "bytes": 10561,
-      "sha256": "bc90364793e051c551165b43850ed60318c14f640c4bd0da2db4184f6f02541c"
-    },
-    {
-      "path": "tests/test_horizon_data.py",
-      "bytes": 4163,
-      "sha256": "5527b3901632cbc9ce94ea2668560ba753fcfa438cd0ba448f0efbb92ca53a56"
-    },
-    {
-      "path": "tests/test_horizon_history.py",
-      "bytes": 9781,
-      "sha256": "6ecdc5eac1ab6e433b79d605b94caa5022fc66ff742bd1b80d2be5a8d427965a"
-    },
-    {
-      "path": "tests/test_horizon_models.py",
-      "bytes": 9613,
-      "sha256": "5870d7bd530ecef19d3b05a9a13d32cefba77666661caf2c4dce76fcdbec2903"
-    },
-    {
-      "path": "tests/test_imports.py",
+      "path": "tests/core/test_imports.py",
       "bytes": 9681,
       "sha256": "f7c0e7c7be5dd215cbe2d4b5284dab5b3275af8e220d8899296f3ff3975d1906"
     },
     {
-      "path": "tests/test_incremental_public_forecast.py",
+      "path": "tests/core/test_incremental_public_forecast.py",
       "bytes": 3291,
-      "sha256": "5229ddc26f4510d2633da3040c3472f6f7932567bd48a654720499109678053d"
+      "sha256": "393c67247bdcb944b07cf8f515755f826efcbee6db76b06fc6c417c85075e9d2"
     },
     {
-      "path": "tests/test_legacy_retraining_activity.py",
-      "bytes": 6398,
-      "sha256": "471c05e56aba0d186f65a30c77609a49f91dfa436c4ca7ba3d780324c783d590"
-    },
-    {
-      "path": "tests/test_ml.py",
-      "bytes": 22154,
-      "sha256": "ccdf036bd1a6559ebe58d71175766c00b587ad16dcb1e1765d56daf78e1cb258"
-    },
-    {
-      "path": "tests/test_observed_dashboard.py",
-      "bytes": 2798,
-      "sha256": "806067b011ca993bfa0d1ec31b060ad75220448ebd60171ceb88c6b1adcb91cf"
-    },
-    {
-      "path": "tests/test_package_download.py",
-      "bytes": 1707,
-      "sha256": "dc0d9c0cd0c1f52edab7a32bd37fe88ffe48157357dd897a281ebfe0dcaf8690"
-    },
-    {
-      "path": "tests/test_package_models.py",
-      "bytes": 5366,
-      "sha256": "7df5f96b2f117159b49524987a0a894065506227225c54d0c7a9af316f7da5c4"
-    },
-    {
-      "path": "tests/test_package_runtime.py",
-      "bytes": 7568,
-      "sha256": "8f6b679257378ae7d8e1f1964fb88264c88babc9459916601c51323c94b6c002"
-    },
-    {
-      "path": "tests/test_retraining_monitoring.py",
-      "bytes": 4834,
-      "sha256": "9ea56f166d4e6f96f77b28bd6f19296971836d05e4fa1723821f33f025dced49"
-    },
-    {
-      "path": "tests/test_retraining_persistence.py",
-      "bytes": 5489,
-      "sha256": "d7e4bae87e8fb003d1f8e80cd287363ee4f78f3d419f1761ac9a8e2b7c16bd84"
-    },
-    {
-      "path": "tests/test_service.py",
+      "path": "tests/core/test_service.py",
       "bytes": 1501,
       "sha256": "f836c3b8dd1927dec6df8e8f3d781f4dcf50ac21cda82606dc3aa372bd7cd5ab"
     },
     {
-      "path": "tests/test_shared_ml.py",
-      "bytes": 6934,
-      "sha256": "72a1153a667805b9a831b47b1abffdf726ad3a3499395820552f326ae02fab95"
-    },
-    {
-      "path": "tests/test_shared_runtime.py",
-      "bytes": 8516,
-      "sha256": "50d9c8824f63932bec2cbc6a0054aa3678aa04ffd92635d4a433cdd707a52c62"
-    },
-    {
-      "path": "tests/test_store.py",
+      "path": "tests/core/test_store.py",
       "bytes": 6506,
       "sha256": "c2f2530b843509b6a470d83d4bc912ffe3cfc4b30f421360d464f1417dca6014"
     },
     {
-      "path": "tests/test_temperature_drift.py",
-      "bytes": 20206,
-      "sha256": "bc34232d93015e00744f5281037556a48ee17cc2f6124ac32f55ebb8441aef8b"
-    },
-    {
-      "path": "tests/test_temperature_practice_import.py",
-      "bytes": 14355,
-      "sha256": "40081ffb90c7464762b8c03eacdb659414e84ad28db2da981b0e47fcc65777a3"
-    },
-    {
-      "path": "tests/test_tirex_adapter.py",
-      "bytes": 4556,
-      "sha256": "bb7acd2333d60d7d40e2dd3bf035e4b8d430b6d3cd1d94a4b0f0a029388912a4"
-    },
-    {
-      "path": "tests/test_tirex_serving.py",
-      "bytes": 2060,
-      "sha256": "df2701c8894ed4cdeaf8c27af5e148447c50fce7a902d5523be078896e30ca99"
-    },
-    {
-      "path": "tests/test_trend_case_reports.py",
-      "bytes": 5822,
-      "sha256": "3132dae9ad65aedefd736f8a4182d4671b7517a2e7ba6172c67cbf115ea80607"
-    },
-    {
-      "path": "tests/test_workflow_api.py",
+      "path": "tests/core/test_workflow_api.py",
       "bytes": 7440,
-      "sha256": "dde797902179a7dda6c6db1f1cafd80aef36007d357a4ba036ae693060751eb6"
+      "sha256": "8daeac53745f3cb6ef13b13ebed941000e9b6d1e224fdf92eb34bf871895c5ee"
     },
     {
-      "path": "tests/test_workspaces.py",
+      "path": "tests/core/test_workspaces.py",
       "bytes": 12100,
       "sha256": "99775d010b8ae2e13604f5385237e177668efade18edc1c7f5deaaed53af569e"
     },
     {
-      "path": "tests/ui_automatic_recommendation.cjs",
-      "bytes": 22373,
-      "sha256": "c50a9e983239c88b3715260c90f74f64b0e8ceeba8cc9f7afc6a4f4589236c77"
+      "path": "tests/dashboard/test_dashboard_data.py",
+      "bytes": 6466,
+      "sha256": "4f2e7d5359ef987d4d41cece735f9be6b22eb5426cfa52fa748e5541946cf562"
     },
     {
-      "path": "tests/ui_dashboard_cases.cjs",
-      "bytes": 9281,
-      "sha256": "2014ff5b7a9395249f328c08128f29c4b08ddd17966b77a8a9e6bae471b5ea71"
+      "path": "tests/dashboard/test_forecast_report.py",
+      "bytes": 11159,
+      "sha256": "bf11269bd41281b49116a0a3b73ef89b9f32d05b8ea879b032c18613e468a349"
     },
     {
-      "path": "tests/ui_practice_run.cjs",
-      "bytes": 20282,
-      "sha256": "6c1a48ee20b0e44ce94593cc09ab58e296b5e3b0d1fdf82ec31492c0f4765b70"
+      "path": "tests/dashboard/test_observed_dashboard.py",
+      "bytes": 2798,
+      "sha256": "806067b011ca993bfa0d1ec31b060ad75220448ebd60171ceb88c6b1adcb91cf"
     },
     {
-      "path": "tests/ui_retraining_status.cjs",
-      "bytes": 28658,
-      "sha256": "584ed6ec5835fc4042b1af2b239559bd80d777134e93af2405db1cf4dc8fe83d"
+      "path": "tests/dashboard/test_trend_case_reports.py",
+      "bytes": 5822,
+      "sha256": "3132dae9ad65aedefd736f8a4182d4671b7517a2e7ba6172c67cbf115ea80607"
+    },
+    {
+      "path": "tests/harvest/test_harvest.py",
+      "bytes": 11245,
+      "sha256": "bf7c18af484fab4feda36a9115cbf17c703bcaf447168ccadbbba972dc0fdac2"
+    },
+    {
+      "path": "tests/harvest/test_harvest_context.py",
+      "bytes": 8227,
+      "sha256": "c309968f2105ab888f959b31a3367e1b1798ccbd05717757cb8e70b0155d273f"
+    },
+    {
+      "path": "tests/harvest/test_harvest_preferences.py",
+      "bytes": 3975,
+      "sha256": "59958cec78409051f3d2a0320c611bf4fc5656f4c0461cb6d4cb37e7a170a4a2"
+    },
+    {
+      "path": "tests/harvest/test_harvest_recommendation.py",
+      "bytes": 3019,
+      "sha256": "022076bac5c908d71db7eaa5931e153612e0ddbeeb0e011e4776883e02508b96"
+    },
+    {
+      "path": "tests/horizon/test_horizon_api.py",
+      "bytes": 10561,
+      "sha256": "7ec8ffdbc890bad7ae9195ef781deb5721331f7a180f85d96c61894bfee2a44e"
+    },
+    {
+      "path": "tests/horizon/test_horizon_data.py",
+      "bytes": 4163,
+      "sha256": "5527b3901632cbc9ce94ea2668560ba753fcfa438cd0ba448f0efbb92ca53a56"
+    },
+    {
+      "path": "tests/horizon/test_horizon_history.py",
+      "bytes": 9781,
+      "sha256": "6ecdc5eac1ab6e433b79d605b94caa5022fc66ff742bd1b80d2be5a8d427965a"
+    },
+    {
+      "path": "tests/horizon/test_horizon_models.py",
+      "bytes": 9613,
+      "sha256": "5870d7bd530ecef19d3b05a9a13d32cefba77666661caf2c4dce76fcdbec2903"
+    },
+    {
+      "path": "tests/horizon/test_tirex_adapter.py",
+      "bytes": 4556,
+      "sha256": "bb7acd2333d60d7d40e2dd3bf035e4b8d430b6d3cd1d94a4b0f0a029388912a4"
+    },
+    {
+      "path": "tests/horizon/test_tirex_serving.py",
+      "bytes": 2060,
+      "sha256": "df2701c8894ed4cdeaf8c27af5e148447c50fce7a902d5523be078896e30ca99"
+    },
+    {
+      "path": "tests/ml/test_baselines.py",
+      "bytes": 6066,
+      "sha256": "607eebb1f6202e5cdf7ef5aa69502eed376f169e9307a6f12bd2d8dce6639d29"
+    },
+    {
+      "path": "tests/ml/test_ml.py",
+      "bytes": 22154,
+      "sha256": "ccdf036bd1a6559ebe58d71175766c00b587ad16dcb1e1765d56daf78e1cb258"
+    },
+    {
+      "path": "tests/ml/test_shared_ml.py",
+      "bytes": 6934,
+      "sha256": "72a1153a667805b9a831b47b1abffdf726ad3a3499395820552f326ae02fab95"
+    },
+    {
+      "path": "tests/package/test_package_download.py",
+      "bytes": 1707,
+      "sha256": "dc0d9c0cd0c1f52edab7a32bd37fe88ffe48157357dd897a281ebfe0dcaf8690"
+    },
+    {
+      "path": "tests/package/test_package_models.py",
+      "bytes": 5366,
+      "sha256": "7969b2ce14707e68fe6c73acf54d92c196431224133be7e8fec8f34944f5e1ac"
+    },
+    {
+      "path": "tests/package/test_package_runtime.py",
+      "bytes": 7568,
+      "sha256": "4f4c8ae807bdbdc0c63836d68c0976998f2fefd83c315ba2ffc61993d1cdc5a8"
+    },
+    {
+      "path": "tests/package/test_shared_runtime.py",
+      "bytes": 8516,
+      "sha256": "50d9c8824f63932bec2cbc6a0054aa3678aa04ffd92635d4a433cdd707a52c62"
+    },
+    {
+      "path": "tests/retraining/test_ensemble_retrain_api.py",
+      "bytes": 2891,
+      "sha256": "7f2d3490f3857fd1299342092768e314dcdcb28bdd5871a398b17b79432b4340"
+    },
+    {
+      "path": "tests/retraining/test_ensemble_retraining.py",
+      "bytes": 6207,
+      "sha256": "27cb95ae512df9acce023dc1646841f25cc4d6100ef23c3d9c9f2527071f498f"
+    },
+    {
+      "path": "tests/retraining/test_legacy_retraining_activity.py",
+      "bytes": 6398,
+      "sha256": "471c05e56aba0d186f65a30c77609a49f91dfa436c4ca7ba3d780324c783d590"
+    },
+    {
+      "path": "tests/retraining/test_retraining_monitoring.py",
+      "bytes": 4834,
+      "sha256": "9ea56f166d4e6f96f77b28bd6f19296971836d05e4fa1723821f33f025dced49"
+    },
+    {
+      "path": "tests/retraining/test_retraining_persistence.py",
+      "bytes": 5489,
+      "sha256": "d7e4bae87e8fb003d1f8e80cd287363ee4f78f3d419f1761ac9a8e2b7c16bd84"
+    },
+    {
+      "path": "tests/retraining/test_temperature_drift.py",
+      "bytes": 20206,
+      "sha256": "bc34232d93015e00744f5281037556a48ee17cc2f6124ac32f55ebb8441aef8b"
+    },
+    {
+      "path": "tests/retraining/test_temperature_practice_import.py",
+      "bytes": 14355,
+      "sha256": "d4f7b41f2e090e4d927649e5e62679b092e6c5f817dfbc9067b4cc64808fb7b6"
+    },
+    {
+      "path": "tests/ui/ui_automatic_recommendation.cjs",
+      "bytes": 22379,
+      "sha256": "c69df64805f6eecc81ac8b7af4bfee8c22f7476dcc2245cc92fc2f2013f7ef5e"
+    },
+    {
+      "path": "tests/ui/ui_dashboard_cases.cjs",
+      "bytes": 9287,
+      "sha256": "38866a75e6ee8c01a3a03378be55a7d369f798e348708c9b478567a9c87f2d73"
+    },
+    {
+      "path": "tests/ui/ui_practice_run.cjs",
+      "bytes": 20288,
+      "sha256": "e634319367e4417430ae8df1755d4bd8986d68cc79a64448a36af41c56dc7be5"
+    },
+    {
+      "path": "tests/ui/ui_retraining_status.cjs",
+      "bytes": 28664,
+      "sha256": "531e6c5952f71ba1f241c4edf1d84a5196dd6947ac2bab9b99eedb629ab62aa1"
     },
     {
       "path": "verification/GITHUB_DOWNLOAD.md",
@@ -1018,8 +1018,8 @@
     },
     {
       "path": "verify.sh",
-      "bytes": 669,
-      "sha256": "8f55c93dc50d00f6d18953f6e829326218e98aa47f10e988e493967ec7ed75f1"
+      "bytes": 560,
+      "sha256": "69d989788ddfbaf112de8770cb70f9652b0a3324000b3def19777a36c9d0f509"
     }
   ],
   "official_downloads": [
