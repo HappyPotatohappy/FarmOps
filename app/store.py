@@ -19,6 +19,14 @@ BASELINE_ZERO_TOLERANCE_KG = 1e-12
 def utcnow(): return datetime.now(timezone.utc).isoformat()
 def digest(value): return hashlib.sha256(json.dumps(value,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
+def atomic_json(path, value):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(f'.{path.name}-{uuid.uuid4().hex}.tmp')
+    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False)+'\n')
+    temporary.replace(path)
+
+
 def same_observation_values(left,right):
     # CSV and pandas parsers can differ by a final binary digit. Accept only
     # numerical roundoff; retain the originally persisted measurement verbatim.
