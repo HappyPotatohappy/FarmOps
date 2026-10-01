@@ -1,0 +1,98 @@
+{
+  "checked_at": "2026-10-01T07:47:20.042467+00:00",
+  "scope": "standalone final documentation; application and source workspace unchanged",
+  "initial_model": {
+    "bundle": "9",
+    "run_id": "d3a7d6beca674cab8037bb9f51f99c78",
+    "weights": {
+      "lstm": 0.45,
+      "tirex2": 0.55
+    }
+  },
+  "renderer": "WeasyPrint 70.0; Poppler PNG rasterization at 100 DPI; no browser/CDP export",
+  "documents": [
+    {
+      "markdown": "docs/BeeOPS_모델_상세설명.md",
+      "sha256": "b013d6dbf9b42d88a09672f105f107c88d4a7f7236aedac02744ad76e79f962a",
+      "html_source_hash_matches": true,
+      "local_links_checked": 57
+    },
+    {
+      "markdown": "docs/BeeOPS_조별기획서.md",
+      "sha256": "18fa0e382efeec89c49e270d00f7cd6418d65b322672d3775cdefaea99f2ea7c",
+      "html_source_hash_matches": true,
+      "local_links_checked": 29
+    },
+    {
+      "markdown": "docs/시연가이드.md",
+      "sha256": "6d21bc97f753d58d6bdcf30c65432ce96ed4e009e74f1032d92ae3dd6a484ea5",
+      "html_source_hash_matches": true,
+      "local_links_checked": 4
+    },
+    {
+      "markdown": "docs/온도_드리프트_실습.md",
+      "sha256": "8d00f806f48e7adca50c86db71926ae4c536fb1d90a93298a30976fc48e487e3",
+      "html_source_hash_matches": true,
+      "local_links_checked": 8
+    }
+  ],
+  "pdfs": [
+    {
+      "path": "output/pdf/BeeOPS_조별기획서.pdf",
+      "pages": 12,
+      "sha256": "6961e5cf569b0cbc45d81f1dd757e4ee60f7785a17f10a2740aabeb3573edcb2",
+      "all_pages_visually_reviewed": true,
+      "text_extraction_passed": true
+    },
+    {
+      "path": "output/pdf/BeeOPS_모델_상세설명.pdf",
+      "pages": 17,
+      "sha256": "decc55befe5c3bb38daa1400c5191ab2164a9209cc8a5eef426e8886e0c614ed",
+      "all_pages_visually_reviewed": true,
+      "text_extraction_passed": true
+    }
+  ],
+  "visual_result": "PASS: 29 pages reviewed; no clipped text, overlap, missing Korean glyphs, truncated diagrams or omitted table content. Multipage tables repeat headers.",
+  "semantics_checked": [
+    "Docker primary Windows/macOS on port 8012; native macOS alternative",
+    "three initial public cases and independent runtime",
+    "new trusted heat preview commit reruns actual ensemble training; same request idempotent; active coalescing",
+    "immediate TEMP selection; honest preparing; real epochs; completion retained until acknowledgment and after reload",
+    "reused canonical evaluation identified as descriptive, not independent future accuracy",
+    "initial bundle 9 distinguished from future local run and historic bundle 2 benchmark",
+    "public data provenance and official model references remain linked"
+  ],
+  "regeneration": {
+    "html_script": "scripts/build_docs.py",
+    "pdf_script": "scripts/build_docs_pdf.py",
+    "pdf_dependencies": "scripts/requirements-docs.txt",
+    "instructions": "docs/README_docs.md",
+    "portable_copy_without_source_project": "PASS",
+    "html_twice_with_fixed_SOURCE_DATE_EPOCH": "identical hashes for all four HTML files",
+    "http_supplementary_route_check": "PASS: local-only document references have no invalid HTTP href",
+    "actual_packaged_pdf_script": "PASS: two PDFs regenerated; all changed pages inspected, unchanged pages pixel-identical",
+    "fonts": "OS fonts with Apple/Malgun/Noto fallbacks; no proprietary font files copied"
+  },
+  "package_evidence_notes": "Final standalone package independently verified: host backend 430 passed, 1 optional Chronos integration skipped, 4 existing Pydantic deprecation warnings; Node VM UI 105 passed. Replaced source-implementation logs with final-package logs, anonymizing only the host Python environment path.",
+  "package_evidence": {
+    "docs/evidence/backend_package_regression.log": {
+      "sha256": "7bbe022acbe2d12376c709e789d760a0a828256b078929af39042fc27d8ff596"
+    },
+    "docs/evidence/ui_package_regression.log": {
+      "sha256": "f85a6790a4fd609e856c796d76d46eff60aaa0f6f8674577a80c0694523bc692"
+    }
+  },
+  "latest_visual_diff": {
+    "proposal_changed_pages": [
+      1,
+      9,
+      11,
+      12
+    ],
+    "model_changed_pages": [
+      12,
+      17
+    ],
+    "result": "PASS: all changed pages visually inspected; all other pages pixel-identical to prior reviewed versions; 12+17 pages unchanged."
+  }
+}

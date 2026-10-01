@@ -1,0 +1,26 @@
+name: Source and UI checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  repository:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check Python syntax and tracked assets
+        run: |
+          python -m compileall -q app scripts
+          python scripts/check_bundle.py --allow-missing-checkpoint
+      - name: Check package installation and relocation logic
+        run: |
+          python -m pip install pytest==8.3.5
+          python -m pytest tests/test_package_runtime.py tests/test_package_models.py tests/test_package_download.py -q -k "not packaged_real_seed"
+      - name: Check dashboard and retraining behavior
+        run: node --test tests/ui_automatic_recommendation.cjs tests/ui_dashboard_cases.cjs tests/ui_retraining_status.cjs tests/ui_practice_run.cjs

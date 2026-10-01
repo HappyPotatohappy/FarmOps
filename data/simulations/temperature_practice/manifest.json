@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "scenario_id": "synthetic_temperature_drift_v1",
+  "data_kind": "synthetic",
+  "source": "SYNTHETIC: deterministic generator; no observed/public hive data",
+  "purpose": "Temperature drift, retraining workflow, and delayed actual-join demonstration",
+  "generator": "scripts/generate_temperature_scenario.py",
+  "seed": 20261001,
+  "timezone": "UTC (chosen synthetic timeline)",
+  "columns": [
+    "timestamp",
+    "hive_id",
+    "weight_kg",
+    "temperature_c",
+    "event"
+  ],
+  "method": {
+    "baseline_hours": 336,
+    "heat_hours": 168,
+    "followup_hours": 72,
+    "temperature_center_c": 24,
+    "temperature_daily_amplitude_c": 3,
+    "temperature_noise_uniform_c": [
+      -0.18,
+      0.18
+    ],
+    "heat_shift_c": 8.0,
+    "heat_ramp_hours": 12,
+    "heat_ramp": "smoothstep: 3*x^2 - 2*x^3",
+    "heat_load_threshold_c": 28,
+    "heat_load_ema_alpha": 0.16666666666666666,
+    "starting_mass_kg": 50,
+    "weight_daily_amplitude_kg": 0.25,
+    "normal_mass_gain_kg_per_hour": 0.01,
+    "heat_mass_penalty_kg_per_hour_per_c": 0.007,
+    "mass_noise_uniform_kg_per_hour": [
+      -0.003,
+      0.003
+    ],
+    "causal": true,
+    "interpolation": false,
+    "event_labels": "normal only; no synthetic operational/biological event labels"
+  },
+  "model_metrics": null,
+  "limitations": [
+    "Toy engineering scenario, not a validated biological or disease model",
+    "No forecast accuracy or retraining improvement is claimed",
+    "Follow-up observations remain synthetic even when joined as actuals in the demonstration ledger",
+    "Upload stages separately in order; create predictions before uploading their follow-up targets"
+  ],
+  "files": {
+    "01_baseline.csv": {
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "rows": 336,
+      "start": "2026-07-01T00:00:00+00:00",
+      "end": "2026-07-14T23:00:00+00:00",
+      "sha256": "1434f0e08aa879546962a832754475029adc04f683a242c6448d2b140c9b2813",
+      "bytes": 23840,
+      "temperature_mean_c": 23.996227,
+      "temperature_min_c": 20.8231,
+      "temperature_max_c": 27.151,
+      "weight_start_kg": 50.176777,
+      "weight_end_kg": 53.469979,
+      "net_weight_change_kg": 3.293202,
+      "mean_24h_weight_change_kg": 0.239855
+    },
+    "02_heatwave.csv": {
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "rows": 168,
+      "start": "2026-07-15T00:00:00+00:00",
+      "end": "2026-07-21T23:00:00+00:00",
+      "sha256": "4913ff0354862f0f252c136bccfe60f027b615aa5fb39f4bc404484447b09b2a",
+      "bytes": 11929,
+      "temperature_mean_c": 31.741983,
+      "temperature_min_c": 21.8346,
+      "temperature_max_c": 35.1608,
+      "weight_start_kg": 53.533791,
+      "weight_end_kg": 50.72193,
+      "net_weight_change_kg": -2.811861,
+      "mean_24h_weight_change_kg": -0.418849
+    },
+    "03_followup.csv": {
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "rows": 72,
+      "start": "2026-07-22T00:00:00+00:00",
+      "end": "2026-07-24T23:00:00+00:00",
+      "sha256": "4b6e35c590ca816e3fc155987793c8a610106f4dc8902cacc9be3d6d1b3b096f",
+      "bytes": 5137,
+      "temperature_mean_c": 31.981638,
+      "temperature_min_c": 28.8588,
+      "temperature_max_c": 35.1111,
+      "weight_start_kg": 50.754758,
+      "weight_end_kg": 49.416101,
+      "net_weight_change_kg": -1.338657,
+      "mean_24h_weight_change_kg": -0.433282
+    },
+    "control/01_baseline.csv": {
+      "hive_id": "TEMP-CONTROL-PRACTICE",
+      "rows": 336,
+      "start": "2026-07-01T00:00:00+00:00",
+      "end": "2026-07-14T23:00:00+00:00",
+      "sha256": "04fa4503eba14c5af8e17724da69c411c18cb2330d5d6fa33efb48bbb4782e74",
+      "bytes": 24512,
+      "temperature_mean_c": 23.996227,
+      "temperature_min_c": 20.8231,
+      "temperature_max_c": 27.151,
+      "weight_start_kg": 50.176777,
+      "weight_end_kg": 53.469979,
+      "net_weight_change_kg": 3.293202,
+      "mean_24h_weight_change_kg": 0.239855
+    },
+    "control/02_normal.csv": {
+      "hive_id": "TEMP-CONTROL-PRACTICE",
+      "rows": 168,
+      "start": "2026-07-15T00:00:00+00:00",
+      "end": "2026-07-21T23:00:00+00:00",
+      "sha256": "9bc137c13076f05bd98076a867bb8e2129619834adf17c84434d683753596766",
+      "bytes": 12257,
+      "temperature_mean_c": 24.003889,
+      "temperature_min_c": 20.8422,
+      "temperature_max_c": 27.1608,
+      "weight_start_kg": 53.533791,
+      "weight_end_kg": 55.175738,
+      "net_weight_change_kg": 1.641947,
+      "mean_24h_weight_change_kg": 0.242792
+    }
+  }
+}

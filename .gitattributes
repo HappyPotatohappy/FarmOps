@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.keras -text
+*.db -text
+*.pdf -text
+*.zip -text
+
+# Preserve CSV bytes exactly: provenance checksums include line endings.
+*.csv -text

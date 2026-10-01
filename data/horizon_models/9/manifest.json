@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "registry_id": "BeeOPS_Horizon_Weight",
+  "version": "9",
+  "run_id": "d3a7d6beca674cab8037bb9f51f99c78",
+  "created_at": "2026-10-01T07:22:48.172571+00:00",
+  "context_hours": 168,
+  "max_horizon_hours": 168,
+  "components": [
+    "lstm",
+    "tirex2"
+  ],
+  "weights": {
+    "lstm": 0.45,
+    "tirex2": 0.55
+  },
+  "scaler": {
+    "weight_scale": 2.9984389027515608,
+    "temperature_mean": 28.16724689171857,
+    "temperature_scale": 3.481366552194797
+  },
+  "files": {
+    "lstm": "lstm.keras",
+    "tirex2": "tirex2"
+  },
+  "file_sha256": {
+    "lstm.keras": "040bc91ee7bd0dfd25096d4c8abf420f3b11743e3cd381d323d80bf65e4c2172",
+    "ensemble_calibration.json": "557204e982514a789b85445d1aade7cb7cb4724ce7b04ba5fc0e985055d818e3",
+    "training_snapshot.json": "62b78e511bd406d01a987fdf234f5beff61965cb43d7317cb83e301c6d76d8f7",
+    "evaluation.json": "a04864f4486b092c59ebb7611d92f69b0db0d687bf213b6c210881f84605b1d4",
+    "tirex2/model-config.yaml": "cddbe6d0be4919cb7b0cad747fb19a295264e129d1c0790cf62133b4cb5da727",
+    "tirex2/LICENSE": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "tirex2/NOTICE": "e00534420d17a0305afcd15982a9ef0c30a421d9e3f7ad22e70a7ff5018c0b74",
+    "tirex2/model.ckpt": "184b160ffbe4c01a26beeba14015ff3507c7497e1f3577114187bbc1d19fcac1"
+  },
+  "validation": {
+    "status": "insufficient",
+    "calibrated": false,
+    "role": "informational",
+    "horizons": {},
+    "noise_kg": 0.015623092651367188,
+    "reasons": [
+      "new_bundle_intervals_not_calibrated"
+    ],
+    "temperature_retraining": {
+      "role": "descriptive_only",
+      "horizon_hours": 1,
+      "evaluation": "chronological_practice_replay_holdout_after_blend_calibration",
+      "old_weights": {
+        "lstm": 0.55,
+        "tirex2": 0.45
+      },
+      "new_weights": {
+        "lstm": 0.45,
+        "tirex2": 0.55
+      },
+      "previous_ensemble_mae_kg": 0.0024404525756835938,
+      "new_ensemble_mae_kg": 0.0023527145385742188,
+      "lstm_mae_kg": 0.004782041069120169,
+      "calibration_mae_kg": 0.004372437950223684,
+      "calibration_samples": 24,
+      "validation_samples": 24,
+      "training_windows": 120,
+      "epochs_completed": 8,
+      "validation_start": "2026-07-21T00:00:00+00:00",
+      "validation_end": "2026-07-21T23:00:00+00:00",
+      "rows": [
+        {
+          "origin": "2026-07-20T23:00:00+00:00",
+          "target_timestamp": "2026-07-21T00:00:00+00:00",
+          "actual_kg": 51.17041015625,
+          "previous_kg": 51.168052673339844,
+          "new_kg": 51.17008972167969,
+          "previous_lstm_kg": 51.16844940185547,
+          "lstm_kg": 51.17316436767578,
+          "tirex2_kg": 51.167572021484375
+        },
+        {
+          "origin": "2026-07-21T00:00:00+00:00",
+          "target_timestamp": "2026-07-21T01:00:00+00:00",
+          "actual_kg": 51.19371032714844,
+          "previous_kg": 51.192787170410156,
+          "new_kg": 51.19559860229492,
+          "previous_lstm_kg": 51.190860748291016,
+          "lstm_kg": 51.1961555480957,
+          "tirex2_kg": 51.19514465332031
+        },
+        {
+          "origin": "2026-07-21T01:00:00+00:00",
+          "target_timestamp": "2026-07-21T02:00:00+00:00",
+          "actual_kg": 51.204833984375,
+          "previous_kg": 51.20137023925781,
+          "new_kg": 51.20444107055664,
+          "previous_lstm_kg": 51.19915008544922,
+          "lstm_kg": 51.20486831665039,
+          "tirex2_kg": 51.2040901184082
+        },
+        {
+          "origin": "2026-07-21T02:00:00+00:00",
+          "target_timestamp": "2026-07-21T03:00:00+00:00",
+          "actual_kg": 51.204193115234375,
+          "previous_kg": 51.19783020019531,
+          "new_kg": 51.20087432861328,
+          "previous_lstm_kg": 51.196128845214844,
+          "lstm_kg": 51.202049255371094,
+          "tirex2_kg": 51.19990921020508
+        },
+        {
+          "origin": "2026-07-21T03:00:00+00:00",
+          "target_timestamp": "2026-07-21T04:00:00+00:00",
+          "actual_kg": 51.18587112426758,
+          "previous_kg": 51.18402862548828,
+          "new_kg": 51.187320709228516,
+          "previous_lstm_kg": 51.181400299072266,
+          "lstm_kg": 51.18742370605469,
+          "tirex2_kg": 51.18723678588867
+        },
+        {
+          "origin": "2026-07-21T04:00:00+00:00",
+          "target_timestamp": "2026-07-21T05:00:00+00:00",
+          "actual_kg": 51.156951904296875,
+          "previous_kg": 51.1517219543457,
+          "new_kg": 51.15431213378906,
+          "previous_lstm_kg": 51.151954650878906,
+          "lstm_kg": 51.15782165527344,
+          "tirex2_kg": 51.15143966674805
+        },
+        {
+          "origin": "2026-07-21T05:00:00+00:00",
+          "target_timestamp": "2026-07-21T06:00:00+00:00",
+          "actual_kg": 51.1119270324707,
+          "previous_kg": 51.11314392089844,
+          "new_kg": 51.11559295654297,
+          "previous_lstm_kg": 51.11343765258789,
+          "lstm_kg": 51.11903381347656,
+          "tirex2_kg": 51.1127815246582
+        },
+        {
+          "origin": "2026-07-21T06:00:00+00:00",
+          "target_timestamp": "2026-07-21T07:00:00+00:00",
+          "actual_kg": 51.05495834350586,
+          "previous_kg": 51.056636810302734,
+          "new_kg": 51.05854034423828,
+          "previous_lstm_kg": 51.058738708496094,
+          "lstm_kg": 51.06401062011719,
+          "tirex2_kg": 51.0540657043457
+        },
+        {
+          "origin": "2026-07-21T07:00:00+00:00",
+          "target_timestamp": "2026-07-21T08:00:00+00:00",
+          "actual_kg": 50.98870086669922,
+          "previous_kg": 50.99222183227539,
+          "new_kg": 50.993690490722656,
+          "previous_lstm_kg": 50.99522399902344,
+          "lstm_kg": 50.99997329711914,
+          "tirex2_kg": 50.98855209350586
+        },
+        {
+          "origin": "2026-07-21T08:00:00+00:00",
+          "target_timestamp": "2026-07-21T09:00:00+00:00",
+          "actual_kg": 50.91769790649414,
+          "previous_kg": 50.920719146728516,
+          "new_kg": 50.921958923339844,
+          "previous_lstm_kg": 50.92353820800781,
+          "lstm_kg": 50.92768859863281,
+          "tirex2_kg": 50.917274475097656
+        },
+        {
+          "origin": "2026-07-21T09:00:00+00:00",
+          "target_timestamp": "2026-07-21T10:00:00+00:00",
+          "actual_kg": 50.841915130615234,
+          "previous_kg": 50.846832275390625,
+          "new_kg": 50.84806823730469,
+          "previous_lstm_kg": 50.848514556884766,
+          "lstm_kg": 50.85210037231445,
+          "tirex2_kg": 50.84477233886719
+        },
+        {
+          "origin": "2026-07-21T10:00:00+00:00",
+          "target_timestamp": "2026-07-21T11:00:00+00:00",
+          "actual_kg": 50.769142150878906,
+          "previous_kg": 50.77082824707031,
+          "new_kg": 50.771812438964844,
+          "previous_lstm_kg": 50.772315979003906,
+          "lstm_kg": 50.77524185180664,
+          "tirex2_kg": 50.76900863647461
+        },
+        {
+          "origin": "2026-07-21T11:00:00+00:00",
+          "target_timestamp": "2026-07-21T12:00:00+00:00",
+          "actual_kg": 50.70171356201172,
+          "previous_kg": 50.70233154296875,
+          "new_kg": 50.70344543457031,
+          "previous_lstm_kg": 50.70199203491211,
+          "lstm_kg": 50.70430374145508,
+          "tirex2_kg": 50.7027473449707
+        },
+        {
+          "origin": "2026-07-21T12:00:00+00:00",
+          "target_timestamp": "2026-07-21T13:00:00+00:00",
+          "actual_kg": 50.64362335205078,
+          "previous_kg": 50.642845153808594,
+          "new_kg": 50.643760681152344,
+          "previous_lstm_kg": 50.641937255859375,
+          "lstm_kg": 50.643524169921875,
+          "tirex2_kg": 50.643959045410156
+        },
+        {
+          "origin": "2026-07-21T13:00:00+00:00",
+          "target_timestamp": "2026-07-21T14:00:00+00:00",
+          "actual_kg": 50.59787368774414,
+          "previous_kg": 50.595008850097656,
+          "new_kg": 50.59593200683594,
+          "previous_lstm_kg": 50.59292984008789,
+          "lstm_kg": 50.59395980834961,
+          "tirex2_kg": 50.5975456237793
+        },
+        {
+          "origin": "2026-07-21T14:00:00+00:00",
+          "target_timestamp": "2026-07-21T15:00:00+00:00",
+          "actual_kg": 50.56409454345703,
+          "previous_kg": 50.56307601928711,
+          "new_kg": 50.56361389160156,
+          "previous_lstm_kg": 50.56153869628906,
+          "lstm_kg": 50.56197738647461,
+          "tirex2_kg": 50.5649528503418
+        },
+        {
+          "origin": "2026-07-21T15:00:00+00:00",
+          "target_timestamp": "2026-07-21T16:00:00+00:00",
+          "actual_kg": 50.54584884643555,
+          "previous_kg": 50.543418884277344,
+          "new_kg": 50.54362106323242,
+          "previous_lstm_kg": 50.54275131225586,
+          "lstm_kg": 50.542877197265625,
+          "tirex2_kg": 50.54423141479492
+        },
+        {
+          "origin": "2026-07-21T16:00:00+00:00",
+          "target_timestamp": "2026-07-21T17:00:00+00:00",
+          "actual_kg": 50.54075241088867,
+          "previous_kg": 50.54125213623047,
+          "new_kg": 50.5413703918457,
+          "previous_lstm_kg": 50.54087829589844,
+          "lstm_kg": 50.540958404541016,
+          "tirex2_kg": 50.54170608520508
+        },
+        {
+          "origin": "2026-07-21T17:00:00+00:00",
+          "target_timestamp": "2026-07-21T18:00:00+00:00",
+          "actual_kg": 50.5499153137207,
+          "previous_kg": 50.5513801574707,
+          "new_kg": 50.55099868774414,
+          "previous_lstm_kg": 50.553470611572266,
+          "lstm_kg": 50.55364990234375,
+          "tirex2_kg": 50.548828125
+        },
+        {
+          "origin": "2026-07-21T18:00:00+00:00",
+          "target_timestamp": "2026-07-21T19:00:00+00:00",
+          "actual_kg": 50.573448181152344,
+          "previous_kg": 50.57372283935547,
+          "new_kg": 50.57344436645508,
+          "previous_lstm_kg": 50.576332092285156,
+          "lstm_kg": 50.57700729370117,
+          "tirex2_kg": 50.57052993774414
+        },
+        {
+          "origin": "2026-07-21T19:00:00+00:00",
+          "target_timestamp": "2026-07-21T20:00:00+00:00",
+          "actual_kg": 50.606563568115234,
+          "previous_kg": 50.608638763427734,
+          "new_kg": 50.60856628417969,
+          "previous_lstm_kg": 50.6117057800293,
+          "lstm_kg": 50.61305618286133,
+          "tirex2_kg": 50.604888916015625
+        },
+        {
+          "origin": "2026-07-21T20:00:00+00:00",
+          "target_timestamp": "2026-07-21T21:00:00+00:00",
+          "actual_kg": 50.64241027832031,
+          "previous_kg": 50.64794158935547,
+          "new_kg": 50.648475646972656,
+          "previous_lstm_kg": 50.650169372558594,
+          "lstm_kg": 50.65245819091797,
+          "tirex2_kg": 50.64521408081055
+        },
+        {
+          "origin": "2026-07-21T21:00:00+00:00",
+          "target_timestamp": "2026-07-21T22:00:00+00:00",
+          "actual_kg": 50.681270599365234,
+          "previous_kg": 50.68511962890625,
+          "new_kg": 50.685752868652344,
+          "previous_lstm_kg": 50.68855285644531,
+          "lstm_kg": 50.69166564941406,
+          "tirex2_kg": 50.6809196472168
+        },
+        {
+          "origin": "2026-07-21T22:00:00+00:00",
+          "target_timestamp": "2026-07-21T23:00:00+00:00",
+          "actual_kg": 50.72193145751953,
+          "previous_kg": 50.720985412597656,
+          "new_kg": 50.7222900390625,
+          "previous_lstm_kg": 50.723106384277344,
+          "lstm_kg": 50.72706604003906,
+          "tirex2_kg": 50.718387603759766
+        }
+      ],
+      "data_reused": true,
+      "independent_future_evaluation": false
+    }
+  },
+  "interval_radii_kg": [],
+  "evaluation_protocol": "chronological_training_blend_calibration_final_one_hour_holdout",
+  "training_calendar_cutoff": "2025-10-25T11:00:00+00:00",
+  "bundle_available_after": "2026-07-21T23:00:00+00:00",
+  "dependencies": {
+    "tensorflow": "2.18.0",
+    "lightgbm": "4.7.0",
+    "chronos-forecasting": "2.3.2",
+    "torch": "2.14.1",
+    "transformers": "5.18.0",
+    "numpy": "2.0.2",
+    "pandas": "2.2.3"
+  },
+  "provenance_snapshot": "cc7574c0717eb873a5246a9985fa69976766217c2fae0881c09fa72a51911693",
+  "limitations": [
+    "LSTM parameters and ensemble blend were trained; the TiRex-2 checkpoint stays frozen.",
+    "Blend weights use separate one-hour calibration origins; later holdout targets are evaluation only.",
+    "One-hour held-out metrics describe this update, not independent pretraining data or long-horizon calibration.",
+    "Temperature thresholds are engineering demonstration thresholds, not biological criteria."
+  ],
+  "benchmark_file": "evaluation.json",
+  "training_hive_ids": [
+    "TEMP-DRIFT-DEMO",
+    "TEMP-DRIFT-PRACTICE",
+    "ufc_apis_2",
+    "ufc_meliponini_s1",
+    "ufc_meliponini_s2",
+    "ufc_meliponini_s3",
+    "vecauce_2021_3"
+  ],
+  "parent_version": "8",
+  "tirex2": {
+    "model_id": "NX-AI/TiRex-2",
+    "revision": "05e5b26db52bfb256f1ae1bdf785589850482de3",
+    "checkpoint_sha256": "184b160ffbe4c01a26beeba14015ff3507c7497e1f3577114187bbc1d19fcac1",
+    "device": "cpu",
+    "runtime_package": "tirex-2==0.3.0",
+    "worker_environment": "BEEOPS_TIREX_PYTHON"
+  },
+  "lstm_origin": "Warm-started actual parent LSTM; retrained on explicitly reused fixed synthetic practice labels",
+  "baseline_report_sha256": "fbde3cd5266abcbb7960eb9126336aeeea398363582bdd1b4b0edb8ea6da77de",
+  "temperature_training": {
+    "reason": "explicit_temperature_practice",
+    "job_id": "d27ac8be245c4269976a4cc16d55fe56",
+    "snapshot_id": "cc7574c0717eb873a5246a9985fa69976766217c2fae0881c09fa72a51911693",
+    "reference_id": "a07b19845c7dc4750bc8d25034a8d89ad58874bb32c28a19267e85778dd73894",
+    "source_workspace_id": "TEMP-DRIFT-PRACTICE",
+    "training_start": "2026-07-15T00:00:00+00:00",
+    "training_end": "2026-07-19T23:00:00+00:00",
+    "new_observations": 0,
+    "maximum_observed_training_horizon": 120,
+    "validation_start": "2026-07-21T00:00:00+00:00",
+    "validation_end": "2026-07-21T23:00:00+00:00",
+    "calibration_start": "2026-07-20T00:00:00+00:00",
+    "calibration_end": "2026-07-20T23:00:00+00:00",
+    "calibration_samples": 24,
+    "validation_samples": 24,
+    "consumed_through_by_hive": {
+      "TEMP-DRIFT-DEMO": "2026-07-21T23:00:00+00:00",
+      "TEMP-DRIFT-PRACTICE": "2026-07-21T23:00:00+00:00"
+    },
+    "epochs_completed": 8,
+    "loss_scaled": [
+      0.010623992420732975,
+      0.0112404003739357,
+      0.005937137175351381,
+      0.0067162117920815945,
+      0.011347907595336437,
+      0.00897290837019682,
+      0.008811643347144127,
+      0.006372667849063873
+    ],
+    "old_weights": {
+      "lstm": 0.55,
+      "tirex2": 0.45
+    },
+    "new_weights": {
+      "lstm": 0.45,
+      "tirex2": 0.55
+    },
+    "trained_components": [
+      "lstm",
+      "ensemble_weights"
+    ],
+    "frozen_components": [
+      "tirex2"
+    ],
+    "before_weights_sha256": "207b36a5b8a12ac0dae708d3b4cdb1a138ee653571c738bd5c02855e1c874bee",
+    "after_weights_sha256": "cc250cdc1ee01a2c725f53273cc70d8098ab0bc4ae17f1e713f07046735e530f",
+    "tirex_before_sha256": "184b160ffbe4c01a26beeba14015ff3507c7497e1f3577114187bbc1d19fcac1",
+    "ensemble_before_sha256": "a6bb9fb361ef17f7fb52260025942f20ce470fe8da551eeff55baec105418289",
+    "ensemble_after_sha256": "d1f97e76840f5656fc0b0f89be57fe5ba1c49b75a250bff1c8ef6ef29bc5e7a2",
+    "tirex_after_sha256": "184b160ffbe4c01a26beeba14015ff3507c7497e1f3577114187bbc1d19fcac1",
+    "metrics": {
+      "previous_ensemble_mae_kg": 0.0024404525756835938,
+      "new_ensemble_mae_kg": 0.0023527145385742188,
+      "lstm_mae_kg": 0.004782041069120169,
+      "calibration_mae_kg": 0.004372437950223684,
+      "calibration_samples": 24,
+      "validation_samples": 24,
+      "training_windows": 120,
+      "epochs_completed": 8
+    },
+    "promotion_policy": "finite_artifacts_and_reload_no_quality_threshold",
+    "scaler_policy": "frozen_parent_scaler",
+    "tirex_policy": "frozen_checkpoint",
+    "blend_policy": "one_hour_chronological_calibration_positive_weights",
+    "evaluation_role": "descriptive_fixed_practice_replay",
+    "practice_replay": {
+      "request_id": "eccb330bb4a54e1cbf7158a122973e10",
+      "data_kind": "synthetic",
+      "fixed_observations": 504,
+      "inserted_observations": 0,
+      "reused_observations": 504,
+      "data_policy": "explicit_reuse_of_fixed_builtin_observations",
+      "reference_start": "2026-07-08T00:00:00+00:00",
+      "reference_end": "2026-07-14T23:00:00+00:00"
+    },
+    "replayed_target_observations": 168
+  },
+  "mlflow": {
+    "registry_name": "BeeOPS_Horizon_Weight",
+    "model_version": "7",
+    "run_id": "d3a7d6beca674cab8037bb9f51f99c78",
+    "tracking_location": "source training registry not bundled; new runs use the local runtime/temperature_drift registry"
+  }
+}

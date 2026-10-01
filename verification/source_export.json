@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-01",
+  "tested_source_files": 196,
+  "tested_source_bytes": 3346836,
+  "checkpoint_excluded": true,
+  "secret_runtime_files_excluded": true,
+  "symlinks": 0,
+  "over_100_mib_files": 0,
+  "checks": {
+    "compile": {
+      "status": "passed",
+      "summary": "exit 0"
+    },
+    "assets": {
+      "status": "passed",
+      "summary": "{\"status\": \"ok\", \"initial_version\": \"9\", \"verified_artifacts\": 7, \"deferred_downloads\": [\"tirex2/model.ckpt\"], \"observed_cases\": 3}"
+    },
+    "package": {
+      "status": "passed",
+      "summary": "21 passed, 1 deselected in 0.12s"
+    },
+    "ui": {
+      "status": "passed",
+      "summary": "ℹ duration_ms 423.870125"
+    }
+  },
+  "markdown_links": "passed",
+  "zip_integrity": "passed",
+  "note": "Counts describe the tested Git source snapshot before this result receipt and FILE_MANIFEST.json were generated; the final inventory is FILE_MANIFEST.json."
+}

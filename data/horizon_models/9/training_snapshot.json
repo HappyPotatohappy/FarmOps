@@ -1,0 +1,3568 @@
+{
+  "rows": [
+    {
+      "timestamp": "2026-07-01T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.176777,
+      "temperature_c": 21.7842,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.227796,
+      "temperature_c": 21.4124,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.264552,
+      "temperature_c": 21.0633,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.28097,
+      "temperature_c": 20.8647,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.279919,
+      "temperature_c": 21.1958,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.267297,
+      "temperature_c": 21.271,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.23585,
+      "temperature_c": 21.8653,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.196378,
+      "temperature_c": 22.3889,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.145428,
+      "temperature_c": 23.1351,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.088942,
+      "temperature_c": 24.1485,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.032623,
+      "temperature_c": 24.6057,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 49.983819,
+      "temperature_c": 25.5177,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 49.940153,
+      "temperature_c": 26.1141,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 49.911597,
+      "temperature_c": 26.5578,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 49.896319,
+      "temperature_c": 26.9805,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 49.897727,
+      "temperature_c": 27.033,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 49.917307,
+      "temperature_c": 26.7565,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 49.955277,
+      "temperature_c": 26.5959,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.003072,
+      "temperature_c": 26.0937,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.063558,
+      "temperature_c": 25.5824,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.130951,
+      "temperature_c": 24.7712,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.206046,
+      "temperature_c": 24.1425,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.281777,
+      "temperature_c": 23.2013,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-01T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.351783,
+      "temperature_c": 22.6337,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.416441,
+      "temperature_c": 21.8693,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.464654,
+      "temperature_c": 21.4314,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.497885,
+      "temperature_c": 20.9911,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.517958,
+      "temperature_c": 21.0248,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.517128,
+      "temperature_c": 21.0799,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.503762,
+      "temperature_c": 21.336,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.476653,
+      "temperature_c": 21.728,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.434676,
+      "temperature_c": 22.6164,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.383614,
+      "temperature_c": 23.2191,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.329848,
+      "temperature_c": 23.9154,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.276178,
+      "temperature_c": 24.649,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.225551,
+      "temperature_c": 25.6395,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.185365,
+      "temperature_c": 25.9585,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.152965,
+      "temperature_c": 26.5,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.137245,
+      "temperature_c": 26.9911,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.137129,
+      "temperature_c": 26.8675,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.157447,
+      "temperature_c": 26.7838,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.193701,
+      "temperature_c": 26.6663,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.241611,
+      "temperature_c": 26.0202,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.306029,
+      "temperature_c": 25.4467,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.377115,
+      "temperature_c": 24.7268,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.45006,
+      "temperature_c": 24.1122,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.523431,
+      "temperature_c": 23.0996,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-02T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.593465,
+      "temperature_c": 22.3559,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.653341,
+      "temperature_c": 21.7642,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.704226,
+      "temperature_c": 21.4605,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.737043,
+      "temperature_c": 21.2198,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.75816,
+      "temperature_c": 21.1541,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.761379,
+      "temperature_c": 21.0669,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.749113,
+      "temperature_c": 21.4493,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.721675,
+      "temperature_c": 21.7776,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.680706,
+      "temperature_c": 22.4649,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.630896,
+      "temperature_c": 23.2965,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.577341,
+      "temperature_c": 23.8738,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.520541,
+      "temperature_c": 24.7692,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.472573,
+      "temperature_c": 25.5154,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.430846,
+      "temperature_c": 25.9801,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.399816,
+      "temperature_c": 26.5307,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.384216,
+      "temperature_c": 26.9137,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.387496,
+      "temperature_c": 26.9514,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.403052,
+      "temperature_c": 26.8053,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.440412,
+      "temperature_c": 26.6798,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.492766,
+      "temperature_c": 26.2304,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.556949,
+      "temperature_c": 25.5901,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.628861,
+      "temperature_c": 24.6381,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.701418,
+      "temperature_c": 24.0317,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.775115,
+      "temperature_c": 23.2351,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-03T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.847585,
+      "temperature_c": 22.526,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.909914,
+      "temperature_c": 21.8262,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.958907,
+      "temperature_c": 21.5023,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.991577,
+      "temperature_c": 21.1394,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.008615,
+      "temperature_c": 20.8773,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.008393,
+      "temperature_c": 21.0807,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.994858,
+      "temperature_c": 21.2531,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.962753,
+      "temperature_c": 21.8705,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.918936,
+      "temperature_c": 22.5586,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.867163,
+      "temperature_c": 23.1667,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.815006,
+      "temperature_c": 23.8209,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.761775,
+      "temperature_c": 24.7088,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.710153,
+      "temperature_c": 25.6167,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.670659,
+      "temperature_c": 26.2295,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.638039,
+      "temperature_c": 26.672,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.620864,
+      "temperature_c": 27.0181,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.624236,
+      "temperature_c": 26.9177,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.640744,
+      "temperature_c": 26.9631,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.676386,
+      "temperature_c": 26.421,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.724021,
+      "temperature_c": 25.976,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.783877,
+      "temperature_c": 25.5412,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.854797,
+      "temperature_c": 24.755,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.931214,
+      "temperature_c": 24.0481,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.006441,
+      "temperature_c": 23.3252,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-04T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.076853,
+      "temperature_c": 22.5664,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.141383,
+      "temperature_c": 21.7785,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.193081,
+      "temperature_c": 21.5594,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.227278,
+      "temperature_c": 20.9408,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.247754,
+      "temperature_c": 20.8583,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.246378,
+      "temperature_c": 20.9752,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.229499,
+      "temperature_c": 21.4713,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.2013,
+      "temperature_c": 21.9828,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.158929,
+      "temperature_c": 22.4684,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.110641,
+      "temperature_c": 23.3632,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.058856,
+      "temperature_c": 23.946,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.004936,
+      "temperature_c": 24.9335,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.952339,
+      "temperature_c": 25.6551,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.909972,
+      "temperature_c": 26.0544,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.882348,
+      "temperature_c": 26.4585,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.865142,
+      "temperature_c": 26.9582,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.867708,
+      "temperature_c": 26.8487,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.886183,
+      "temperature_c": 27.0617,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.919433,
+      "temperature_c": 26.4229,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.971449,
+      "temperature_c": 26.15,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.031044,
+      "temperature_c": 25.4944,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.101844,
+      "temperature_c": 24.9042,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.178189,
+      "temperature_c": 24.0671,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.252648,
+      "temperature_c": 23.1525,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-05T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.321706,
+      "temperature_c": 22.3467,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.381127,
+      "temperature_c": 22.0465,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.428973,
+      "temperature_c": 21.3354,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.463298,
+      "temperature_c": 20.9533,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.482928,
+      "temperature_c": 20.9403,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.484807,
+      "temperature_c": 21.1647,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.472734,
+      "temperature_c": 21.388,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.44077,
+      "temperature_c": 21.7534,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.397463,
+      "temperature_c": 22.4632,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.345138,
+      "temperature_c": 23.363,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.292793,
+      "temperature_c": 23.8515,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.237309,
+      "temperature_c": 24.7788,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.188116,
+      "temperature_c": 25.6265,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.143557,
+      "temperature_c": 26.1601,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.114483,
+      "temperature_c": 26.6486,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.098342,
+      "temperature_c": 26.922,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.098925,
+      "temperature_c": 26.9277,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.114618,
+      "temperature_c": 26.8464,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.15219,
+      "temperature_c": 26.7051,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.201713,
+      "temperature_c": 26.2298,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.260885,
+      "temperature_c": 25.6692,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.330968,
+      "temperature_c": 24.6974,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.407839,
+      "temperature_c": 23.9118,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.484388,
+      "temperature_c": 23.1829,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-06T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.557534,
+      "temperature_c": 22.4043,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.622021,
+      "temperature_c": 21.9403,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.673306,
+      "temperature_c": 21.2285,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.705597,
+      "temperature_c": 21.0206,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.724935,
+      "temperature_c": 20.8231,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.724299,
+      "temperature_c": 21.117,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.711356,
+      "temperature_c": 21.2341,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.681262,
+      "temperature_c": 21.7373,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.642269,
+      "temperature_c": 22.448,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.589829,
+      "temperature_c": 23.2613,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.532242,
+      "temperature_c": 23.8652,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.480391,
+      "temperature_c": 24.9031,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.428889,
+      "temperature_c": 25.4014,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.389387,
+      "temperature_c": 26.1321,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.360608,
+      "temperature_c": 26.5336,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.343978,
+      "temperature_c": 26.8366,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.345934,
+      "temperature_c": 27.151,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.364385,
+      "temperature_c": 26.8977,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.397157,
+      "temperature_c": 26.4462,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.448287,
+      "temperature_c": 25.9783,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.509121,
+      "temperature_c": 25.5097,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.576645,
+      "temperature_c": 24.8516,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.649315,
+      "temperature_c": 24.0068,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.725233,
+      "temperature_c": 23.1993,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-07T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.796856,
+      "temperature_c": 22.3385,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.857909,
+      "temperature_c": 21.9525,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.905688,
+      "temperature_c": 21.5301,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.941951,
+      "temperature_c": 20.9747,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.960917,
+      "temperature_c": 20.826,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.960941,
+      "temperature_c": 21.208,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.948824,
+      "temperature_c": 21.5202,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.918703,
+      "temperature_c": 22.0058,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.874077,
+      "temperature_c": 22.4725,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.822972,
+      "temperature_c": 23.3001,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.767353,
+      "temperature_c": 23.8534,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.713797,
+      "temperature_c": 24.6691,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.660951,
+      "temperature_c": 25.6786,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.618575,
+      "temperature_c": 26.1115,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.589576,
+      "temperature_c": 26.7396,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.575559,
+      "temperature_c": 26.749,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.574676,
+      "temperature_c": 26.9541,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.593746,
+      "temperature_c": 26.8647,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.627778,
+      "temperature_c": 26.6829,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.678803,
+      "temperature_c": 26.0477,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.740765,
+      "temperature_c": 25.3538,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.811556,
+      "temperature_c": 24.8676,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.888307,
+      "temperature_c": 24.1139,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.96374,
+      "temperature_c": 23.2364,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-08T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.035672,
+      "temperature_c": 22.566,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.094787,
+      "temperature_c": 22.0011,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.146907,
+      "temperature_c": 21.5663,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.181913,
+      "temperature_c": 20.9946,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.201112,
+      "temperature_c": 21.0827,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.203042,
+      "temperature_c": 21.2672,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.185942,
+      "temperature_c": 21.5453,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.157346,
+      "temperature_c": 21.8913,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.116662,
+      "temperature_c": 22.5925,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.068099,
+      "temperature_c": 23.3493,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.015182,
+      "temperature_c": 24.0435,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.958837,
+      "temperature_c": 24.8911,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.908029,
+      "temperature_c": 25.4242,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.869111,
+      "temperature_c": 26.0553,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.839864,
+      "temperature_c": 26.7413,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.82365,
+      "temperature_c": 26.9928,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.826081,
+      "temperature_c": 27.0579,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.846046,
+      "temperature_c": 26.9176,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.878957,
+      "temperature_c": 26.7514,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.928662,
+      "temperature_c": 26.2742,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.99142,
+      "temperature_c": 25.5801,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.062781,
+      "temperature_c": 24.8381,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.13611,
+      "temperature_c": 23.9718,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.211049,
+      "temperature_c": 23.211,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-09T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.281245,
+      "temperature_c": 22.3596,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.345315,
+      "temperature_c": 21.7761,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.392237,
+      "temperature_c": 21.3476,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.425777,
+      "temperature_c": 21.1749,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.441859,
+      "temperature_c": 21.0358,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.440363,
+      "temperature_c": 20.9384,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.422731,
+      "temperature_c": 21.3019,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.393103,
+      "temperature_c": 21.7983,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.353936,
+      "temperature_c": 22.6236,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.303167,
+      "temperature_c": 23.2589,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.246967,
+      "temperature_c": 24.0946,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.193043,
+      "temperature_c": 24.6153,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.14142,
+      "temperature_c": 25.6682,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.101489,
+      "temperature_c": 25.9647,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.071718,
+      "temperature_c": 26.4938,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.058204,
+      "temperature_c": 26.9626,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.05706,
+      "temperature_c": 27.1332,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.078124,
+      "temperature_c": 26.8832,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.113432,
+      "temperature_c": 26.6165,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.163552,
+      "temperature_c": 26.0214,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.225045,
+      "temperature_c": 25.507,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.294267,
+      "temperature_c": 24.6335,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.369533,
+      "temperature_c": 24.0344,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.441902,
+      "temperature_c": 23.1786,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-10T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.512726,
+      "temperature_c": 22.4549,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.575413,
+      "temperature_c": 21.8864,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.626256,
+      "temperature_c": 21.3568,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.66303,
+      "temperature_c": 20.9928,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.681166,
+      "temperature_c": 21.0251,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.681426,
+      "temperature_c": 20.9233,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.666935,
+      "temperature_c": 21.2868,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.635073,
+      "temperature_c": 21.8605,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.593091,
+      "temperature_c": 22.3335,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.545218,
+      "temperature_c": 23.3717,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.489858,
+      "temperature_c": 23.9445,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.435379,
+      "temperature_c": 24.9143,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.386517,
+      "temperature_c": 25.3631,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.344602,
+      "temperature_c": 26.1643,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.314275,
+      "temperature_c": 26.5946,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.301824,
+      "temperature_c": 26.9423,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.305798,
+      "temperature_c": 27.0814,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.324076,
+      "temperature_c": 27.002,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.357906,
+      "temperature_c": 26.7711,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.409847,
+      "temperature_c": 26.0005,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.469183,
+      "temperature_c": 25.4403,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.541375,
+      "temperature_c": 24.8209,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.613321,
+      "temperature_c": 23.9226,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.685661,
+      "temperature_c": 23.1737,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-11T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.756719,
+      "temperature_c": 22.6022,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.818024,
+      "temperature_c": 21.7859,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.86517,
+      "temperature_c": 21.2492,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.900992,
+      "temperature_c": 21.2698,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.918897,
+      "temperature_c": 21.1133,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.919389,
+      "temperature_c": 21.0282,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.9043,
+      "temperature_c": 21.4054,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.877068,
+      "temperature_c": 21.7397,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.836605,
+      "temperature_c": 22.651,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.785895,
+      "temperature_c": 23.3877,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.729381,
+      "temperature_c": 24.024,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.671694,
+      "temperature_c": 24.764,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.620781,
+      "temperature_c": 25.6476,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.57669,
+      "temperature_c": 26.2744,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.549441,
+      "temperature_c": 26.5216,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.532578,
+      "temperature_c": 27.0715,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.534476,
+      "temperature_c": 27.109,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.55049,
+      "temperature_c": 27.0744,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.586446,
+      "temperature_c": 26.7676,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.637082,
+      "temperature_c": 26.2746,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.696508,
+      "temperature_c": 25.3614,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.768599,
+      "temperature_c": 24.818,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.84204,
+      "temperature_c": 24.1667,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.915846,
+      "temperature_c": 23.1819,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-12T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.985658,
+      "temperature_c": 22.4797,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.04808,
+      "temperature_c": 21.9745,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.098747,
+      "temperature_c": 21.4296,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.130847,
+      "temperature_c": 21.1356,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.150641,
+      "temperature_c": 20.8331,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.14981,
+      "temperature_c": 21.2547,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.133028,
+      "temperature_c": 21.2464,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.106058,
+      "temperature_c": 22.0321,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.065782,
+      "temperature_c": 22.5066,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.018022,
+      "temperature_c": 23.0641,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.963247,
+      "temperature_c": 23.8713,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.905674,
+      "temperature_c": 24.8245,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.855541,
+      "temperature_c": 25.6012,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.814401,
+      "temperature_c": 25.9531,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.783638,
+      "temperature_c": 26.5677,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.76861,
+      "temperature_c": 27.0185,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.771112,
+      "temperature_c": 27.1444,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.788015,
+      "temperature_c": 26.9984,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.820143,
+      "temperature_c": 26.6533,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.871043,
+      "temperature_c": 26.1313,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.932512,
+      "temperature_c": 25.5572,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.004169,
+      "temperature_c": 24.5984,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.079564,
+      "temperature_c": 23.8658,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.155106,
+      "temperature_c": 23.2293,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-13T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.223085,
+      "temperature_c": 22.4467,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.287622,
+      "temperature_c": 21.8457,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.339422,
+      "temperature_c": 21.3629,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.376088,
+      "temperature_c": 21.0846,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.397168,
+      "temperature_c": 21.1749,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.39911,
+      "temperature_c": 21.2596,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.381523,
+      "temperature_c": 21.4753,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.353186,
+      "temperature_c": 21.7546,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.312657,
+      "temperature_c": 22.4339,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.262905,
+      "temperature_c": 23.1967,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.209155,
+      "temperature_c": 23.907,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.153935,
+      "temperature_c": 24.93,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.105012,
+      "temperature_c": 25.4452,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.062028,
+      "temperature_c": 26.042,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.03251,
+      "temperature_c": 26.5334,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.019566,
+      "temperature_c": 26.7378,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.022738,
+      "temperature_c": 27.0541,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.040107,
+      "temperature_c": 26.8938,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.072275,
+      "temperature_c": 26.4468,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.119933,
+      "temperature_c": 26.0169,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.182427,
+      "temperature_c": 25.6593,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.249733,
+      "temperature_c": 24.6216,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.323626,
+      "temperature_c": 24.0075,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.397889,
+      "temperature_c": 23.0944,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-14T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.469979,
+      "temperature_c": 22.4736,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.533791,
+      "temperature_c": 22.1059,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.583379,
+      "temperature_c": 21.8346,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.616246,
+      "temperature_c": 22.512,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.635287,
+      "temperature_c": 22.9989,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.634636,
+      "temperature_c": 24.2348,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.621559,
+      "temperature_c": 25.2237,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.5912,
+      "temperature_c": 26.7127,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.550886,
+      "temperature_c": 28.2921,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.500605,
+      "temperature_c": 30.1409,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.439234,
+      "temperature_c": 31.2989,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.372403,
+      "temperature_c": 32.4997,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.309906,
+      "temperature_c": 33.4313,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.248538,
+      "temperature_c": 34.2611,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.194609,
+      "temperature_c": 34.46,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.150547,
+      "temperature_c": 34.8859,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.123266,
+      "temperature_c": 34.9628,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.107048,
+      "temperature_c": 34.77,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.103974,
+      "temperature_c": 34.6665,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.113907,
+      "temperature_c": 34.1142,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.13615,
+      "temperature_c": 33.4136,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.171036,
+      "temperature_c": 32.6734,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.209337,
+      "temperature_c": 32.1603,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.249811,
+      "temperature_c": 31.3875,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-15T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.286635,
+      "temperature_c": 30.6098,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.322017,
+      "temperature_c": 29.7346,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.346618,
+      "temperature_c": 29.44,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.361838,
+      "temperature_c": 29.1224,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.358257,
+      "temperature_c": 29.1315,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.344774,
+      "temperature_c": 29.1729,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.313853,
+      "temperature_c": 29.4287,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.268231,
+      "temperature_c": 29.9673,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.208429,
+      "temperature_c": 30.58,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.142635,
+      "temperature_c": 31.2946,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 53.0694,
+      "temperature_c": 31.8385,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.993515,
+      "temperature_c": 32.6223,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.918324,
+      "temperature_c": 33.4692,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.852205,
+      "temperature_c": 33.9734,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.790555,
+      "temperature_c": 34.5744,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.744789,
+      "temperature_c": 34.9436,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.709108,
+      "temperature_c": 34.905,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.692306,
+      "temperature_c": 34.852,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.690207,
+      "temperature_c": 34.7759,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.702402,
+      "temperature_c": 34.2653,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.72613,
+      "temperature_c": 33.4036,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.759537,
+      "temperature_c": 32.8776,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.798285,
+      "temperature_c": 31.9111,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.837735,
+      "temperature_c": 31.3667,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-16T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.876873,
+      "temperature_c": 30.6493,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.911497,
+      "temperature_c": 29.9767,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.935365,
+      "temperature_c": 29.4019,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.947758,
+      "temperature_c": 29.1621,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.945627,
+      "temperature_c": 28.9042,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.93073,
+      "temperature_c": 29.2301,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.897507,
+      "temperature_c": 29.2794,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.85236,
+      "temperature_c": 29.8421,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.792471,
+      "temperature_c": 30.6748,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.724517,
+      "temperature_c": 31.2186,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.650735,
+      "temperature_c": 31.8744,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.573906,
+      "temperature_c": 32.6155,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.502098,
+      "temperature_c": 33.5114,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.430701,
+      "temperature_c": 34.0994,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.370757,
+      "temperature_c": 34.4696,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.325482,
+      "temperature_c": 34.9104,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.293591,
+      "temperature_c": 35.1608,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.272493,
+      "temperature_c": 34.9192,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.268181,
+      "temperature_c": 34.6007,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.274937,
+      "temperature_c": 34.1197,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.295246,
+      "temperature_c": 33.6398,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.326379,
+      "temperature_c": 32.7713,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.366896,
+      "temperature_c": 32.0449,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.409207,
+      "temperature_c": 31.2346,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-17T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.449948,
+      "temperature_c": 30.6788,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.482322,
+      "temperature_c": 29.9452,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.508632,
+      "temperature_c": 29.3521,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.519858,
+      "temperature_c": 28.9903,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.521439,
+      "temperature_c": 28.8422,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.504142,
+      "temperature_c": 29.1069,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.471908,
+      "temperature_c": 29.374,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.428774,
+      "temperature_c": 29.971,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.372224,
+      "temperature_c": 30.4767,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.302964,
+      "temperature_c": 31.2207,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.229502,
+      "temperature_c": 32.0742,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.152767,
+      "temperature_c": 32.8573,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.075504,
+      "temperature_c": 33.6482,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.006123,
+      "temperature_c": 34.1807,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.943668,
+      "temperature_c": 34.6831,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.896826,
+      "temperature_c": 35.0188,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.863212,
+      "temperature_c": 35.0597,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.841326,
+      "temperature_c": 35.0468,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.838739,
+      "temperature_c": 34.7642,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.850173,
+      "temperature_c": 34.0013,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.87395,
+      "temperature_c": 33.5703,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.902804,
+      "temperature_c": 32.714,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.941526,
+      "temperature_c": 31.9585,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.981817,
+      "temperature_c": 31.2606,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-18T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.019575,
+      "temperature_c": 30.5781,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.050645,
+      "temperature_c": 29.7727,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.075115,
+      "temperature_c": 29.53,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.089553,
+      "temperature_c": 29.0816,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.088313,
+      "temperature_c": 29.0451,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.074145,
+      "temperature_c": 29.0668,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 52.044987,
+      "temperature_c": 29.387,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.998966,
+      "temperature_c": 29.7109,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.942131,
+      "temperature_c": 30.5363,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.876303,
+      "temperature_c": 31.1946,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.804124,
+      "temperature_c": 31.9397,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.728039,
+      "temperature_c": 32.7472,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.651197,
+      "temperature_c": 33.5436,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.584306,
+      "temperature_c": 34.1644,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.525727,
+      "temperature_c": 34.611,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.475314,
+      "temperature_c": 35.0708,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.437784,
+      "temperature_c": 34.9022,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.41512,
+      "temperature_c": 34.989,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.410918,
+      "temperature_c": 34.7082,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.42048,
+      "temperature_c": 34.2269,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.439748,
+      "temperature_c": 33.3241,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.468643,
+      "temperature_c": 32.6499,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.507845,
+      "temperature_c": 32.1575,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.545914,
+      "temperature_c": 31.1454,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-19T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.585812,
+      "temperature_c": 30.4097,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.61773,
+      "temperature_c": 29.9686,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.643486,
+      "temperature_c": 29.2686,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.657466,
+      "temperature_c": 29.2745,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.653313,
+      "temperature_c": 28.9302,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.636793,
+      "temperature_c": 29.0372,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.603632,
+      "temperature_c": 29.5627,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.555729,
+      "temperature_c": 29.7203,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.498339,
+      "temperature_c": 30.4178,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.428029,
+      "temperature_c": 31.162,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.353797,
+      "temperature_c": 31.9988,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.278462,
+      "temperature_c": 32.8695,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.203606,
+      "temperature_c": 33.6778,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.135323,
+      "temperature_c": 34.1673,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.076392,
+      "temperature_c": 34.7718,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.028606,
+      "temperature_c": 34.7589,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.993696,
+      "temperature_c": 35.026,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.971058,
+      "temperature_c": 35.0572,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.96375,
+      "temperature_c": 34.6763,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.97046,
+      "temperature_c": 34.2404,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.989495,
+      "temperature_c": 33.323,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.019169,
+      "temperature_c": 32.7689,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.058268,
+      "temperature_c": 31.82,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.0989,
+      "temperature_c": 31.3086,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-20T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.136045,
+      "temperature_c": 30.3839,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T00:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.170409,
+      "temperature_c": 29.8563,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T01:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.193712,
+      "temperature_c": 29.3246,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T02:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.204833,
+      "temperature_c": 29.0837,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T03:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.204195,
+      "temperature_c": 28.8818,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T04:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.185872,
+      "temperature_c": 29.0855,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T05:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.15695,
+      "temperature_c": 29.4659,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T06:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.111928,
+      "temperature_c": 29.7653,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T07:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 51.05496,
+      "temperature_c": 30.4582,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T08:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.988702,
+      "temperature_c": 31.2304,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T09:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.917699,
+      "temperature_c": 31.8898,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T10:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.841914,
+      "temperature_c": 32.7081,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T11:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.769142,
+      "temperature_c": 33.3426,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T12:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.701715,
+      "temperature_c": 34.1695,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T13:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.643623,
+      "temperature_c": 34.4549,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T14:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.597873,
+      "temperature_c": 34.9745,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T15:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.564094,
+      "temperature_c": 34.96,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T16:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.54585,
+      "temperature_c": 34.7663,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T17:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.540752,
+      "temperature_c": 34.7235,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T18:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.549915,
+      "temperature_c": 34.1326,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T19:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.57345,
+      "temperature_c": 33.6273,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T20:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.606563,
+      "temperature_c": 32.7018,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T21:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.642409,
+      "temperature_c": 32.1151,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T22:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.681272,
+      "temperature_c": 31.3003,
+      "event": "normal"
+    },
+    {
+      "timestamp": "2026-07-21T23:00:00+00:00",
+      "hive_id": "TEMP-DRIFT-PRACTICE",
+      "weight_kg": 50.72193,
+      "temperature_c": 30.5445,
+      "event": "normal"
+    }
+  ],
+  "sources": [
+    "기본 합성 온도 실습 CSV: 01_baseline.csv + 02_heatwave.csv",
+    "사용자 CSV: 02_heatwave.csv"
+  ],
+  "workspace_id": "TEMP-DRIFT-PRACTICE",
+  "reference": {
+    "reference_id": "a07b19845c7dc4750bc8d25034a8d89ad58874bb32c28a19267e85778dd73894",
+    "count": 168,
+    "mean_c": 24.00908630952381,
+    "std_c": 2.133917211288667,
+    "start": "2026-07-08T00:00:00+00:00",
+    "end": "2026-07-14T23:00:00+00:00",
+    "model_version": "8",
+    "source": "built_in_practice_normal_baseline"
+  },
+  "check": {
+    "status": "drift",
+    "checked_at": "2026-10-01T07:22:43.561570+00:00",
+    "snapshot_id": "cc7574c0717eb873a5246a9985fa69976766217c2fae0881c09fa72a51911693",
+    "thresholds": {
+      "mean_shift_c": 4.0,
+      "standardized_shift": 1.5,
+      "reference_hours": 168,
+      "current_hours": 24
+    },
+    "reference_mean_c": 24.00908630952381,
+    "available_hours": 24,
+    "current_mean_c": 31.981770833333332,
+    "mean_shift_c": 7.972684523809523,
+    "standardized_shift": 3.736173306833605,
+    "current_start": "2026-07-21T00:00:00+00:00",
+    "current_end": "2026-07-21T23:00:00+00:00",
+    "reference_std_floor_c": 1.0,
+    "trigger": "explicit_practice_request",
+    "training_after": "2026-07-14T23:00:00+00:00"
+  }
+}

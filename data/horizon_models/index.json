@@ -1,0 +1,10 @@
+{
+  "registry_id": "BeeOPS_Horizon_Weight",
+  "versions": [
+    {
+      "version": "9",
+      "manifest": "9/manifest.json"
+    }
+  ],
+  "default_version": "9"
+}

@@ -1,0 +1,474 @@
+{
+  "schema_version": 1,
+  "default_case_id": "ufc_apis2_dec_jan",
+  "columns": [
+    "timestamp",
+    "hive_id",
+    "weight_kg",
+    "temperature_c",
+    "event"
+  ],
+  "archive_url": "/data/trend-cases.zip",
+  "cases": [
+    {
+      "id": "ufc_apis2_dec_jan",
+      "label": "브라질 Apis 2",
+      "hive_id": "trend_ufc_apis2_dec_jan",
+      "source_hive_id": "ufc_apis_2",
+      "source_hive": "ufc_apis_2",
+      "species": "Apis mellifera",
+      "file": "ufc_apis2_dec_jan.csv",
+      "download_url": "/data/trend-cases/ufc_apis2_dec_jan.csv",
+      "start": "2024-12-18T15:00:00+00:00",
+      "end": "2025-01-12T23:00:00+00:00",
+      "forecast_origin": "2025-01-12T23:00:00+00:00",
+      "rows": 609,
+      "sha256": "a3ecc1515b2dc6b28a8ed0b5c4496fc921156e66b322b1f396350e75cb8f955a",
+      "weight_min_kg": 54.517877575,
+      "weight_max_kg": 55.84932709,
+      "source_url": "https://zenodo.org/records/20399470",
+      "license": "CC-BY-4.0",
+      "source": {
+        "dataset_url": "https://zenodo.org/records/20399470",
+        "download_url": "https://zenodo.org/api/records/20399470/files/dadosColmeia2Apis.csv/content",
+        "doi": "10.5281/zenodo.20399470",
+        "title": "Hive Monitoring (Apis mellifera and Stingless Bees) and Rainfall Data - Federal University of Ceará (UFC) Apiary - Brazil",
+        "creators": [
+          {
+            "name": "JUCÁ DOS SANTOS, FELIPE",
+            "affiliation": "Universidade Federal do Ceará",
+            "orcid": "0000-0001-6693-8366"
+          },
+          {
+            "name": "abrahao bomfim, isac gabriel",
+            "affiliation": "Universidade Federal do Ceará",
+            "orcid": "0000-0001-5813-1896"
+          },
+          {
+            "name": "G. Gomes, Danielo",
+            "affiliation": "Universidade Federal do Ceará",
+            "orcid": "0000-0002-8285-4629"
+          },
+          {
+            "name": "Coelho, Alexandre",
+            "affiliation": null,
+            "orcid": "0000-0001-8715-849X"
+          },
+          {
+            "name": "Rafael Braga, Antonio",
+            "affiliation": "Universidade Federal do Ceará",
+            "orcid": "0000-0001-9105-9056"
+          },
+          {
+            "name": "Cavalcante, Marcelo Casimiro",
+            "affiliation": "University for International Integration of the Afro-Brazilian Lusophony",
+            "orcid": "0000-0001-7950-0515"
+          },
+          {
+            "name": "Freitas, Breno M.",
+            "affiliation": "Universidade Federal do Ceará",
+            "orcid": "0000-0002-9932-2207"
+          }
+        ],
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "published_md5": "064d28fd61b0578ac19c1399d88cde14",
+        "sensor_id": 3,
+        "file": "data/raw/dadosColmeia2Apis.csv",
+        "sha256": "5dc04fa9222ead3708257d40075d364c4fb5beb218f0aa841be26153df4e4a45",
+        "md5": "064d28fd61b0578ac19c1399d88cde14",
+        "md5_verified": true,
+        "bytes": 609522,
+        "metadata_sha256": "a25814c2d041b00caf8ce277f755cfb84195f9aa600212a7534dd8260f4f700e",
+        "filter_statistics": {
+          "sensor_raw_rows": 7066,
+          "valid_raw_rows": 6925,
+          "rejected_total_rows": 141,
+          "rejected_joint_zero_ambient_rows": 141,
+          "rejected_physical_bounds_rows": 0,
+          "rejected_overlap_rows": 0,
+          "occupied_hourly_bins": 1266,
+          "raw_start": "2024-12-14T00:16:59.952000",
+          "raw_end": "2025-02-10T05:45:07.463000",
+          "raw_duplicate_timestamps": 0
+        }
+      },
+      "processing": {
+        "weight_unit": "kg",
+        "weight_scale_factor": 1,
+        "weight_offsets_applied": false,
+        "temperature": "External ambient Celsius, Temperature OUT or ext_temperature",
+        "aggregation": "Component medians of jointly valid source rows in [h,h+1), labeled at completed hour h+1",
+        "physical_bounds": "Finite 0 < weight <= 300 kg and -50 <= ambient <= 60 C",
+        "ufc_sentinel_filter": "Exclude joint ext_temperature=0 and ext_humidity=0 rows",
+        "vecauce_period_filter": "Source timestamps 2021-06-01 inclusive to 2021-09-01 exclusive",
+        "missing_policy": "Jointly invalid rows dropped; empty bins remain gaps; exported bounds contain none",
+        "interpolation": false,
+        "synthetic_rows_added": 0,
+        "source_clock_shift_hours": 0,
+        "timezone_policy": "Source timezone unspecified; +00:00 is bookkeeping, with no clock conversion or verified UTC claim",
+        "hive_alias": "Isolated case namespace only; every observation comes from source_hive_id",
+        "event_policy": "normal means no >1 kg consecutive-hour numerical alert inside this interval; source does not annotate harvests or interventions"
+      },
+      "selection": {
+        "method": "Pinned continuous source interval, selected after inspecting observed trend shape",
+        "uses_model_performance": false,
+        "representative_or_unbiased_evaluation_sample": false,
+        "minimum_context_hours": 168,
+        "future_observations_in_context": false,
+        "missing_hours_inserted": 0,
+        "hives_combined": false
+      },
+      "pattern_evidence": {
+        "smoothing": "trailing_24_hour_mean",
+        "segments": [
+          {
+            "direction": "rise",
+            "start": "2024-12-19T23:00:00+00:00",
+            "end": "2024-12-22T11:00:00+00:00",
+            "duration_hours": 60,
+            "start_smoothed_kg": 55.22413523937501,
+            "end_smoothed_kg": 55.69410673770833,
+            "change_kg": 0.4699714983333223
+          },
+          {
+            "direction": "decline",
+            "start": "2024-12-22T11:00:00+00:00",
+            "end": "2025-01-09T11:00:00+00:00",
+            "duration_hours": 432,
+            "start_smoothed_kg": 55.69410673770833,
+            "end_smoothed_kg": 54.75728440354167,
+            "change_kg": -0.9368223341666635
+          },
+          {
+            "direction": "rebound",
+            "start": "2025-01-09T11:00:00+00:00",
+            "end": "2025-01-10T11:00:00+00:00",
+            "duration_hours": 24,
+            "start_smoothed_kg": 54.75728440354167,
+            "end_smoothed_kg": 54.80677731854166,
+            "change_kg": 0.04949291499999475
+          },
+          {
+            "direction": "decline",
+            "start": "2025-01-10T11:00:00+00:00",
+            "end": "2025-01-12T23:00:00+00:00",
+            "duration_hours": 60,
+            "start_smoothed_kg": 54.80677731854166,
+            "end_smoothed_kg": 54.646205425000005,
+            "change_kg": -0.16057189354165757
+          }
+        ],
+        "evidence_type": "observed_hourly_values_only",
+        "smoothing_changes_exported_values": false,
+        "initial_rise_hours": 60,
+        "max_abs_hourly_change_kg": 0.15753173999999603,
+        "causes_of_weight_changes_verified": false,
+        "limitations": "Descriptive endpoint changes in smoothed observations; not strictly monotonic phases, harvest labels, or proof of absent interventions."
+      }
+    },
+    {
+      "id": "vecauce3_july",
+      "label": "Vecauce 3",
+      "hive_id": "trend_vecauce3_july",
+      "source_hive_id": "vecauce_2021_3",
+      "source_hive": "vecauce_2021_3",
+      "species": "honey bee; source README does not identify species",
+      "file": "vecauce3_july.csv",
+      "download_url": "/data/trend-cases/vecauce3_july.csv",
+      "start": "2021-07-13T00:00:00+00:00",
+      "end": "2021-07-31T23:00:00+00:00",
+      "forecast_origin": "2021-07-31T23:00:00+00:00",
+      "rows": 456,
+      "sha256": "63f1179d8a74b8cbd89fe906fea071171ce957407ffb5a03f8faa26fddc6be7c",
+      "weight_min_kg": 83.9045,
+      "weight_max_kg": 89.17699999999999,
+      "source_url": "https://dv.dataverse.lv/dataset.xhtml?persistentId=doi:10.71782/DATA/J1CQTJ",
+      "license": "CC BY 4.0",
+      "source": {
+        "dataset_url": "https://dv.dataverse.lv/dataset.xhtml?persistentId=doi:10.71782/DATA/J1CQTJ",
+        "download_url": "https://dv.dataverse.lv/api/access/datafile/2691?format=original",
+        "doi": "https://doi.org/10.71782/DATA/J1CQTJ",
+        "citation": "Zacepins, Aleksejs; Komasilova, Olvija; Komasilovs, Vitalijs, 2025, \"Bee colony monitoring data in Vecauce, Latvia, summer 2021\", https://doi.org/10.71782/DATA/J1CQTJ, DataverseLV, V1, UNF:6:qcGTcUC8K3gnQvaI104/bw== [fileUNF]",
+        "title": "Bee colony monitoring data in Vecauce, Latvia, summer 2021",
+        "license": "CC BY 4.0",
+        "license_url": "http://creativecommons.org/licenses/by/4.0",
+        "published_md5": "8ec38dbec74f1d8b1775f93a3d1e4313",
+        "datafile_id": 2691,
+        "readme_sha256": "06fd23852b495b7f09011b92154f4e6543de6a16272fed4dc02f68753cdeb4a5",
+        "file": "data/raw/vecauce2021/Vecauce2021_3.csv",
+        "sha256": "27f5099e8354695bbae506a5fee20612e302cd220d1b4035372123c6733224be",
+        "md5": "8ec38dbec74f1d8b1775f93a3d1e4313",
+        "md5_verified": true,
+        "bytes": 134914,
+        "metadata_sha256": "d1bcea553d73067efb167b781d3404fe8842a77e974ec527f8be9d87bc78e985",
+        "filter_statistics": {
+          "hive_id": "vecauce_2021_3",
+          "source_file": "Vecauce2021_3.csv",
+          "datafile_id": 2691,
+          "download_url": "https://dv.dataverse.lv/api/access/datafile/2691?format=original",
+          "md5": "8ec38dbec74f1d8b1775f93a3d1e4313",
+          "published_md5": "8ec38dbec74f1d8b1775f93a3d1e4313",
+          "md5_verified": true,
+          "sha256": "27f5099e8354695bbae506a5fee20612e302cd220d1b4035372123c6733224be",
+          "source_bytes": 134914,
+          "source_rows": 3292,
+          "valid_source_rows": 3289,
+          "missing_required_rows": 3,
+          "physical_bounds_rejected_rows": 0,
+          "outside_documented_period_rows": 0,
+          "valid_duplicate_timestamp_rows": 0,
+          "occupied_hourly_bins": 1752,
+          "continuous_segments": 150,
+          "longest_continuous_rows": 625,
+          "longest_start_hour_end": "2021-07-08T15:00:00",
+          "longest_end_hour_end": "2021-08-03T15:00:00",
+          "initial_normal_prefix_rows": 99,
+          "longest_clean_rows": 525,
+          "longest_segment_event_counts": {
+            "normal": 624,
+            "colony_alert": 1
+          },
+          "weight_range_kg": [
+            55.529,
+            113.311
+          ],
+          "outside_temperature_range_c": [
+            7.063,
+            40.563
+          ]
+        }
+      },
+      "processing": {
+        "weight_unit": "kg",
+        "weight_scale_factor": 1,
+        "weight_offsets_applied": false,
+        "temperature": "External ambient Celsius, Temperature OUT or ext_temperature",
+        "aggregation": "Component medians of jointly valid source rows in [h,h+1), labeled at completed hour h+1",
+        "physical_bounds": "Finite 0 < weight <= 300 kg and -50 <= ambient <= 60 C",
+        "ufc_sentinel_filter": "Exclude joint ext_temperature=0 and ext_humidity=0 rows",
+        "vecauce_period_filter": "Source timestamps 2021-06-01 inclusive to 2021-09-01 exclusive",
+        "missing_policy": "Jointly invalid rows dropped; empty bins remain gaps; exported bounds contain none",
+        "interpolation": false,
+        "synthetic_rows_added": 0,
+        "source_clock_shift_hours": 0,
+        "timezone_policy": "Source timezone unspecified; +00:00 is bookkeeping, with no clock conversion or verified UTC claim",
+        "hive_alias": "Isolated case namespace only; every observation comes from source_hive_id",
+        "event_policy": "normal means no >1 kg consecutive-hour numerical alert inside this interval; source does not annotate harvests or interventions"
+      },
+      "selection": {
+        "method": "Pinned continuous source interval, selected after inspecting observed trend shape",
+        "uses_model_performance": false,
+        "representative_or_unbiased_evaluation_sample": false,
+        "minimum_context_hours": 168,
+        "future_observations_in_context": false,
+        "missing_hours_inserted": 0,
+        "hives_combined": false
+      },
+      "pattern_evidence": {
+        "smoothing": "trailing_24_hour_mean",
+        "segments": [
+          {
+            "direction": "rise",
+            "start": "2021-07-13T23:00:00+00:00",
+            "end": "2021-07-14T11:00:00+00:00",
+            "duration_hours": 12,
+            "start_smoothed_kg": 88.370625,
+            "end_smoothed_kg": 88.5564375,
+            "change_kg": 0.18581249999999727
+          },
+          {
+            "direction": "decline",
+            "start": "2021-07-14T11:00:00+00:00",
+            "end": "2021-07-27T11:00:00+00:00",
+            "duration_hours": 312,
+            "start_smoothed_kg": 88.5564375,
+            "end_smoothed_kg": 84.8580625,
+            "change_kg": -3.6983749999999986
+          },
+          {
+            "direction": "rebound",
+            "start": "2021-07-27T11:00:00+00:00",
+            "end": "2021-07-28T11:00:00+00:00",
+            "duration_hours": 24,
+            "start_smoothed_kg": 84.8580625,
+            "end_smoothed_kg": 85.43074999999999,
+            "change_kg": 0.5726874999999865
+          },
+          {
+            "direction": "decline",
+            "start": "2021-07-28T11:00:00+00:00",
+            "end": "2021-07-31T23:00:00+00:00",
+            "duration_hours": 84,
+            "start_smoothed_kg": 85.43074999999999,
+            "end_smoothed_kg": 84.50429166666667,
+            "change_kg": -0.926458333333315
+          }
+        ],
+        "evidence_type": "observed_hourly_values_only",
+        "smoothing_changes_exported_values": false,
+        "initial_rise_hours": 12,
+        "max_abs_hourly_change_kg": 0.6895000000000095,
+        "causes_of_weight_changes_verified": false,
+        "limitations": "Descriptive endpoint changes in smoothed observations; not strictly monotonic phases, harvest labels, or proof of absent interventions."
+      }
+    },
+    {
+      "id": "ufc_meliponini1_oct_nov",
+      "label": "브라질 무침벌 1",
+      "hive_id": "trend_ufc_meliponini1_oct_nov",
+      "source_hive_id": "ufc_meliponini_s1",
+      "source_hive": "ufc_meliponini_s1",
+      "species": "Meliponini (stingless bees)",
+      "file": "ufc_meliponini1_oct_nov.csv",
+      "download_url": "/data/trend-cases/ufc_meliponini1_oct_nov.csv",
+      "start": "2025-10-29T00:00:00+00:00",
+      "end": "2025-11-17T20:00:00+00:00",
+      "forecast_origin": "2025-11-17T20:00:00+00:00",
+      "rows": 477,
+      "sha256": "284713ce580a8de3e7fdc08f00d3877a999cbddd47aaddb82305c3c56301ff3e",
+      "weight_min_kg": 5.26845932,
+      "weight_max_kg": 5.893483162000001,
+      "source_url": "https://zenodo.org/records/20399470",
+      "license": "CC-BY-4.0",
+      "source": {
+        "dataset_url": "https://zenodo.org/records/20399470",
+        "download_url": "https://zenodo.org/api/records/20399470/files/DadosMeliponas.csv/content",
+        "doi": "10.5281/zenodo.20399470",
+        "title": "Hive Monitoring (Apis mellifera and Stingless Bees) and Rainfall Data - Federal University of Ceará (UFC) Apiary - Brazil",
+        "creators": [
+          {
+            "name": "JUCÁ DOS SANTOS, FELIPE",
+            "affiliation": "Universidade Federal do Ceará",
+            "orcid": "0000-0001-6693-8366"
+          },
+          {
+            "name": "abrahao bomfim, isac gabriel",
+            "affiliation": "Universidade Federal do Ceará",
+            "orcid": "0000-0001-5813-1896"
+          },
+          {
+            "name": "G. Gomes, Danielo",
+            "affiliation": "Universidade Federal do Ceará",
+            "orcid": "0000-0002-8285-4629"
+          },
+          {
+            "name": "Coelho, Alexandre",
+            "affiliation": null,
+            "orcid": "0000-0001-8715-849X"
+          },
+          {
+            "name": "Rafael Braga, Antonio",
+            "affiliation": "Universidade Federal do Ceará",
+            "orcid": "0000-0001-9105-9056"
+          },
+          {
+            "name": "Cavalcante, Marcelo Casimiro",
+            "affiliation": "University for International Integration of the Afro-Brazilian Lusophony",
+            "orcid": "0000-0001-7950-0515"
+          },
+          {
+            "name": "Freitas, Breno M.",
+            "affiliation": "Universidade Federal do Ceará",
+            "orcid": "0000-0002-9932-2207"
+          }
+        ],
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "published_md5": "e1315f0db0f3505362d2feacb7ac9c67",
+        "sensor_id": 1,
+        "file": "data/raw/DadosMeliponas.csv",
+        "sha256": "94afdf7c2baae419e5639737eb81caceb8221e24726196b30e992d1222c0d843",
+        "md5": "e1315f0db0f3505362d2feacb7ac9c67",
+        "md5_verified": true,
+        "bytes": 3378627,
+        "metadata_sha256": "a25814c2d041b00caf8ce277f755cfb84195f9aa600212a7534dd8260f4f700e",
+        "filter_statistics": {
+          "sensor_raw_rows": 12263,
+          "valid_raw_rows": 11152,
+          "rejected_total_rows": 1111,
+          "rejected_joint_zero_ambient_rows": 1111,
+          "rejected_physical_bounds_rows": 0,
+          "rejected_overlap_rows": 0,
+          "occupied_hourly_bins": 2009,
+          "raw_start": "2025-09-01T00:07:49.583000",
+          "raw_end": "2026-03-29T00:32:23.161000",
+          "raw_duplicate_timestamps": 0
+        }
+      },
+      "processing": {
+        "weight_unit": "kg",
+        "weight_scale_factor": 1,
+        "weight_offsets_applied": false,
+        "temperature": "External ambient Celsius, Temperature OUT or ext_temperature",
+        "aggregation": "Component medians of jointly valid source rows in [h,h+1), labeled at completed hour h+1",
+        "physical_bounds": "Finite 0 < weight <= 300 kg and -50 <= ambient <= 60 C",
+        "ufc_sentinel_filter": "Exclude joint ext_temperature=0 and ext_humidity=0 rows",
+        "vecauce_period_filter": "Source timestamps 2021-06-01 inclusive to 2021-09-01 exclusive",
+        "missing_policy": "Jointly invalid rows dropped; empty bins remain gaps; exported bounds contain none",
+        "interpolation": false,
+        "synthetic_rows_added": 0,
+        "source_clock_shift_hours": 0,
+        "timezone_policy": "Source timezone unspecified; +00:00 is bookkeeping, with no clock conversion or verified UTC claim",
+        "hive_alias": "Isolated case namespace only; every observation comes from source_hive_id",
+        "event_policy": "normal means no >1 kg consecutive-hour numerical alert inside this interval; source does not annotate harvests or interventions"
+      },
+      "selection": {
+        "method": "Pinned continuous source interval, selected after inspecting observed trend shape",
+        "uses_model_performance": false,
+        "representative_or_unbiased_evaluation_sample": false,
+        "minimum_context_hours": 168,
+        "future_observations_in_context": false,
+        "missing_hours_inserted": 0,
+        "hives_combined": false
+      },
+      "pattern_evidence": {
+        "smoothing": "trailing_24_hour_mean",
+        "segments": [
+          {
+            "direction": "rise",
+            "start": "2025-10-29T23:00:00+00:00",
+            "end": "2025-11-08T11:00:00+00:00",
+            "duration_hours": 228,
+            "start_smoothed_kg": 5.3348635036875,
+            "end_smoothed_kg": 5.738540609604166,
+            "change_kg": 0.4036771059166657
+          },
+          {
+            "direction": "decline",
+            "start": "2025-11-08T11:00:00+00:00",
+            "end": "2025-11-10T11:00:00+00:00",
+            "duration_hours": 48,
+            "start_smoothed_kg": 5.738540609604166,
+            "end_smoothed_kg": 5.6304924885625,
+            "change_kg": -0.10804812104166572
+          },
+          {
+            "direction": "rebound",
+            "start": "2025-11-10T11:00:00+00:00",
+            "end": "2025-11-12T23:00:00+00:00",
+            "duration_hours": 60,
+            "start_smoothed_kg": 5.6304924885625,
+            "end_smoothed_kg": 5.76529673725,
+            "change_kg": 0.13480424868749985
+          },
+          {
+            "direction": "decline",
+            "start": "2025-11-12T23:00:00+00:00",
+            "end": "2025-11-17T20:00:00+00:00",
+            "duration_hours": 117,
+            "start_smoothed_kg": 5.76529673725,
+            "end_smoothed_kg": 5.6283239125625,
+            "change_kg": -0.13697282468749972
+          }
+        ],
+        "evidence_type": "observed_hourly_values_only",
+        "smoothing_changes_exported_values": false,
+        "initial_rise_hours": 228,
+        "max_abs_hourly_change_kg": 0.12663459750000072,
+        "causes_of_weight_changes_verified": false,
+        "limitations": "Descriptive endpoint changes in smoothed observations; not strictly monotonic phases, harvest labels, or proof of absent interventions."
+      }
+    }
+  ]
+}

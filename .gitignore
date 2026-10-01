@@ -1,0 +1,19 @@
+.venv/
+.venv-tirex/
+.cache/
+.pytest_cache/
+__pycache__/
+*.pyc
+.DS_Store
+runtime/
+mlruns/
+# Official frozen checkpoint is fetched from the pinned URL in models.lock.json.
+**/model.ckpt
+*.part
+# New local training versions must not enter Git accidentally.
+/data/horizon_models/*/
+!/data/horizon_models/9/
+# Keep reproducible source/index separate from local runtime version changes.
+.env
+.env.*
+!.env.example

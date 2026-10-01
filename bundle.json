@@ -1,0 +1,42 @@
+{
+  "name": "FarmOps · BeeOPS",
+  "created_at": "2026-10-01T07:26:18.578382+00:00",
+  "source_project": "beeops_upgrade_lab",
+  "initial_model": {
+    "registry_id": "BeeOPS_Horizon_Weight",
+    "version": "9",
+    "run_id": "d3a7d6beca674cab8037bb9f51f99c78",
+    "components": [
+      "lstm",
+      "tirex2"
+    ],
+    "weights": {
+      "lstm": 0.45,
+      "tirex2": 0.55
+    },
+    "context_hours": 168,
+    "max_horizon_hours": 168
+  },
+  "initial_data": "three_public_observed_cases; heatwave practice is loaded explicitly",
+  "runtime": "independent, created on first launch; source runtime not copied",
+  "default_port": 8012,
+  "excluded": [
+    "old_horizon_versions",
+    "source_runtime_job_history",
+    "mlflow_duplicate_checkpoints",
+    "virtual_environments",
+    "caches",
+    "old_docs_and_plans",
+    "raw_research_files",
+    "archived_browser_experiments"
+  ],
+  "github_model_distribution": "pinned official checkpoint download with SHA-256 verification; learned LSTM committed",
+  "runtime_models": "runtime/horizon_models copied from immutable data seed",
+  "model_metadata_note": "Source-computer MLflow absolute path removed; original run ID retained",
+  "repository": {
+    "name": "FarmOps",
+    "url": "https://github.com/HappyPotatohappy/FarmOps",
+    "implementation": "BeeOPS",
+    "domain": "beekeeping operations"
+  }
+}

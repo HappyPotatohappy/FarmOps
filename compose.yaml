@@ -1,0 +1,19 @@
+name: beeops-final
+services:
+  beeops:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: beeops-final:local
+    init: true
+    ports:
+      - "127.0.0.1:${BEEOPS_PORT:-8012}:8012"
+    environment:
+      BEEOPS_RUNTIME: /app/runtime
+      BEEOPS_HORIZON_MODELS: /app/runtime/horizon_models
+      BEEOPS_DASHBOARD_DATASET: observed
+    volumes:
+      - beeops-runtime:/app/runtime
+    stop_grace_period: 30s
+volumes:
+  beeops-runtime:

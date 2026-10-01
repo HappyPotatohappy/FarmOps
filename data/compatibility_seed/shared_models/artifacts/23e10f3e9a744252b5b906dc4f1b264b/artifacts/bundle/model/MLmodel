@@ -1,0 +1,27 @@
+flavors:
+  keras:
+    data: data
+    keras_backend: tensorflow
+    keras_version: 3.15.1
+    save_exported_model: false
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.keras
+    python_version: 3.11.15
+is_signature_from_type_hint: false
+metadata:
+  output_semantics: delta_kg; wrapper adds last observed weight
+mlflow_version: 2.22.0
+model_size_bytes: 30810
+model_uuid: 7afbb8f9b1ba467abed016c1774db017
+prompts: null
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1, 24,
+    2]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1,
+    1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-01 05:49:41.590101'

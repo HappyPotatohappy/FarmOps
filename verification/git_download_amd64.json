@@ -1,0 +1,237 @@
+{
+  "status": "passed",
+  "architecture": "linux/amd64",
+  "execution_host": "Docker Desktop on Apple Silicon macOS; linux/amd64 via emulation",
+  "source": "Exact Git archive, no developer runtime or checkpoint in build context",
+  "started_at": "2026-10-01T09:01:46.229043+00:00",
+  "finished_at": "2026-10-01T09:02:37.753081+00:00",
+  "fresh_public_cases": [
+    "trend_ufc_apis2_dec_jan",
+    "trend_vecauce3_july",
+    "trend_ufc_meliponini1_oct_nov"
+  ],
+  "initial_prediction": {
+    "status": "ok",
+    "model": {
+      "registry_id": "BeeOPS_Horizon_Weight",
+      "version": "9",
+      "run_id": "d3a7d6beca674cab8037bb9f51f99c78",
+      "context_hours": 168,
+      "max_horizon_hours": 168,
+      "components": [
+        "lstm",
+        "tirex2"
+      ],
+      "weights": {
+        "lstm": 0.45,
+        "tirex2": 0.55
+      }
+    },
+    "trajectory": [
+      {
+        "timestamp": "2025-01-13T00:00:00+00:00",
+        "weight_kg": 54.6931037902832,
+        "lower_kg": null,
+        "upper_kg": null
+      }
+    ]
+  },
+  "horizon_168_points": 168,
+  "import_id": "a31b41effc7a448b811713036f29655a",
+  "retraining_job_id": "0531cd5de4644866a2fa1872cfa83f04",
+  "parent_version": "9",
+  "new_version": "10",
+  "training_integrity": {
+    "reason": "explicit_temperature_practice",
+    "job_id": "0531cd5de4644866a2fa1872cfa83f04",
+    "snapshot_id": "cc7574c0717eb873a5246a9985fa69976766217c2fae0881c09fa72a51911693",
+    "reference_id": "a07b19845c7dc4750bc8d25034a8d89ad58874bb32c28a19267e85778dd73894",
+    "source_workspace_id": "TEMP-DRIFT-PRACTICE",
+    "training_start": "2026-07-15T00:00:00+00:00",
+    "training_end": "2026-07-19T23:00:00+00:00",
+    "new_observations": 0,
+    "maximum_observed_training_horizon": 120,
+    "validation_start": "2026-07-21T00:00:00+00:00",
+    "validation_end": "2026-07-21T23:00:00+00:00",
+    "calibration_start": "2026-07-20T00:00:00+00:00",
+    "calibration_end": "2026-07-20T23:00:00+00:00",
+    "calibration_samples": 24,
+    "validation_samples": 24,
+    "consumed_through_by_hive": {
+      "TEMP-DRIFT-DEMO": "2026-07-21T23:00:00+00:00",
+      "TEMP-DRIFT-PRACTICE": "2026-07-21T23:00:00+00:00"
+    },
+    "epochs_completed": 8,
+    "loss_scaled": [
+      0.010395913384854794,
+      0.011695917695760727,
+      0.00656445836648345,
+      0.006822170224040747,
+      0.01149013265967369,
+      0.008519752882421017,
+      0.008465318940579891,
+      0.006011383607983589
+    ],
+    "old_weights": {
+      "lstm": 0.45,
+      "tirex2": 0.55
+    },
+    "new_weights": {
+      "lstm": 0.7,
+      "tirex2": 0.3
+    },
+    "trained_components": [
+      "lstm",
+      "ensemble_weights"
+    ],
+    "frozen_components": [
+      "tirex2"
+    ],
+    "before_weights_sha256": "cc250cdc1ee01a2c725f53273cc70d8098ab0bc4ae17f1e713f07046735e530f",
+    "after_weights_sha256": "8341fd3e669a9c127341cf44b21a01d380dfd87945e598550d18ca5d063d7a36",
+    "tirex_before_sha256": "184b160ffbe4c01a26beeba14015ff3507c7497e1f3577114187bbc1d19fcac1",
+    "ensemble_before_sha256": "d1f97e76840f5656fc0b0f89be57fe5ba1c49b75a250bff1c8ef6ef29bc5e7a2",
+    "ensemble_after_sha256": "a354f9397ff44bf8f2d5c9de42b5183d1176f09eb203bde38589eb61c968015f",
+    "tirex_after_sha256": "184b160ffbe4c01a26beeba14015ff3507c7497e1f3577114187bbc1d19fcac1",
+    "metrics": {
+      "previous_ensemble_mae_kg": 0.0023528735619038343,
+      "new_ensemble_mae_kg": 0.004717985633760691,
+      "lstm_mae_kg": 0.006408373359590769,
+      "calibration_mae_kg": 0.003323714016005397,
+      "calibration_samples": 24,
+      "validation_samples": 24,
+      "training_windows": 120,
+      "epochs_completed": 8
+    },
+    "promotion_policy": "finite_artifacts_and_reload_no_quality_threshold",
+    "scaler_policy": "frozen_parent_scaler",
+    "tirex_policy": "frozen_checkpoint",
+    "blend_policy": "one_hour_chronological_calibration_positive_weights",
+    "evaluation_role": "descriptive_fixed_practice_replay",
+    "practice_replay": {
+      "request_id": "a31b41effc7a448b811713036f29655a",
+      "data_kind": "synthetic",
+      "fixed_observations": 504,
+      "inserted_observations": 504,
+      "reused_observations": 0,
+      "data_policy": "explicit_reuse_of_fixed_builtin_observations",
+      "reference_start": "2026-07-08T00:00:00+00:00",
+      "reference_end": "2026-07-14T23:00:00+00:00"
+    },
+    "replayed_target_observations": 168
+  },
+  "steps": [
+    {
+      "key": "collect",
+      "status": "completed",
+      "completed_at": "2026-10-01T09:02:03.366027+00:00"
+    },
+    {
+      "key": "monitor",
+      "status": "completed",
+      "completed_at": "2026-10-01T09:02:03.366027+00:00"
+    },
+    {
+      "key": "detect",
+      "status": "completed",
+      "completed_at": "2026-10-01T09:02:03.366027+00:00"
+    },
+    {
+      "key": "trigger",
+      "status": "completed",
+      "completed_at": "2026-10-01T09:02:03.366027+00:00"
+    },
+    {
+      "key": "train",
+      "status": "completed",
+      "started_at": "2026-10-01T09:02:03.374088+00:00",
+      "completed_at": "2026-10-01T09:02:26.914909+00:00",
+      "detail": {
+        "previous_ensemble_mae_kg": 0.0023528735619038343,
+        "new_ensemble_mae_kg": 0.004717985633760691,
+        "lstm_mae_kg": 0.006408373359590769,
+        "calibration_mae_kg": 0.003323714016005397,
+        "calibration_samples": 24,
+        "validation_samples": 24,
+        "training_windows": 120,
+        "epochs_completed": 8,
+        "old_weights": {
+          "lstm": 0.45,
+          "tirex2": 0.55
+        },
+        "new_weights": {
+          "lstm": 0.7,
+          "tirex2": 0.3
+        },
+        "trained_components": [
+          "lstm",
+          "ensemble_weights"
+        ],
+        "frozen_components": [
+          "tirex2"
+        ],
+        "before_weights_sha256": "cc250cdc1ee01a2c725f53273cc70d8098ab0bc4ae17f1e713f07046735e530f",
+        "after_weights_sha256": "8341fd3e669a9c127341cf44b21a01d380dfd87945e598550d18ca5d063d7a36",
+        "tirex_before_sha256": "184b160ffbe4c01a26beeba14015ff3507c7497e1f3577114187bbc1d19fcac1",
+        "ensemble_before_sha256": "d1f97e76840f5656fc0b0f89be57fe5ba1c49b75a250bff1c8ef6ef29bc5e7a2",
+        "ensemble_after_sha256": "a354f9397ff44bf8f2d5c9de42b5183d1176f09eb203bde38589eb61c968015f",
+        "calibration_start": "2026-07-20T00:00:00+00:00",
+        "calibration_end": "2026-07-20T23:00:00+00:00",
+        "validation_start": "2026-07-21T00:00:00+00:00",
+        "validation_end": "2026-07-21T23:00:00+00:00"
+      }
+    },
+    {
+      "key": "register",
+      "status": "completed",
+      "started_at": "2026-10-01T09:02:26.914939+00:00",
+      "completed_at": "2026-10-01T09:02:29.620508+00:00",
+      "detail": {
+        "version": "10",
+        "mlflow_model_version": "1",
+        "run_id": "372807fb8c704aa7ad5b252842558d87"
+      }
+    },
+    {
+      "key": "deploy",
+      "status": "completed",
+      "started_at": "2026-10-01T09:02:29.620548+00:00",
+      "completed_at": "2026-10-01T09:02:29.660500+00:00",
+      "detail": {
+        "version": "10",
+        "run_id": "372807fb8c704aa7ad5b252842558d87",
+        "scope": "all_workspaces"
+      }
+    }
+  ],
+  "retrained_prediction": {
+    "status": "ok",
+    "model": {
+      "registry_id": "BeeOPS_Horizon_Weight",
+      "version": "10",
+      "run_id": "372807fb8c704aa7ad5b252842558d87",
+      "context_hours": 168,
+      "max_horizon_hours": 168,
+      "components": [
+        "lstm",
+        "tirex2"
+      ],
+      "weights": {
+        "lstm": 0.7,
+        "tirex2": 0.3
+      }
+    },
+    "trajectory": [
+      {
+        "timestamp": "2025-01-13T00:00:00+00:00",
+        "weight_kg": 54.679019927978516,
+        "lower_kg": null,
+        "upper_kg": null
+      }
+    ]
+  },
+  "docker_image": "farmops-publish:amd64",
+  "health_before_shutdown": "healthy",
+  "verification_container_stopped": true,
+  "model_download": "380613375 bytes fetched from official pinned source and SHA-256 verified during build"
+}

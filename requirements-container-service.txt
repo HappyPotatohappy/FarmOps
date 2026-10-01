@@ -1,0 +1,5 @@
+# Linux CPU installation: preserve the tested service versions and require the
+# CPU variant of Torch. Dockerfile installs this wheel from the official index
+# before resolving the remaining pinned dependencies from PyPI.
+-r requirements-service.lock.txt
+torch==2.14.1+cpu

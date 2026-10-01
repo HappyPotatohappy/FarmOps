@@ -1,0 +1,2 @@
+# Optional PDF export only; HTML generation uses the Python standard library.
+WeasyPrint==70.0

@@ -1,0 +1,15 @@
+{
+  "features": [
+    "weight_kg",
+    "temperature_c"
+  ],
+  "window": 24,
+  "input_units": [
+    "kg",
+    "celsius"
+  ],
+  "model_output": "delta_kg",
+  "served_output": "last_weight_kg + delta_kg",
+  "schema_version": 1,
+  "model_scope": "shared"
+}

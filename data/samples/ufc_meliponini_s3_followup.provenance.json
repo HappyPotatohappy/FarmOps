@@ -1,0 +1,259 @@
+{
+  "sample": {
+    "id": "ufc_meliponini_s3_followup",
+    "hive_id": "ufc_meliponini_s3",
+    "rows": 241,
+    "start": "2025-11-25T17:00:00+00:00",
+    "end": "2025-12-05T17:00:00+00:00",
+    "weight_min_kg": 5.792125702,
+    "weight_max_kg": 6.078966141,
+    "license": "CC-BY-4.0",
+    "download_url": "/data/samples/ufc_meliponini_s3_followup.csv",
+    "label": "② 브라질 무침벌 · 추가 241시간",
+    "description": "① 마지막 관측의 정확히 1시간 뒤부터 이어집니다. 새 시점의 예측을 확인하는 파일입니다.",
+    "usage_note": "① 초기 672시간을 먼저 저장하세요. 공통 v1·v2에 이 벌통의 새 관측을 입력해 다음 예측을 확인합니다. 전체 913시간 파일을 이미 넣었다면 모두 중복입니다. 원본 시간대는 미상이며 +00:00은 시스템 입력용 표기입니다.",
+    "source_url": "https://zenodo.org/records/20399470",
+    "file": "samples/ufc_meliponini_s3_followup.csv",
+    "sha256": "12dc2dd98251d00cf7c2fdea590c30a51d0dd1c106050d2b79cfe347fff00f60"
+  },
+  "derivation": {
+    "hive_id": "ufc_meliponini_s3",
+    "label": "브라질 UFC · 무침벌 센서 3",
+    "source_url": "https://zenodo.org/records/20399470",
+    "license": "CC-BY-4.0",
+    "bee_category": "Meliponini (stingless bees)",
+    "source": {
+      "record_url": "https://zenodo.org/records/20399470",
+      "doi": "10.5281/zenodo.20399470",
+      "title": "Hive Monitoring (Apis mellifera and Stingless Bees) and Rainfall Data - Federal University of Ceará (UFC) Apiary - Brazil",
+      "creators": [
+        {
+          "name": "JUCÁ DOS SANTOS, FELIPE",
+          "affiliation": "Universidade Federal do Ceará",
+          "orcid": "0000-0001-6693-8366"
+        },
+        {
+          "name": "abrahao bomfim, isac gabriel",
+          "affiliation": "Universidade Federal do Ceará",
+          "orcid": "0000-0001-5813-1896"
+        },
+        {
+          "name": "G. Gomes, Danielo",
+          "affiliation": "Universidade Federal do Ceará",
+          "orcid": "0000-0002-8285-4629"
+        },
+        {
+          "name": "Coelho, Alexandre",
+          "affiliation": null,
+          "orcid": "0000-0001-8715-849X"
+        },
+        {
+          "name": "Rafael Braga, Antonio",
+          "affiliation": "Universidade Federal do Ceará",
+          "orcid": "0000-0001-9105-9056"
+        },
+        {
+          "name": "Cavalcante, Marcelo Casimiro",
+          "affiliation": "University for International Integration of the Afro-Brazilian Lusophony",
+          "orcid": "0000-0001-7950-0515"
+        },
+        {
+          "name": "Freitas, Breno M.",
+          "affiliation": "Universidade Federal do Ceará",
+          "orcid": "0000-0002-9932-2207"
+        }
+      ],
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "filename": "DadosMeliponas.csv",
+      "sensor_id": 3,
+      "download_url": "https://zenodo.org/api/records/20399470/files/DadosMeliponas.csv/content",
+      "bytes": 3378627,
+      "file_raw_rows": 34881,
+      "md5": "e1315f0db0f3505362d2feacb7ac9c67",
+      "md5_verified": true,
+      "sha256": "94afdf7c2baae419e5639737eb81caceb8221e24726196b30e992d1222c0d843",
+      "metadata_sha256": "a25814c2d041b00caf8ce277f755cfb84195f9aa600212a7534dd8260f4f700e"
+    },
+    "transformation": {
+      "weight_kg": "Source weight, already kilograms; no rescaling",
+      "temperature_c": "Source ext_temperature, external ambient degrees Celsius; not internal temperature",
+      "physical_filter": "Finite 0 < weight <= 300 kg and -50 <= ext_temperature <= 60 C",
+      "sentinel_filter": "Exclude rows where ext_temperature == 0 and ext_humidity == 0",
+      "aggregation": "Median in [h, h+1), left-closed, labelled by completed hour h+1",
+      "imputation": "None; empty hourly bins remain gaps",
+      "event_rule": "Within each continuous segment abs(adjacent hourly weight difference) > 1 kg is colony_alert; a numeric flag, not a diagnosis",
+      "event_exclusion": "Flagged hourly observations split clean blocks and are excluded before coverage selection"
+    },
+    "timestamp_policy": {
+      "source_timezone": "Unspecified; source timestamps are naive",
+      "output_offset": "+00:00",
+      "assumption": "UTC offset attached only for deterministic bookkeeping; no source clock conversion or verified UTC claim"
+    },
+    "filters": {
+      "sensor_raw_rows": 14931,
+      "valid_raw_rows": 11504,
+      "rejected_total_rows": 3427,
+      "rejected_joint_zero_ambient_rows": 3427,
+      "rejected_physical_bounds_rows": 0,
+      "rejected_overlap_rows": 0,
+      "occupied_hourly_bins": 2046,
+      "raw_start": "2025-09-01T00:09:58.125000",
+      "raw_end": "2026-03-29T00:37:37.503000",
+      "raw_duplicate_timestamps": 0
+    },
+    "selection": {
+      "method": "Longest contiguous clean hourly block; earliest start breaks ties",
+      "model_metrics_used": false,
+      "continuous_segments": 17,
+      "longest_continuous_segment_rows": 913,
+      "derived_alert_hourly_rows": 1,
+      "clean_blocks": 17,
+      "selected_rows": 913,
+      "segments": [
+        {
+          "start_hour_end": "2025-09-01T01:00:00",
+          "end_hour_end": "2025-09-09T16:00:00",
+          "rows": 208,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 208
+        },
+        {
+          "start_hour_end": "2025-09-15T18:00:00",
+          "end_hour_end": "2025-09-23T07:00:00",
+          "rows": 182,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 182
+        },
+        {
+          "start_hour_end": "2025-09-24T18:00:00",
+          "end_hour_end": "2025-09-27T21:00:00",
+          "rows": 76,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 76
+        },
+        {
+          "start_hour_end": "2025-09-29T13:00:00",
+          "end_hour_end": "2025-09-29T15:00:00",
+          "rows": 3,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 3
+        },
+        {
+          "start_hour_end": "2025-09-29T20:00:00",
+          "end_hour_end": "2025-10-01T17:00:00",
+          "rows": 46,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 46
+        },
+        {
+          "start_hour_end": "2025-10-01T21:00:00",
+          "end_hour_end": "2025-10-02T15:00:00",
+          "rows": 19,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 19
+        },
+        {
+          "start_hour_end": "2025-10-02T22:00:00",
+          "end_hour_end": "2025-10-03T15:00:00",
+          "rows": 18,
+          "derived_alert_rows": 1,
+          "longest_clean_block_rows": 17
+        },
+        {
+          "start_hour_end": "2025-10-09T20:00:00",
+          "end_hour_end": "2025-10-11T09:00:00",
+          "rows": 38,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 38
+        },
+        {
+          "start_hour_end": "2025-10-11T18:00:00",
+          "end_hour_end": "2025-10-28T13:00:00",
+          "rows": 404,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 404
+        },
+        {
+          "start_hour_end": "2025-10-28T17:00:00",
+          "end_hour_end": "2025-12-05T17:00:00",
+          "rows": 913,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 913
+        },
+        {
+          "start_hour_end": "2026-01-09T19:00:00",
+          "end_hour_end": "2026-01-09T22:00:00",
+          "rows": 4,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 4
+        },
+        {
+          "start_hour_end": "2026-01-15T13:00:00",
+          "end_hour_end": "2026-01-16T01:00:00",
+          "rows": 13,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 13
+        },
+        {
+          "start_hour_end": "2026-02-02T20:00:00",
+          "end_hour_end": "2026-02-05T08:00:00",
+          "rows": 61,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 61
+        },
+        {
+          "start_hour_end": "2026-02-14T20:00:00",
+          "end_hour_end": "2026-02-14T21:00:00",
+          "rows": 2,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 2
+        },
+        {
+          "start_hour_end": "2026-02-15T01:00:00",
+          "end_hour_end": "2026-02-15T08:00:00",
+          "rows": 8,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 8
+        },
+        {
+          "start_hour_end": "2026-02-18T12:00:00",
+          "end_hour_end": "2026-02-20T12:00:00",
+          "rows": 49,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 49
+        },
+        {
+          "start_hour_end": "2026-02-24T14:00:00",
+          "end_hour_end": "2026-02-24T15:00:00",
+          "rows": 2,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 2
+        }
+      ],
+      "scope_limitation": "Coverage-selected clean segment; not a full source history or an unbiased evaluation sample"
+    },
+    "selected": {
+      "rows": 913,
+      "raw_rows": 5156,
+      "start_hour_end": "2025-10-28T17:00:00+00:00",
+      "end_hour_end": "2025-12-05T17:00:00+00:00",
+      "weight_kg_min": 5.792125702,
+      "weight_kg_max": 6.5160923005,
+      "temperature_c_min": 25.29999924,
+      "temperature_c_max": 33.5,
+      "event_counts": {
+        "normal": 913,
+        "colony_alert": 0
+      },
+      "contract_validated": true,
+      "minimum_clean_rows": 168
+    }
+  },
+  "partition": {
+    "first": "2025-11-25T17:00:00+00:00",
+    "last": "2025-12-05T17:00:00+00:00",
+    "rows": 241
+  },
+  "authoring": "Artifact-tool workbook cell values, exact equality verified before CSV serialization"
+}

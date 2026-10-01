@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "source": {
+    "title": "Hive Monitoring (Apis mellifera and Stingless Bees) and Rainfall Data - Federal University of Ceará (UFC) Apiary - Brazil",
+    "citation": "Jucá dos Santos, Felipe et al. (2026). Hive Monitoring (Apis mellifera and Stingless Bees) and Rainfall Data - Federal University of Ceará (UFC) Apiary - Brazil. Zenodo. https://doi.org/10.5281/zenodo.20399470",
+    "record_url": "https://zenodo.org/records/20399470",
+    "metadata_url": "https://zenodo.org/api/records/20399470",
+    "download_url": "https://zenodo.org/api/records/20399470/files/dadosColmeia2Apis.csv/content",
+    "doi": "10.5281/zenodo.20399470",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "published": "2026-05-26",
+    "file": "raw/dadosColmeia2Apis.csv",
+    "sensor_id": "3",
+    "api_metadata_file": "raw/zenodo_20399470_metadata.json",
+    "bytes": 609522,
+    "md5": "064d28fd61b0578ac19c1399d88cde14",
+    "sha256": "5dc04fa9222ead3708257d40075d364c4fb5beb218f0aa841be26153df4e4a45",
+    "row_count": 7066,
+    "timestamp_min": "2024-12-14 00:16:59.952",
+    "timestamp_max": "2025-02-10 05:45:07.463"
+  },
+  "timestamp_policy": {
+    "source_timezone": "unknown; timestamps contain no offset or timezone identifier",
+    "output_utc_offset_hours": 0,
+    "assumption": "An offset of +00:00 is attached for deterministic bookkeeping only. This is not evidence that the source timestamps were recorded in UTC or a claim about their actual local timezone. No clock-time conversion was performed.",
+    "aggregation": "Left-closed hourly windows [h,h+1), labeled by h+1 (hour end). All feature values become available only at this hour-end timestamp."
+  },
+  "selection": {
+    "method": "Select the longest sequence of exactly adjacent occupied hourly bins after filtering the complete Apis2 raw file. Ties would choose the earliest segment. Selection uses observation availability, not forecast scores.",
+    "source_rows_valid": 6925,
+    "source_rows_rejected": {
+      "joint_zero_ambient_sentinel": 141
+    },
+    "hourly_bins_after_filtering": 1266,
+    "continuous_segments": 13,
+    "selected_raw_rows": 4122,
+    "minimum_samples_per_selected_hour": 1,
+    "maximum_samples_per_selected_hour": 10,
+    "hourly_rows": 724,
+    "start_hour_end": "2024-12-18T15:00:00+00:00",
+    "end_hour_end": "2025-01-17T18:00:00+00:00",
+    "unflagged_prefix_rows": 672,
+    "unflagged_prefix_last_hour_end": "2025-01-15T14:00:00+00:00"
+  },
+  "transforms": {
+    "raw_filter": [
+      "finite weight and 0 < weight <= 300 kg",
+      "finite external temperature and -50 <= ext_temperature <= 60 degrees C",
+      "exclude a raw row when ext_temperature == 0 and ext_humidity == 0"
+    ],
+    "aggregation": {
+      "weight_kg": "median(weight) over valid samples per hour",
+      "temperature_c": "median(ext_temperature) over the same valid samples per hour",
+      "hive_id": "ufc_apis_2; maps source file dadosColmeia2Apis.csv, id_sensor 3"
+    },
+    "imputation": "none; no interpolation, forward fill, backfill, or synthetic observations",
+    "event_policy": "colony_alert if absolute change from previous selected hourly median weight > 1 kg; normal otherwise. These are derived operational rule labels, not source event annotations or diagnoses.",
+    "event_count": {
+      "normal": 720,
+      "colony_alert": 4
+    },
+    "alerts": [
+      {
+        "timestamp": "2025-01-15T15:00:00+00:00",
+        "delta_weight_kg": -1.0030956249999932,
+        "basis": "derived absolute adjacent hourly-median change > 1 kg; cause unknown"
+      },
+      {
+        "timestamp": "2025-01-15T16:00:00+00:00",
+        "delta_weight_kg": -1.3014316550000018,
+        "basis": "derived absolute adjacent hourly-median change > 1 kg; cause unknown"
+      },
+      {
+        "timestamp": "2025-01-15T18:00:00+00:00",
+        "delta_weight_kg": 1.8725776700000054,
+        "basis": "derived absolute adjacent hourly-median change > 1 kg; cause unknown"
+      },
+      {
+        "timestamp": "2025-01-16T15:00:00+00:00",
+        "delta_weight_kg": -5.269008634999999,
+        "basis": "derived absolute adjacent hourly-median change > 1 kg; cause unknown"
+      }
+    ]
+  },
+  "processed": {
+    "file": "real_hive.csv",
+    "sha256": "a71a045cc6f0464e8ff74ed37264ba807f0b4fd626c2ffcd37a07028a40c5d52",
+    "row_count": 724,
+    "columns": [
+      "timestamp",
+      "hive_id",
+      "weight_kg",
+      "temperature_c",
+      "event"
+    ],
+    "weight_kg_min": 48.487075805,
+    "weight_kg_max": 55.84932709,
+    "temperature_c_min": 23.5,
+    "temperature_c_max": 33.25
+  },
+  "limitations": [
+    "Only one hive and approximately one month are retained; not evidence of generalization to other sites, species, seasons, or production workloads.",
+    "The source has no event labels establishing the cause of abrupt weight changes. Harvesting, equipment intervention, sensor issues, and colony events cannot be distinguished from these measurements.",
+    "normal means only that the greater-than-1-kg numeric rule did not fire; it does not establish biological health.",
+    "Temperature means external ambient temperature, not internal hive temperature.",
+    "Each occupied hour can contain as few as one valid raw sample; hourly medians have variable sample support.",
+    "The segment-selection step was performed on all timestamps for data availability. Keep model fitting, scaling, threshold tuning and performance evaluation chronological within the retained segment.",
+    "The final source span may contain incomplete hourly coverage; no such extension or filling was applied."
+  ]
+}

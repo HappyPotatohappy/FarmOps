@@ -1,0 +1,25 @@
+.git
+.gitignore
+.gitattributes
+.venv
+.venv-*
+runtime
+.cache
+.pytest_cache
+**/__pycache__
+**/*.pyc
+**/.DS_Store
+**/*.log
+.env
+.env.*
+# Always exercise the same verified fetch as a GitHub clone/ZIP download.
+**/model.ckpt
+# Keep the submission's compact documentation evidence, but never copy another
+# running service's database, copied virtual environment, or ad-hoc build output.
+evidence/**/runtime
+evidence/**/.venv*
+output/**/tmp
+tmp
+
+# Never import a developer-generated MLflow fallback directory.
+mlruns

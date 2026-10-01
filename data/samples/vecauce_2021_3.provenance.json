@@ -1,0 +1,300 @@
+{
+  "sample": {
+    "id": "vecauce_2021_3",
+    "hive_id": "vecauce_2021_3",
+    "rows": 625,
+    "start": "2021-07-08T15:00:00+00:00",
+    "end": "2021-08-03T15:00:00+00:00",
+    "weight_min_kg": 83.9045,
+    "weight_max_kg": 110.007,
+    "license": "CC-BY-4.0",
+    "download_url": "/data/samples/vecauce_2021_3.csv",
+    "label": "라트비아 Vecauce · 625시간",
+    "description": "여름철 벌통 무게 84–110kg, 외기 온도 9–37°C. 큰 급변 관측 1개도 보존했습니다.",
+    "usage_note": "급변의 원인은 확인되지 않았습니다. 이 관측을 입력해 공통 v1·v2 LSTM으로 각각 예측합니다. 성능 고도화는 후속 과제입니다. 원본 시간대는 미상이며 +00:00은 시스템 입력용 표기입니다.",
+    "source_url": "https://dv.dataverse.lv/dataset.xhtml?persistentId=doi:10.71782/DATA/J1CQTJ",
+    "file": "samples/vecauce_2021_3.csv",
+    "sha256": "2f046e7bb5c305d2bc054173dfc3af6f35bbc00c26232f172a1b9e22bc86d6e7"
+  },
+  "derivation": {
+    "hive_id": "vecauce_2021_3",
+    "display_name": "Vecauce Latvia 2021 · hive 3",
+    "dataset_title": "Bee colony monitoring data in Vecauce, Latvia, summer 2021",
+    "source": {
+      "hive_id": "vecauce_2021_3",
+      "source_file": "Vecauce2021_3.csv",
+      "datafile_id": 2691,
+      "download_url": "https://dv.dataverse.lv/api/access/datafile/2691?format=original",
+      "md5": "8ec38dbec74f1d8b1775f93a3d1e4313",
+      "published_md5": "8ec38dbec74f1d8b1775f93a3d1e4313",
+      "md5_verified": true,
+      "sha256": "27f5099e8354695bbae506a5fee20612e302cd220d1b4035372123c6733224be",
+      "source_bytes": 134914,
+      "source_rows": 3292,
+      "valid_source_rows": 3289,
+      "missing_required_rows": 3,
+      "physical_bounds_rejected_rows": 0,
+      "outside_documented_period_rows": 0,
+      "valid_duplicate_timestamp_rows": 0,
+      "occupied_hourly_bins": 1752,
+      "continuous_segments": 150,
+      "longest_continuous_rows": 625,
+      "longest_start_hour_end": "2021-07-08T15:00:00",
+      "longest_end_hour_end": "2021-08-03T15:00:00",
+      "initial_normal_prefix_rows": 99,
+      "longest_clean_rows": 525,
+      "longest_segment_event_counts": {
+        "normal": 624,
+        "colony_alert": 1
+      },
+      "weight_range_kg": [
+        55.529,
+        113.311
+      ],
+      "outside_temperature_range_c": [
+        7.063,
+        40.563
+      ],
+      "dataset_url": "https://dv.dataverse.lv/dataset.xhtml?persistentId=doi:10.71782/DATA/J1CQTJ",
+      "doi": "https://doi.org/10.71782/DATA/J1CQTJ",
+      "citation": "Zacepins, Aleksejs; Komasilova, Olvija; Komasilovs, Vitalijs, 2025, \"Bee colony monitoring data in Vecauce, Latvia, summer 2021\", https://doi.org/10.71782/DATA/J1CQTJ, DataverseLV, V1, UNF:6:qcGTcUC8K3gnQvaI104/bw== [fileUNF]",
+      "license": "CC BY 4.0",
+      "license_url": "http://creativecommons.org/licenses/by/4.0",
+      "dataset_version": "1.0",
+      "metadata_sha256": "d1bcea553d73067efb167b781d3404fe8842a77e974ec527f8be9d87bc78e985",
+      "readme_sha256": "06fd23852b495b7f09011b92154f4e6543de6a16272fed4dc02f68753cdeb4a5"
+    },
+    "selection": {
+      "rule": "longest_continuous_interval_with_event_flags_preserved",
+      "initial_normal_prefix_rows": 99,
+      "longest_clean_rows": 525,
+      "minimum_clean_block_rows": 168,
+      "clean_block_can_follow_event": true,
+      "rows_removed_for_initialization": 0,
+      "hive_rule": "greatest longest continuous hourly coverage across all five hives; filename order breaks ties; earliest interval breaks within-hive ties",
+      "selection_uses_model_performance": false,
+      "all_candidates": [
+        {
+          "hive_id": "vecauce_2021_1",
+          "source_file": "Vecauce2021_1.csv",
+          "datafile_id": 2690,
+          "download_url": "https://dv.dataverse.lv/api/access/datafile/2690?format=original",
+          "md5": "96517764e765fea1f7d4dac772f51f44",
+          "published_md5": "96517764e765fea1f7d4dac772f51f44",
+          "md5_verified": true,
+          "sha256": "09d7ee8ca6d58c869d243bd5f1de0f4c40953f4e96c432d0812a48bb56f5d383",
+          "source_bytes": 150215,
+          "source_rows": 3655,
+          "valid_source_rows": 3574,
+          "missing_required_rows": 81,
+          "physical_bounds_rejected_rows": 0,
+          "outside_documented_period_rows": 0,
+          "valid_duplicate_timestamp_rows": 0,
+          "occupied_hourly_bins": 1749,
+          "continuous_segments": 18,
+          "longest_continuous_rows": 363,
+          "longest_start_hour_end": "2021-07-09T14:00:00",
+          "longest_end_hour_end": "2021-07-24T16:00:00",
+          "initial_normal_prefix_rows": 363,
+          "longest_clean_rows": 363,
+          "longest_segment_event_counts": {
+            "normal": 363
+          },
+          "weight_range_kg": [
+            55.579,
+            139.611
+          ],
+          "outside_temperature_range_c": [
+            5.313,
+            37.875
+          ]
+        },
+        {
+          "hive_id": "vecauce_2021_2",
+          "source_file": "Vecauce2021_2.csv",
+          "datafile_id": 2693,
+          "download_url": "https://dv.dataverse.lv/api/access/datafile/2693?format=original",
+          "md5": "aee2ca6610bb0981bfbc14db493803b1",
+          "published_md5": "aee2ca6610bb0981bfbc14db493803b1",
+          "md5_verified": true,
+          "sha256": "27c0c2f5594a8d383bd15d37580a276c157e1885a9a3c2e351465936a12089f8",
+          "source_bytes": 181696,
+          "source_rows": 4415,
+          "valid_source_rows": 4406,
+          "missing_required_rows": 9,
+          "physical_bounds_rejected_rows": 0,
+          "outside_documented_period_rows": 0,
+          "valid_duplicate_timestamp_rows": 0,
+          "occupied_hourly_bins": 2184,
+          "continuous_segments": 22,
+          "longest_continuous_rows": 472,
+          "longest_start_hour_end": "2021-08-12T09:00:00",
+          "longest_end_hour_end": "2021-09-01T00:00:00",
+          "initial_normal_prefix_rows": 312,
+          "longest_clean_rows": 312,
+          "longest_segment_event_counts": {
+            "normal": 469,
+            "colony_alert": 3
+          },
+          "weight_range_kg": [
+            56.912,
+            162.337
+          ],
+          "outside_temperature_range_c": [
+            6.313,
+            38.625
+          ]
+        },
+        {
+          "hive_id": "vecauce_2021_3",
+          "source_file": "Vecauce2021_3.csv",
+          "datafile_id": 2691,
+          "download_url": "https://dv.dataverse.lv/api/access/datafile/2691?format=original",
+          "md5": "8ec38dbec74f1d8b1775f93a3d1e4313",
+          "published_md5": "8ec38dbec74f1d8b1775f93a3d1e4313",
+          "md5_verified": true,
+          "sha256": "27f5099e8354695bbae506a5fee20612e302cd220d1b4035372123c6733224be",
+          "source_bytes": 134914,
+          "source_rows": 3292,
+          "valid_source_rows": 3289,
+          "missing_required_rows": 3,
+          "physical_bounds_rejected_rows": 0,
+          "outside_documented_period_rows": 0,
+          "valid_duplicate_timestamp_rows": 0,
+          "occupied_hourly_bins": 1752,
+          "continuous_segments": 150,
+          "longest_continuous_rows": 625,
+          "longest_start_hour_end": "2021-07-08T15:00:00",
+          "longest_end_hour_end": "2021-08-03T15:00:00",
+          "initial_normal_prefix_rows": 99,
+          "longest_clean_rows": 525,
+          "longest_segment_event_counts": {
+            "normal": 624,
+            "colony_alert": 1
+          },
+          "weight_range_kg": [
+            55.529,
+            113.311
+          ],
+          "outside_temperature_range_c": [
+            7.063,
+            40.563
+          ]
+        },
+        {
+          "hive_id": "vecauce_2021_4",
+          "source_file": "Vecauce2021_4.csv",
+          "datafile_id": 2692,
+          "download_url": "https://dv.dataverse.lv/api/access/datafile/2692?format=original",
+          "md5": "837c678468bcd1836703c8fa178f1bb4",
+          "published_md5": "837c678468bcd1836703c8fa178f1bb4",
+          "md5_verified": true,
+          "sha256": "3cf3b6c534bb05040729142dfb6e7563b36684cd29c65b815bc55884ed753d6d",
+          "source_bytes": 120039,
+          "source_rows": 2898,
+          "valid_source_rows": 2895,
+          "missing_required_rows": 3,
+          "physical_bounds_rejected_rows": 0,
+          "outside_documented_period_rows": 0,
+          "valid_duplicate_timestamp_rows": 0,
+          "occupied_hourly_bins": 1796,
+          "continuous_segments": 272,
+          "longest_continuous_rows": 120,
+          "longest_start_hour_end": "2021-08-12T11:00:00",
+          "longest_end_hour_end": "2021-08-17T10:00:00",
+          "initial_normal_prefix_rows": 120,
+          "longest_clean_rows": 120,
+          "longest_segment_event_counts": {
+            "normal": 120
+          },
+          "weight_range_kg": [
+            60.941,
+            168.17
+          ],
+          "outside_temperature_range_c": [
+            7.313,
+            43.813
+          ]
+        },
+        {
+          "hive_id": "vecauce_2021_5",
+          "source_file": "Vecauce2021_5.csv",
+          "datafile_id": 2694,
+          "download_url": "https://dv.dataverse.lv/api/access/datafile/2694?format=original",
+          "md5": "607e91b7a72e2cd50046ae789aae57fe",
+          "published_md5": "607e91b7a72e2cd50046ae789aae57fe",
+          "md5_verified": true,
+          "sha256": "f23de7beb7e2eb9b0010e61f9f84721ca309d8d374bb598190fb90816afb612b",
+          "source_bytes": 88594,
+          "source_rows": 2141,
+          "valid_source_rows": 2139,
+          "missing_required_rows": 2,
+          "physical_bounds_rejected_rows": 0,
+          "outside_documented_period_rows": 0,
+          "valid_duplicate_timestamp_rows": 0,
+          "occupied_hourly_bins": 1486,
+          "continuous_segments": 395,
+          "longest_continuous_rows": 86,
+          "longest_start_hour_end": "2021-06-01T01:00:00",
+          "longest_end_hour_end": "2021-06-04T14:00:00",
+          "initial_normal_prefix_rows": 86,
+          "longest_clean_rows": 86,
+          "longest_segment_event_counts": {
+            "normal": 86
+          },
+          "weight_range_kg": [
+            57.653,
+            132.313
+          ],
+          "outside_temperature_range_c": [
+            7.25,
+            32.563
+          ]
+        }
+      ]
+    },
+    "transformation": {
+      "source_weight_column": "Weight",
+      "source_weight_unit": "kg",
+      "weight_scale_factor": 1,
+      "source_temperature_column": "Temperature OUT",
+      "source_temperature_unit": "Celsius",
+      "ignored_temperature_column": "Temperature IN",
+      "date_format": "%d/%m/%Y %H:%M:%S; README confirms day/month/year",
+      "timestamp_policy": "Timezone unspecified in source; +00:00 is deterministic bookkeeping only, not a claim of UTC acquisition.",
+      "hourly_aggregation": "Joint-valid weight/ambient rows only; component medians in [h,h+1), timestamp at h+1.",
+      "missing_policy": "NULL or invalid required values are dropped jointly; no interpolation or gap filling.",
+      "physical_bounds": {
+        "weight_kg": "0 < weight <= 300",
+        "temperature_c": "-50 <= temperature <= 60"
+      },
+      "event_policy": "colony_alert when absolute consecutive hourly weight change >1kg; numerical flag, not a diagnosis or known beekeeper intervention.",
+      "weight_offsets_or_calibration_applied": false,
+      "synthetic_rows_added": 0
+    },
+    "output": {
+      "rows": 625,
+      "start": "2021-07-08T15:00:00+00:00",
+      "end": "2021-08-03T15:00:00+00:00",
+      "weight_range_kg": [
+        83.9045,
+        110.007
+      ],
+      "temperature_range_c": [
+        9.094000000000001,
+        36.5315
+      ],
+      "event_counts": {
+        "normal": 624,
+        "colony_alert": 1
+      },
+      "rows_sha256": "29b0ff807e27c6e58b8685cc20324f8d2b16aeaeb0133d089f2f8d95210132e1"
+    }
+  },
+  "partition": {
+    "first": "2021-07-08T15:00:00+00:00",
+    "last": "2021-08-03T15:00:00+00:00",
+    "rows": 625
+  },
+  "authoring": "Artifact-tool workbook cell values, exact equality verified before CSV serialization"
+}

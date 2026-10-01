@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "downloads": [
+    {
+      "path": "data/horizon_models/9/tirex2/model.ckpt",
+      "model_id": "NX-AI/TiRex-2",
+      "revision": "05e5b26db52bfb256f1ae1bdf785589850482de3",
+      "url": "https://huggingface.co/NX-AI/TiRex-2/resolve/05e5b26db52bfb256f1ae1bdf785589850482de3/model.ckpt",
+      "bytes": 380613375,
+      "sha256": "184b160ffbe4c01a26beeba14015ff3507c7497e1f3577114187bbc1d19fcac1",
+      "license": "Apache-2.0",
+      "license_file": "data/horizon_models/9/tirex2/LICENSE",
+      "notice_file": "data/horizon_models/9/tirex2/NOTICE"
+    }
+  ]
+}

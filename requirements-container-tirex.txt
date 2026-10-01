@@ -1,0 +1,4 @@
+# Keep TiRex separate: its NumPy >=2.1.3 is incompatible with TensorFlow 2.18.
+# CPU wheel source: https://download.pytorch.org/whl/cpu
+-r requirements-tirex.lock.txt
+torch==2.14.1+cpu

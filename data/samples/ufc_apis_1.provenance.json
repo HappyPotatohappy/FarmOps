@@ -1,0 +1,168 @@
+{
+  "sample": {
+    "id": "ufc_apis_1",
+    "hive_id": "ufc_apis_1",
+    "rows": 174,
+    "start": "2025-02-13T08:00:00+00:00",
+    "end": "2025-02-20T13:00:00+00:00",
+    "weight_min_kg": 28.29371262,
+    "weight_max_kg": 29.75819778,
+    "license": "CC-BY-4.0",
+    "download_url": "/data/samples/ufc_apis_1.csv",
+    "label": "브라질 Apis 벌통 1 · 174시간",
+    "description": "기존 Apis 벌통 2와 다른 실제 벌통입니다. 무게 약 28–30kg의 짧은 연속 구간입니다.",
+    "usage_note": "공개 데이터 시연 정책으로 모든 벌통에 동일한 공통 v1·v2 LSTM으로 예측합니다. 짧은 관측 구간이므로 성능 고도화와 추가 데이터 평가는 후속 과제입니다. 원본 시간대는 미상이며 +00:00은 시스템 입력용 표기입니다.",
+    "source_url": "https://zenodo.org/records/20399470",
+    "file": "samples/ufc_apis_1.csv",
+    "sha256": "d17dbc153124901e02178b2bc729ce2d364fe0a2f2259608b9b864cd44096b3f"
+  },
+  "derivation": {
+    "hive_id": "ufc_apis_1",
+    "label": "브라질 UFC · Apis 벌통 1",
+    "source_url": "https://zenodo.org/records/20399470",
+    "license": "CC-BY-4.0",
+    "bee_category": "Apis mellifera",
+    "source": {
+      "record_url": "https://zenodo.org/records/20399470",
+      "doi": "10.5281/zenodo.20399470",
+      "title": "Hive Monitoring (Apis mellifera and Stingless Bees) and Rainfall Data - Federal University of Ceará (UFC) Apiary - Brazil",
+      "creators": [
+        {
+          "name": "JUCÁ DOS SANTOS, FELIPE",
+          "affiliation": "Universidade Federal do Ceará",
+          "orcid": "0000-0001-6693-8366"
+        },
+        {
+          "name": "abrahao bomfim, isac gabriel",
+          "affiliation": "Universidade Federal do Ceará",
+          "orcid": "0000-0001-5813-1896"
+        },
+        {
+          "name": "G. Gomes, Danielo",
+          "affiliation": "Universidade Federal do Ceará",
+          "orcid": "0000-0002-8285-4629"
+        },
+        {
+          "name": "Coelho, Alexandre",
+          "affiliation": null,
+          "orcid": "0000-0001-8715-849X"
+        },
+        {
+          "name": "Rafael Braga, Antonio",
+          "affiliation": "Universidade Federal do Ceará",
+          "orcid": "0000-0001-9105-9056"
+        },
+        {
+          "name": "Cavalcante, Marcelo Casimiro",
+          "affiliation": "University for International Integration of the Afro-Brazilian Lusophony",
+          "orcid": "0000-0001-7950-0515"
+        },
+        {
+          "name": "Freitas, Breno M.",
+          "affiliation": "Universidade Federal do Ceará",
+          "orcid": "0000-0002-9932-2207"
+        }
+      ],
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "filename": "dadosColmeia1Apis.csv",
+      "sensor_id": 1,
+      "download_url": "https://zenodo.org/api/records/20399470/files/dadosColmeia1Apis.csv/content",
+      "bytes": 268775,
+      "file_raw_rows": 3116,
+      "md5": "84206d6ca170906019874e0ed5f27650",
+      "md5_verified": true,
+      "sha256": "d23e556d970eac22a47b5c70dadce83e626cdf7b0a3d878a2280bf81ee7a5382",
+      "metadata_sha256": "a25814c2d041b00caf8ce277f755cfb84195f9aa600212a7534dd8260f4f700e"
+    },
+    "transformation": {
+      "weight_kg": "Source weight, already kilograms; no rescaling",
+      "temperature_c": "Source ext_temperature, external ambient degrees Celsius; not internal temperature",
+      "physical_filter": "Finite 0 < weight <= 300 kg and -50 <= ext_temperature <= 60 C",
+      "sentinel_filter": "Exclude rows where ext_temperature == 0 and ext_humidity == 0",
+      "aggregation": "Median in [h, h+1), left-closed, labelled by completed hour h+1",
+      "imputation": "None; empty hourly bins remain gaps",
+      "event_rule": "Within each continuous segment abs(adjacent hourly weight difference) > 1 kg is colony_alert; a numeric flag, not a diagnosis",
+      "event_exclusion": "Flagged hourly observations split clean blocks and are excluded before coverage selection"
+    },
+    "timestamp_policy": {
+      "source_timezone": "Unspecified; source timestamps are naive",
+      "output_offset": "+00:00",
+      "assumption": "UTC offset attached only for deterministic bookkeeping; no source clock conversion or verified UTC claim"
+    },
+    "filters": {
+      "sensor_raw_rows": 3116,
+      "valid_raw_rows": 3115,
+      "rejected_total_rows": 1,
+      "rejected_joint_zero_ambient_rows": 1,
+      "rejected_physical_bounds_rows": 0,
+      "rejected_overlap_rows": 0,
+      "occupied_hourly_bins": 554,
+      "raw_start": "2025-02-02T00:05:34.484000",
+      "raw_end": "2025-03-02T04:34:25.129000",
+      "raw_duplicate_timestamps": 0
+    },
+    "selection": {
+      "method": "Longest contiguous clean hourly block; earliest start breaks ties",
+      "model_metrics_used": false,
+      "continuous_segments": 4,
+      "longest_continuous_segment_rows": 227,
+      "derived_alert_hourly_rows": 10,
+      "clean_blocks": 13,
+      "selected_rows": 174,
+      "segments": [
+        {
+          "start_hour_end": "2025-02-02T01:00:00",
+          "end_hour_end": "2025-02-03T18:00:00",
+          "rows": 42,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 42
+        },
+        {
+          "start_hour_end": "2025-02-03T20:00:00",
+          "end_hour_end": "2025-02-13T06:00:00",
+          "rows": 227,
+          "derived_alert_rows": 2,
+          "longest_clean_block_rows": 135
+        },
+        {
+          "start_hour_end": "2025-02-13T08:00:00",
+          "end_hour_end": "2025-02-20T13:00:00",
+          "rows": 174,
+          "derived_alert_rows": 0,
+          "longest_clean_block_rows": 174
+        },
+        {
+          "start_hour_end": "2025-02-25T15:00:00",
+          "end_hour_end": "2025-03-02T05:00:00",
+          "rows": 111,
+          "derived_alert_rows": 8,
+          "longest_clean_block_rows": 45
+        }
+      ],
+      "scope_limitation": "Coverage-selected clean segment; not a full source history or an unbiased evaluation sample"
+    },
+    "selected": {
+      "rows": 174,
+      "raw_rows": 984,
+      "start_hour_end": "2025-02-13T08:00:00+00:00",
+      "end_hour_end": "2025-02-20T13:00:00+00:00",
+      "weight_kg_min": 28.29371262,
+      "weight_kg_max": 29.75819778,
+      "temperature_c_min": 22.60000038,
+      "temperature_c_max": 33.40000153,
+      "event_counts": {
+        "normal": 174,
+        "colony_alert": 0
+      },
+      "contract_validated": true,
+      "minimum_clean_rows": 168
+    }
+  },
+  "partition": {
+    "first": "2025-02-13T08:00:00+00:00",
+    "last": "2025-02-20T13:00:00+00:00",
+    "rows": 174
+  },
+  "authoring": "Artifact-tool workbook cell values, exact equality verified before CSV serialization"
+}
