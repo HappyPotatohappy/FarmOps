@@ -34,4 +34,4 @@ python scripts/build_docs_pdf.py
 
 시스템 라이브러리가 없다는 오류가 나면 브라우저 PDF 저장을 사용하거나 [WeasyPrint 공식 설치 안내](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation)에 맞춰 환경을 준비합니다. macOS Homebrew에서 라이브러리를 찾지 못하는 경우 `DYLD_FALLBACK_LIBRARY_PATH`에 Homebrew의 `lib` 경로를 지정할 수 있습니다. Linux에서는 한국어가 포함된 Noto 글꼴을 설치해야 합니다.
 
-PDF 스크립트는 먼저 최신 HTML을 만들고 두 본문 PDF만 저장합니다. `--output-dir`로 다른 출력 폴더를 지정할 수 있습니다. 브라우저 자동화, CDP, 제품 서버, 모델·관측 저장소에 접근하지 않습니다. 이번 배포 PDF는 WeasyPrint 70.0과 Poppler로 생성·검수했으며 상세 기록은 `evidence/document_audit.json`에 있습니다.
+PDF 스크립트는 먼저 최신 HTML을 만들고 두 본문 PDF만 저장합니다. `--output-dir`로 다른 출력 폴더를 지정할 수 있습니다. 브라우저 자동화, CDP, 제품 서버, 모델·관측 저장소에 접근하지 않습니다.

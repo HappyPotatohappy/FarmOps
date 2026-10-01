@@ -124,7 +124,7 @@ docker compose exec beeops /opt/venv-service/bin/python scripts/smoke_demo.py
 docker compose exec beeops /opt/venv-service/bin/python scripts/smoke_demo.py --train --repeat 2
 ```
 
-두 번째 명령은 로컬 실습 데이터와 모델 버전을 갱신합니다. 화면 알림은 데이터 탭의 버튼으로 실행하는 시연 순서에서 확인합니다. 실제 검증 결과는 [검증 기록](verification/RESULTS.md)과 [GitHub 다운로드 재현 검증](verification/GITHUB_DOWNLOAD.md)에 정리했습니다.
+두 번째 명령은 로컬 실습 데이터와 모델 버전을 갱신합니다. 화면 알림은 데이터 탭의 버튼으로 실행하는 시연 순서에서 확인합니다.
 
 ## Mac에서 직접 실행하기
 
