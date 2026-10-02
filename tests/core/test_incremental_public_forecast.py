@@ -12,7 +12,7 @@ from test_workflow_api import await_job, csv_file
 
 def test_real_csv_incremental_upload_updates_inference_and_duplicate_is_unchanged(tmp_path):
     data = list(csv.DictReader(io.StringIO(
-        (Path(__file__).resolve().parents[1] / 'data/real_hive.csv').read_text())))
+        (Path(__file__).resolve().parents[2] / 'data/real_hive.csv').read_text())))
     assert len(data) == 724
     scope = {'workspace_id': 'ufc_apis_2'}
     with TestClient(create_app(tmp_path, model=ModelService(tmp_path))) as client:

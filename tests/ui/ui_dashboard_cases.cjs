@@ -1,7 +1,7 @@
 /* Read-only dashboard context and selected CSV integration regressions. */
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const source=fs.readFileSync(path.join(__dirname,'../app/static/app.js'),'utf8').split('init();setInterval')[0];
-const html=fs.readFileSync(path.join(__dirname,'../app/static/index.html'),'utf8');
+const source=fs.readFileSync(path.join(__dirname,'../../app/static/app.js'),'utf8').split('init();setInterval')[0];
+const html=fs.readFileSync(path.join(__dirname,'../../app/static/index.html'),'utf8');
 const at=hour=>new Date(Date.UTC(2025,0,1,hour)).toISOString();
 const cases=['apis2','vecauce3','meliponini1'].map((id,index)=>({id,hive_id:'trend_'+id,workspace_id:'trend_'+id,name:['브라질 Apis 2','Vecauce 3','브라질 무침벌 1'][index],label:['브라질 Apis 2','Vecauce 3','브라질 무침벌 1'][index],kind:'public_real',rows:609,start:at(0),end:at(608),download_url:'/data/trend-cases/'+id+'.csv'}));
 const observations=Array.from({length:609},(_,i)=>({timestamp:at(i),hive_id:cases[0].hive_id,weight_kg:50+i/100,temperature_c:24,event:'normal'}));

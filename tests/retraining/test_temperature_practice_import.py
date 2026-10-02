@@ -14,7 +14,7 @@ from test_api import ForecastFixture
 from test_imports import csv_bytes, wait_job
 from test_temperature_drift import coordinator
 
-ROOT=Path(__file__).resolve().parents[1]/'data/simulations/temperature_practice'
+ROOT=Path(__file__).resolve().parents[2]/'data/simulations/temperature_practice'
 HIVE='TEMP-DRIFT-PRACTICE'
 
 

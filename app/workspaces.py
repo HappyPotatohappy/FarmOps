@@ -10,7 +10,7 @@ import sqlite3
 import threading
 
 from .service import Service
-from .store import Store
+from .store import Store, atomic_json
 
 
 def workspace_directory(root_runtime, hive_id):
@@ -73,9 +73,7 @@ class WorkspaceManager:
             metadata=workspace_metadata(hive_id)
             # Publish identity before model creation so an initialization failure
             # remains inspectable and cannot silently create a second registry.
-            temporary=path/'workspace.json.tmp'
-            temporary.write_text(json.dumps(metadata,ensure_ascii=False,indent=2))
-            temporary.replace(path/'workspace.json')
+            atomic_json(path/'workspace.json',metadata)
             self._entries[hive_id]={**metadata,'path':path}
             self.primary.store.set_meta('workspace_reserved_hives',sorted(self._entries))
             return self.get(hive_id),True
