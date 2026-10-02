@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-SCRIPT=Path(__file__).resolve().parents[1]/'scripts/initialize_models.py'
+SCRIPT=Path(__file__).resolve().parents[2]/'scripts/initialize_models.py'
 
 
 def initialize(seed,destination):

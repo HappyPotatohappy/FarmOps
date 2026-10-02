@@ -5,6 +5,7 @@ import json
 from threading import RLock
 
 from .contracts import validate_series
+from .store import atomic_json
 from .workspaces import workspace_directory
 
 
@@ -40,10 +41,7 @@ class DashboardData:
         self._visible = list(dict.fromkeys([*self._case_by_hive, *saved]))
 
     def _save(self, workspace_ids):
-        temporary = self.path.with_suffix('.json.tmp')
-        temporary.write_text(json.dumps({'schema_version':1, 'workspace_ids':workspace_ids},
-                                        ensure_ascii=False, indent=2)+'\n')
-        temporary.replace(self.path)
+        atomic_json(self.path, {'schema_version':1, 'workspace_ids':workspace_ids})
 
     def seed(self):
         """Validate every source first; duplicate ingestion preserves later rows."""

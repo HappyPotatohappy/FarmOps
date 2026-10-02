@@ -88,7 +88,7 @@ def test_invalid_preview_and_oversize_never_mutate(tmp_path):
 def test_public_csv_creates_a_real_model_and_forecast_from_empty_runtime(tmp_path):
     from pathlib import Path
     from app.ml import ModelService
-    source = Path(__file__).resolve().parents[1] / 'data' / 'real_hive.csv'
+    source = Path(__file__).resolve().parents[2] / 'data' / 'real_hive.csv'
     with TestClient(create_app(tmp_path, model=ModelService(tmp_path))) as client:
         preview = client.post('/imports/preview', files={'file': ('real_hive.csv', source.read_bytes(), 'text/csv')}).json()
         assert preview['can_commit'] and preview['insert_count'] == 724

@@ -4,8 +4,8 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
 const path = require('node:path');
-const source = fs.readFileSync(path.join(__dirname, '../app/static/app.js'), 'utf8').split('init();setInterval')[0];
-const html = fs.readFileSync(path.join(__dirname, '../app/static/index.html'), 'utf8');
+const source = fs.readFileSync(path.join(__dirname, '../../app/static/app.js'), 'utf8').split('init();setInterval')[0];
+const html = fs.readFileSync(path.join(__dirname, '../../app/static/index.html'), 'utf8');
 const registry = 'BeeOPS_Horizon_Weight';
 const removedIds = ['horizon-hours', 'horizon-model-select', 'harvest-preferences-form', 'harvest-work-start',
   'harvest-work-end', 'prediction-model-select', 'comparison-version'];
