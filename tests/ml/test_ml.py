@@ -427,3 +427,10 @@ def test_failed_candidate_load_keeps_cache_and_alias(trained, monkeypatch):
     assert "load_failed" in result["gate_reasons"]
     assert service.status()["version"] == incumbent
     assert str(service.client.get_model_version_by_alias("BeeOPS_Weight", "champion").version) == incumbent
+
+
+def test_unregistered_version_raises_unknown_model_version(trained):
+    from app.service import UnknownModelVersion
+    window = frame().iloc[-24:][["weight_kg", "temperature_c"]].to_numpy()[None]
+    with pytest.raises(UnknownModelVersion):
+        trained.predict(window, version="99")

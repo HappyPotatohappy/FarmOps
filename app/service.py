@@ -13,6 +13,7 @@ from .scenarios import generate
 
 
 class BusyError(Exception): pass
+class UnknownModelVersion(LookupError): pass
 
 
 class Service:
