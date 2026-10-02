@@ -123,3 +123,16 @@ def test_case_http_routes_and_downloads_are_read_only(tmp_path):
         assert client.get('/analysis/trend-cases/missing').status_code==404
         assert client.get('/data/trend-cases/missing.csv').status_code==404
         assert client.get('/workspaces').json()==before
+
+
+def test_corrupt_bundled_case_is_server_error_not_client_error(tmp_path):
+    from fastapi.testclient import TestClient
+    from app.main import create_app
+    from test_api import ForecastFixture
+    service, provider, folder, _, _ = reports(tmp_path)
+    (folder/'case-a.csv').write_text('tampered')
+    app = create_app(tmp_path/'runtime',model=ForecastFixture(),horizon_model=provider)
+    with TestClient(app,raise_server_exceptions=False) as client:
+        app.state.trend_cases = service
+        for url in ('/data/trend-cases/case-a.csv','/analysis/trend-cases/case-a','/analysis/trend-cases/case-a/forecast.csv'):
+            assert client.get(url).status_code == 503, url

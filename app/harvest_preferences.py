@@ -35,7 +35,7 @@ class HarvestPreferences(BaseModel):
             return value
         try:
             ZoneInfo(value)
-        except (ZoneInfoNotFoundError, ValueError) as exc:
+        except (ZoneInfoNotFoundError, ValueError, OSError) as exc:
             raise ValueError('실제 원본 데이터의 IANA 시간대를 입력해 주세요. 예: Asia/Seoul') from exc
         return value
 
