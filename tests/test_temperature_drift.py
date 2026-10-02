@@ -379,3 +379,16 @@ def test_real_lstm_training_registers_immutable_bundle_and_deploys_only_after_re
         if failure_stage!='report':
             assert client.get_run(record.run_id).info.status=='FINISHED'
         assert provider.predict(observations(24,480,8.),168)['model']['version']=='3'
+    # The frozen checkpoint is shared by inode, never duplicated into MLflow.
+    if (model_root/'3').exists():
+        assert (model_root/'3/tirex2/model.ckpt').stat().st_ino==(checkpoint/'model.ckpt').stat().st_ino
+    assert not list((tmp_path/'runtime/temperature_drift/artifacts').rglob('model.ckpt'))
+
+
+def test_link_or_copy_falls_back_when_hardlinks_are_unsupported(tmp_path,monkeypatch):
+    from app import temperature_drift
+    source=tmp_path/'model.ckpt'; source.write_bytes(b'frozen')
+    def refuse(*args): raise OSError(18,'Invalid cross-device link')
+    monkeypatch.setattr(temperature_drift.os,'link',refuse)
+    temperature_drift._link_or_copy(source,tmp_path/'copy.ckpt')
+    assert (tmp_path/'copy.ckpt').read_bytes()==b'frozen'
