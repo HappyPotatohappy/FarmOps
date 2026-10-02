@@ -19,19 +19,11 @@ import pandas as pd
 
 from .horizon_data import build_windows, encode_context
 from .horizon_models import REGISTRY_ID
-from .store import digest, utcnow
+from .store import atomic_json, digest, utcnow
 
 THRESHOLDS = {'mean_shift_c': 4., 'standardized_shift': 1.5,
               'reference_hours': 168, 'current_hours': 24}
 STEP_KEYS = ('collect', 'monitor', 'detect', 'trigger', 'train', 'register', 'deploy')
-
-
-def atomic_json(path, value):
-    path = Path(path)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_name(f'.{path.name}-{uuid.uuid4().hex}.tmp')
-    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False)+'\n')
-    temporary.replace(path)
 
 
 def file_sha256(path):

@@ -111,7 +111,7 @@ docker compose exec beeops /opt/venv-service/bin/python -m pytest tests -q -p no
 화면 회귀 검사는 호스트에 Node.js 20 이상이 있다면 실행할 수 있습니다. Python 패키지 설치 없이 Node 기본 기능만 사용합니다.
 
 ```sh
-node --test tests/ui_automatic_recommendation.cjs tests/ui_dashboard_cases.cjs tests/ui_retraining_status.cjs tests/ui_practice_run.cjs
+node --test tests/ui/*.cjs
 ```
 
 GitHub 자동 검사는 모델을 내려받지 않는 가벼운 소스·패키지·UI 검사입니다. 실제 ML 추론과 재학습 검증은 Docker 실행 후 시연 순서를 통해 확인합니다. 제공한 API 점검 도구도 사용할 수 있습니다.
@@ -124,7 +124,7 @@ docker compose exec beeops /opt/venv-service/bin/python scripts/smoke_demo.py
 docker compose exec beeops /opt/venv-service/bin/python scripts/smoke_demo.py --train --repeat 2
 ```
 
-두 번째 명령은 로컬 실습 데이터와 모델 버전을 갱신합니다. 화면 알림은 데이터 탭의 버튼으로 실행하는 시연 순서에서 확인합니다. 실제 검증 결과는 [검증 기록](verification/RESULTS.md)과 [GitHub 다운로드 재현 검증](verification/GITHUB_DOWNLOAD.md)에 정리했습니다.
+두 번째 명령은 로컬 실습 데이터와 모델 버전을 갱신합니다. 화면 알림은 데이터 탭의 버튼으로 실행하는 시연 순서에서 확인합니다.
 
 ## Mac에서 직접 실행하기
 
