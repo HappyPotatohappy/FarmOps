@@ -34,6 +34,11 @@ def atomic_json(path, value):
     temporary.replace(path)
 
 
+def file_sha256(path):
+    with open(path, 'rb') as handle:
+        return hashlib.file_digest(handle, 'sha256').hexdigest()
+
+
 def reference_for(rows, version, source):
     values = np.asarray([row['temperature_c'] for row in rows], dtype=float)
     return {'reference_id': digest(rows), 'count': len(rows), 'mean_c': float(values.mean()),
@@ -455,7 +460,7 @@ class TemperatureDriftCoordinator:
         old_weights = deepcopy(parent['weights'])
         trained_components, frozen_components = ['lstm','ensemble_weights'], ['tirex2']
         tirex_folder = parent_folder/parent['files']['tirex2']
-        tirex_before_sha256 = hashlib.sha256((tirex_folder/'model.ckpt').read_bytes()).hexdigest()
+        tirex_before_sha256 = file_sha256(tirex_folder/'model.ckpt')
         total_epochs = 8
         progress_base = {'total_epochs':total_epochs,'training_windows':len(train),
                          'old_weights':old_weights,'trained_components':trained_components,
@@ -590,7 +595,7 @@ class TemperatureDriftCoordinator:
             shutil.copy2(snapshot, pending/'training_snapshot.json')
             atomic_json(pending/'evaluation.json', evidence)
             atomic_json(pending/'ensemble_calibration.json', calibration_evidence)
-            hashes = {str(p.relative_to(pending)): hashlib.sha256(p.read_bytes()).hexdigest()
+            hashes = {str(p.relative_to(pending)): file_sha256(p)
                       for p in pending.rglob('*') if p.is_file()}
             tirex_after_sha256 = hashes['tirex2/model.ckpt']
             if tirex_after_sha256 != tirex_before_sha256:
