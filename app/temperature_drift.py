@@ -154,6 +154,11 @@ class TemperatureDriftCoordinator:
                         step.update(status='interrupted', error=job['error'], completed_at=job['completed_at'])
         if self.path.exists():
             self._save()
+        # A killed process never reaches _train_bundle's cleanup; no job runs yet.
+        root = getattr(provider, 'artifact_root', None)
+        if root is not None and Path(root).is_dir():
+            for stale in Path(root).glob('.pending-temperature-*'):
+                shutil.rmtree(stale, ignore_errors=True)
 
     def _save(self):
         atomic_json(self.path, self.state)

@@ -236,6 +236,17 @@ def test_recommendation_follows_current_shared_tirex_bundle_and_rejects_other_fa
         report.recommendation(None,'hive')
 
 
+def test_startup_removes_pending_bundle_left_by_killed_training_but_keeps_versions(tmp_path):
+    from app.temperature_drift import TemperatureDriftCoordinator
+    provider=Provider(tmp_path/'models')
+    stale=tmp_path/'models/.pending-temperature-dead/tirex2'; stale.mkdir(parents=True)
+    (stale/'model.ckpt').write_bytes(b'partial')
+    kept=tmp_path/'models/3'; kept.mkdir()
+    TemperatureDriftCoordinator(tmp_path,provider)
+    assert not (tmp_path/'models/.pending-temperature-dead').exists()
+    assert kept.is_dir()
+
+
 @pytest.mark.parametrize('failure_stage',[None,'register','publish','report','manual'])
 def test_real_lstm_training_registers_immutable_bundle_and_deploys_only_after_registration(tmp_path,monkeypatch,failure_stage):
     tf=pytest.importorskip('tensorflow')
