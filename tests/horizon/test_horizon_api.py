@@ -198,7 +198,7 @@ def test_public_species_requires_verified_recent_decision_context():
     import csv
     from pathlib import Path
     from app.horizon_service import species_for
-    source=list(csv.DictReader((Path(__file__).resolve().parents[1]/'data/real_hive.csv').open()))
+    source=list(csv.DictReader((Path(__file__).resolve().parents[2]/'data/real_hive.csv').open()))
     assert species_for('ufc_apis_2',source[:96])=='apis'
     fake=deepcopy(source[:24])
     origin=datetime.fromisoformat(fake[-1]['timestamp'])

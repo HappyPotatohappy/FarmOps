@@ -21,6 +21,6 @@ jobs:
       - name: Check package installation and relocation logic
         run: |
           python -m pip install pytest==8.3.5
-          python -m pytest tests/test_package_runtime.py tests/test_package_models.py tests/test_package_download.py -q -k "not packaged_real_seed"
+          python -m pytest tests/package/test_package_runtime.py tests/package/test_package_models.py tests/package/test_package_download.py -q -k "not packaged_real_seed"
       - name: Check dashboard and retraining behavior
-        run: node --test tests/ui_automatic_recommendation.cjs tests/ui_dashboard_cases.cjs tests/ui_retraining_status.cjs tests/ui_practice_run.cjs
+        run: node --test tests/ui/*.cjs
