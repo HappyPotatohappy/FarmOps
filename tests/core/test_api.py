@@ -1,3 +1,5 @@
+import json
+import time
 import numpy as np
 import csv
 import io
@@ -98,6 +100,66 @@ def test_csv_hive_mismatch_has_recovery_guidance_without_changing_data(client,mo
     assert client.get('/data/status').json()==before
 
 
+def test_public_sample_csv_serves_only_catalogued_files(client):
+    from app.public_data import sample_catalog
+    sample_id=sample_catalog()['default_sample_id']
+    response=client.get(f'/data/samples/{sample_id}.csv')
+    assert response.status_code==200 and response.text.startswith('timestamp')
+    assert client.get('/data/samples/unknown.csv').status_code==404
+    assert client.get('/data/samples/..%2Fpublic_samples.csv').status_code==404
+
+
+def test_public_sample_file_refuses_paths_outside_data_root(tmp_path,monkeypatch):
+    from app import public_data
+    data=tmp_path/'data'; data.mkdir(); (tmp_path/'secret.csv').write_text('x')
+    (data/'public_samples.json').write_text(json.dumps({'default_sample_id':'escape',
+        'samples':[{'id':'escape','file':'../secret.csv'},{'id':'missing','file':'missing.csv'}]}))
+    monkeypatch.setattr(public_data,'DATA_ROOT',data)
+    for sample_id in ('escape','missing'):
+        with pytest.raises(RuntimeError): public_data.sample_file(sample_id)
+    assert public_data.sample_catalog()['samples'][0]=={'id':'escape'}
+
+
+@pytest.mark.parametrize('filename',['..%2F..%2Fapp%2Fmain.py','control%2F..%2F01_baseline.csv','other.csv'])
+def test_temperature_practice_csv_is_allow_listed(client,filename):
+    assert client.get('/data/simulations/temperature/'+filename).status_code==404
+    assert client.get('/data/simulations/temperature/01_baseline.csv').status_code==200
+
+
+def await_demo(service,attempts=200):
+    for _ in range(attempts):
+        if service.demo.get('status')!='running': return service.demo
+        time.sleep(.02)
+    raise AssertionError('Demo did not finish')
+
+
+def test_demo_run_requires_synthetic_runtime(client):
+    client.post('/observations',json={'observations':rows(24)})
+    assert client.post('/demo/run',json={'scenario':'normal'}).status_code==422
+    assert client.post('/demo/run',json={'scenario':'unknown'}).status_code==422
+
+
+@pytest.mark.parametrize('scenario,event',[('colony','colony_alert'),('sensor','sensor_fault')])
+def test_demo_run_records_flagged_synthetic_event(client,scenario,event):
+    client.post('/observations',json={'observations':rows(24)})
+    service=client.app.state.service
+    service.store.set_meta('demo_runtime',True)
+    response=client.post('/demo/run',json={'scenario':scenario})
+    assert response.status_code==202 and response.json()['status']=='running'
+    demo=await_demo(service)
+    assert demo['status']=='completed',demo
+    observations=service.store.observations()
+    assert len(observations)==24+48
+    assert observations[-1]['event']==event
+    assert all(row['hive_id']=='BEE-01' for row in observations)
+
+
+def test_demo_run_rejects_concurrent_request(client):
+    client.post('/observations',json={'observations':rows(24)})
+    service=client.app.state.service
+    service.store.set_meta('demo_runtime',True)
+    service.demo={'status':'running','scenario':'normal'}
+    assert client.post('/demo/run',json={'scenario':'normal'}).status_code==409
 def test_unregistered_model_version_is_404_not_500(tmp_path):
     from app.service import UnknownModelVersion
     class Registry(ForecastFixture):
