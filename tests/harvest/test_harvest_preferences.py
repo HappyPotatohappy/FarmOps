@@ -79,3 +79,9 @@ def test_empty_object_resets_all_fields(horizon_client):
     response = client.put('/harvest/preferences', json={})
     assert response.status_code == 200
     assert all(v is None for v in response.json()['preferences'].values())
+
+
+def test_timezone_area_name_is_validation_error_not_500(horizon_client):
+    client, _ = horizon_client
+    client.app.state.service.store.ingest(rows(80), 'fixture')
+    assert client.put('/harvest/preferences', json={'recorded_timezone':'Europe'}).status_code == 422

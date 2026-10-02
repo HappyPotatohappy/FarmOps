@@ -160,3 +160,8 @@ def test_null_optional_preferences_are_unknown_and_do_not_mutate_inputs():
     assert preferences == before
     assert all(item["status"] == "unknown" for item in result["field_checks"])
 
+
+
+def test_timezone_area_name_is_rejected_as_value_error():
+    with pytest.raises(ValueError):
+        build_harvest_context(report(), {"recorded_timezone": "Europe"})

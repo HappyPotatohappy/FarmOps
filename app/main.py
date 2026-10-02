@@ -13,7 +13,7 @@ from starlette.concurrency import run_in_threadpool
 from pydantic import BaseModel,Field
 from fastapi.staticfiles import StaticFiles
 from .contracts import PredictRequest,ObservationsRequest,RollbackRequest,DemoRequest,validate_series
-from .service import Service,BusyError
+from .service import Service,BusyError,UnknownModelVersion
 from .harvest_preferences import HarvestPreferences,read_preferences,save_preferences
 from .store import utcnow
 
@@ -93,6 +93,9 @@ def create_app(runtime=None,model=None,model_factory=None,shared_model=None,hori
 
     @app.exception_handler(ValueError)
     async def bad_value(request,exc): return JSONResponse(status_code=422,content={'detail':str(exc)})
+
+    @app.exception_handler(UnknownModelVersion)
+    async def unknown_version(request,exc): return JSONResponse(status_code=404,content={'detail':str(exc)})
 
     @app.exception_handler(BusyError)
     async def busy(request,exc): return JSONResponse(status_code=409,content={'detail':str(exc)})
@@ -217,6 +220,7 @@ def create_app(runtime=None,model=None,model_factory=None,shared_model=None,hori
     def trend_case_csv(case_id:str):
         try: path=app.state.trend_cases.file(case_id)
         except KeyError as exc: raise HTTPException(404,'관측 사례를 찾을 수 없습니다.') from exc
+        except ValueError as exc: raise HTTPException(503,'관측 사례 파일이 손상되었습니다.') from exc
         return FileResponse(path,media_type='text/csv',filename=path.name)
 
     @app.get('/analysis/trend-cases/{case_id}')
@@ -224,13 +228,13 @@ def create_app(runtime=None,model=None,model_factory=None,shared_model=None,hori
         response.headers['Cache-Control']='no-store'
         try: return app.state.trend_cases.report(case_id)
         except KeyError as exc: raise HTTPException(404,'관측 사례를 찾을 수 없습니다.') from exc
-        except (OSError,RuntimeError) as exc: raise HTTPException(503,'관측 사례 예측을 계산하지 못했습니다.') from exc
+        except (OSError,RuntimeError,ValueError) as exc: raise HTTPException(503,'관측 사례 예측을 계산하지 못했습니다.') from exc
 
     @app.get('/analysis/trend-cases/{case_id}/forecast.csv')
     def trend_case_forecast_csv(case_id:str):
         try: content=app.state.trend_cases.forecast_csv(case_id)
         except KeyError as exc: raise HTTPException(404,'관측 사례를 찾을 수 없습니다.') from exc
-        except (OSError,RuntimeError) as exc: raise HTTPException(503,'관측 사례 예측을 계산하지 못했습니다.') from exc
+        except (OSError,RuntimeError,ValueError) as exc: raise HTTPException(503,'관측 사례 예측을 계산하지 못했습니다.') from exc
         return Response(content,media_type='text/csv; charset=utf-8',headers={
             'Cache-Control':'no-store','Content-Disposition':f'attachment; filename="{case_id}_forecast.csv"'})
 
@@ -268,6 +272,10 @@ def create_app(runtime=None,model=None,model_factory=None,shared_model=None,hori
     async def upload(file:UploadFile=File(...),workspace_id:str|None=None):
         content=await file.read(5*1024*1024+1)
         if len(content)>5*1024*1024: raise ValueError('CSV maximum size is 5 MiB')
+        # Validation, SQLite writes and temperature monitoring block; keep them off the event loop.
+        return await run_in_threadpool(ingest_upload,content,file.filename,workspace_id)
+
+    def ingest_upload(content,filename,workspace_id):
         try:
             reader=csv.DictReader(io.StringIO(content.decode('utf-8-sig')))
             expected={'timestamp','hive_id','weight_kg','temperature_c','event'}
@@ -283,7 +291,7 @@ def create_app(runtime=None,model=None,model_factory=None,shared_model=None,hori
                                 'expected_hive_id':current,'received_hive_id':incoming,
                                 'upload_dashboard_url':target})
         selected=service(workspace_id)
-        result=selected.ingest(rows,source=f'사용자 CSV: {Path(file.filename or "data.csv").name}')
+        result=selected.ingest(rows,source=f'사용자 CSV: {Path(filename or "data.csv").name}')
         if app.state.imports.on_observations:
             try:
                 result['temperature_monitoring']=app.state.imports.on_observations(selected,result['hive_id'])

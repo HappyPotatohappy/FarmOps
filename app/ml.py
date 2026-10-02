@@ -27,6 +27,7 @@ from mlflow.exceptions import MlflowException
 from mlflow.models import infer_signature
 from mlflow.tracking import MlflowClient
 import tensorflow as tf
+from .service import UnknownModelVersion
 from .store import MINIMUM_BASELINE_GAIN, BASELINE_ZERO_TOLERANCE_KG, atomic_json
 
 LOGGER = logging.getLogger(__name__)
@@ -257,7 +258,12 @@ class ModelService:
                 version = str(version)
                 bundle = self._cache.get(version)
                 if bundle is None:
-                    bundle = self._load_bundle(version)
+                    try:
+                        bundle = self._load_bundle(version)
+                    except MlflowException as exc:
+                        if exc.error_code == "RESOURCE_DOES_NOT_EXIST":
+                            raise UnknownModelVersion(f"Model version {version} is not registered") from exc
+                        raise
                     self._cache[version] = bundle
         if bundle is None:
             raise RuntimeError("Model service is not ready")

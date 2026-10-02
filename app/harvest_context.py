@@ -67,7 +67,7 @@ def _validate(preferences):
             if not isinstance(preferences["recorded_timezone"], str):
                 raise ValueError()
             zone = ZoneInfo(preferences["recorded_timezone"])
-        except (ValueError, TypeError, ZoneInfoNotFoundError) as error:
+        except (ValueError, TypeError, OSError, ZoneInfoNotFoundError) as error:
             raise ValueError("원본 데이터의 실제 IANA 시간대를 선택하세요.") from error
     hours = preferences.get("working_hours")
     if hours is not None:

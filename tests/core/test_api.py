@@ -160,3 +160,29 @@ def test_demo_run_rejects_concurrent_request(client):
     service.store.set_meta('demo_runtime',True)
     service.demo={'status':'running','scenario':'normal'}
     assert client.post('/demo/run',json={'scenario':'normal'}).status_code==409
+def test_unregistered_model_version_is_404_not_500(tmp_path):
+    from app.service import UnknownModelVersion
+    class Registry(ForecastFixture):
+        def predict(self,windows,version=None):
+            if version=='99': raise UnknownModelVersion('Model version 99 is not registered')
+            return super().predict(windows,version)
+    with TestClient(create_app(tmp_path,model=Registry()),raise_server_exceptions=False) as c:
+        c.post('/observations',json={'observations':rows(24)})
+        assert c.post('/predict',params={'model_version':'99'},json={'sequence':rows(24)}).status_code==404
+        assert c.get('/forecast/report',params={'model_version':'99'}).status_code==404
+
+
+def test_csv_upload_ingests_off_the_event_loop(client,monkeypatch):
+    import asyncio
+    from app.service import Service
+    original=Service.ingest; on_loop=[]
+    def recording(self,*args,**kwargs):
+        try: asyncio.get_running_loop(); on_loop.append(True)
+        except RuntimeError: on_loop.append(False)
+        return original(self,*args,**kwargs)
+    monkeypatch.setattr(Service,'ingest',recording)
+    sample=rows(24); csv_text=io.StringIO(); writer=csv.DictWriter(csv_text,fieldnames=list(sample[0]))
+    writer.writeheader(); writer.writerows(sample)
+    response=client.post('/data/upload',files={'file':('real.csv',csv_text.getvalue(),'text/csv')})
+    assert response.status_code==200,response.text
+    assert on_loop==[False]
