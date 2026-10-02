@@ -118,3 +118,21 @@ def test_packaged_real_seed_validates_in_place_without_copy(tmp_path):
     report=initialize(root,root)
     assert report['initialized'] is False and report['active_version']=='9'
     assert (root/'index.json').read_bytes()==index_before
+
+
+def test_existing_runtime_reports_newer_seed_without_replacing_models(tmp_path):
+    seed=tmp_path/'seed';bundle(seed)
+    target=tmp_path/'runtime/horizon_models';initialize(seed,target)
+    before=contents(target)
+    bundle(seed,'11')
+    report=initialize(seed,target)
+    assert report['initialized'] is False and report['active_version']=='9'
+    assert report['seed_version_missing']=='11'
+    assert contents(target)==before
+
+
+def test_existing_runtime_from_same_seed_reports_no_mismatch(tmp_path):
+    seed=tmp_path/'seed';bundle(seed)
+    target=tmp_path/'runtime/horizon_models';initialize(seed,target)
+    bundle(target,'10')
+    assert 'seed_version_missing' not in initialize(seed,target)
