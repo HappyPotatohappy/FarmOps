@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "created_at": "2026-10-01T09:08:27.940362+00:00",
+  "created_at": "2026-10-01T09:57:10.939014+00:00",
   "scope": "GitHub source files; this manifest itself is excluded to avoid a recursive hash",
   "initial_model_version": "9",
-  "repository_file_count_excluding_manifest": 203,
-  "repository_bytes_excluding_manifest": 3366515,
+  "repository_file_count_excluding_manifest": 192,
+  "repository_bytes_excluding_manifest": 3326353,
   "files": [
     {
       "path": ".dockerignore",
@@ -38,8 +38,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13147,
-      "sha256": "8f0463fc9377a80e135f5f336749b9df1b97d58da4a279920abe6eff68663f7a"
+      "bytes": 12987,
+      "sha256": "a2ec59dec826290c6cb541bb82f9dcbc01094ba226879fa4518a5acc2e3ad0e7"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -63,8 +63,8 @@
     },
     {
       "path": "app/dashboard_data.py",
-      "bytes": 4184,
-      "sha256": "d02d567012271aecf3a76bbaa18a2db6b6f2833bcc1f1423b9aced62ddae3977"
+      "bytes": 4038,
+      "sha256": "b45ed0653a41628696bfb914eef041b46af356a55a0c2522d63314ca495ab281"
     },
     {
       "path": "app/harvest.py",
@@ -93,8 +93,8 @@
     },
     {
       "path": "app/horizon_models.py",
-      "bytes": 22510,
-      "sha256": "c7751be71898641a0b6a4c3b5310eff80ebaa66f45e57e6a467f62914a95b59c"
+      "bytes": 20115,
+      "sha256": "eb6edf0db6ea8612eaeec068eb0398336afaf7cb890238090d020c74bd8cb0e6"
     },
     {
       "path": "app/horizon_service.py",
@@ -113,8 +113,8 @@
     },
     {
       "path": "app/ml.py",
-      "bytes": 38078,
-      "sha256": "13ca739f5df10fe6c0e7004590ac789c69ed8814d8a18fde928a5b42943e4002"
+      "bytes": 37960,
+      "sha256": "7e5454a1b0758c536f05396f051730dc01c2d3322f43ed7faa9964fc1d8338ef"
     },
     {
       "path": "app/public_data.py",
@@ -158,13 +158,13 @@
     },
     {
       "path": "app/store.py",
-      "bytes": 16228,
-      "sha256": "1d653d7059897b3210eba2888fcd5b22b203ebe4db8ed43e0ddf63581c0b7c66"
+      "bytes": 16528,
+      "sha256": "170d4aa0558eceb80b15e0ef9d85010ae858732e8671bf0e6606f4e9a3b3cf28"
     },
     {
       "path": "app/temperature_drift.py",
-      "bytes": 46355,
-      "sha256": "45c3dee674fa11d09d3342e1178b246cb291616995a1cee248f18cd73ecf6513"
+      "bytes": 46068,
+      "sha256": "51513b15b9f61ed350caee19655b2aeed76c1d9aacf390f3d5acaa30c2cde1ea"
     },
     {
       "path": "app/temperature_practice.py",
@@ -183,8 +183,8 @@
     },
     {
       "path": "app/workspaces.py",
-      "bytes": 7058,
-      "sha256": "a21a6a32ff758a8f4126e107d4f2ee7618b7ccc736e564753d2c42d3ceaf192d"
+      "bytes": 6943,
+      "sha256": "b873ff65b5f906188fae03a2f3a3e44a9be2df6bd96be62b02383ebee2cfb13e"
     },
     {
       "path": "bundle.json",
@@ -593,8 +593,8 @@
     },
     {
       "path": "docs/README_docs.md",
-      "bytes": 3505,
-      "sha256": "aa9723cefc91b92be672d9985a2adf597c8e48afe03ff6a1ef0003546bacd78c"
+      "bytes": 3365,
+      "sha256": "7d799dd1855ff164203722fd2f59eb6515a8963ebfa1dd72974493777e258a6e"
     },
     {
       "path": "docs/assets/BeeOPS_서비스_흐름.svg",
@@ -620,11 +620,6 @@
       "path": "docs/evidence/backend_package_regression.log",
       "bytes": 2003,
       "sha256": "7bbe022acbe2d12376c709e789d760a0a828256b078929af39042fc27d8ff596"
-    },
-    {
-      "path": "docs/evidence/document_audit.json",
-      "bytes": 4274,
-      "sha256": "cd5833ee674ae1cc0aaa1759920580bc1af71373396a01d530777337e755ae46"
     },
     {
       "path": "docs/evidence/tirex2_benchmark_20261001.json",
@@ -713,8 +708,8 @@
     },
     {
       "path": "scripts/check_bundle.py",
-      "bytes": 3417,
-      "sha256": "3e5960cbee5d1c605aa3e1002c87571e9c9ab9fb48849a1c113886695446bedb"
+      "bytes": 3232,
+      "sha256": "eede6dd606d9136a990fafae73a8d6cb5eaecb66f389b7a5165bbd6d6f1dbe2d"
     },
     {
       "path": "scripts/fetch_model.py",
@@ -838,8 +833,8 @@
     },
     {
       "path": "tests/test_horizon_models.py",
-      "bytes": 10651,
-      "sha256": "41a78db20a8fec2ae6abe7f752ab19c879c03e8048664c3e2451ebd7ef71651e"
+      "bytes": 9613,
+      "sha256": "5870d7bd530ecef19d3b05a9a13d32cefba77666661caf2c4dce76fcdbec2903"
     },
     {
       "path": "tests/test_imports.py",
@@ -965,56 +960,6 @@
       "path": "tests/ui_retraining_status.cjs",
       "bytes": 28658,
       "sha256": "584ed6ec5835fc4042b1af2b239559bd80d777134e93af2405db1cf4dc8fe83d"
-    },
-    {
-      "path": "verification/GITHUB_DOWNLOAD.md",
-      "bytes": 3437,
-      "sha256": "d8c05679ad802d61e31f3eb7595f5f08c4ebebbf023dcbd09a5760caf3bd230b"
-    },
-    {
-      "path": "verification/RESULTS.md",
-      "bytes": 5168,
-      "sha256": "24004e3e2e6b877ad212e1380a1afd90aaeb30097e21f0f5fd297146f7f689a5"
-    },
-    {
-      "path": "verification/amd64_execution.json",
-      "bytes": 3838,
-      "sha256": "75c49b7081b3b26354b3f51d9ff54b5f4cb42d06538197e5bf40f3592c61187c"
-    },
-    {
-      "path": "verification/arm64_readonly.json",
-      "bytes": 2170,
-      "sha256": "3be0581848648972fdde80b2d2737b8adb724cf958368d91c6d016aca95548ef"
-    },
-    {
-      "path": "verification/arm64_retraining.json",
-      "bytes": 2924,
-      "sha256": "ea1195db35913d5174066a56fcd9e61ab6cd96b475047833b3e6cf52813394f8"
-    },
-    {
-      "path": "verification/docker_regression.log",
-      "bytes": 1871,
-      "sha256": "b68c9bff8fb51c51938c7b5250cb3f902a7b6df22cd51505ceb2df5d5b673a79"
-    },
-    {
-      "path": "verification/git_download_amd64.json",
-      "bytes": 7910,
-      "sha256": "a2f7cd50e8ad97c54856016cbdf3cd208d314ec44d651421634a5f2ab218f4a0"
-    },
-    {
-      "path": "verification/git_download_arm64.json",
-      "bytes": 2701,
-      "sha256": "6b89734c927cbca327347833bc4d025e90e2766957a16229faa7b6922c5ed73d"
-    },
-    {
-      "path": "verification/git_download_restart.json",
-      "bytes": 619,
-      "sha256": "cfeb1e3f3e400b724b57e02a502b10088e9f0a93513f8ea3a8d85c66eb6b07c3"
-    },
-    {
-      "path": "verification/source_export.json",
-      "bytes": 966,
-      "sha256": "2ce0501adc2c7db788bb6442449d9664f43214d88ea430d78ce6bda02ee4af81"
     },
     {
       "path": "verify.sh",

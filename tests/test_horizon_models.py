@@ -141,30 +141,6 @@ def test_unseen_training_hive_cannot_inherit_pooled_validation_pass(tmp_path, mo
     assert 'hive_was_not_represented_in_model_training' in result['validation']['context_notes']
 
 
-def test_chronos_and_tensorflow_can_predict_in_one_service_process():
-    import os
-    import subprocess
-    import sys
-    checkpoint = os.environ.get('BEEOPS_TEST_CHRONOS_PATH')
-    if not checkpoint:
-        pytest.skip('Set BEEOPS_TEST_CHRONOS_PATH for real local Chronos interoperability check')
-    program = '''
-import numpy as np
-from app.horizon_models import train_lstm, ChronosAdapter
-x=np.zeros((4,24,2),dtype='float32'); y=np.zeros((4,168),dtype='float32')
-model,_=train_lstm(x,y,1)
-import lightgbm as lgb
-tree=lgb.LGBMRegressor(n_estimators=2,verbosity=-1,n_jobs=1).fit(np.zeros((40,3)),np.zeros(40))
-c=ChronosAdapter(__import__('sys').argv[1])
-assert model(x,training=False).shape==(4,168)
-assert c.predict([np.column_stack([np.ones(24)*40,np.ones(24)*20])]).shape==(1,168)
-print('real_components_ok')
-'''
-    result=subprocess.run([sys.executable,'-c',program,checkpoint],capture_output=True,text=True,timeout=120)
-    assert result.returncode==0, result.stderr[-1500:]
-    assert 'real_components_ok' in result.stdout
-
-
 def test_zero_weight_unavailable_component_is_not_required_for_prediction():
     actual=hm.combine_predictions({'lstm':np.array([3.,4.])},{'lstm':1.,'chronos2':0.})
     np.testing.assert_array_equal(actual,[3.,4.])
