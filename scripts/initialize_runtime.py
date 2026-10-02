@@ -52,7 +52,7 @@ def _plan_database(database: Path, physical: Path, logical: Path):
             if location != new:
                 changes.append(('UPDATE experiments SET artifact_location=? WHERE experiment_id=?', (new,identifier)))
 
-        def artifact(value, experiment_id):
+        def artifact(value, experiment_id, required=True):
             old = _local_path(value)
             try:
                 old_root, root_relative = roots[str(experiment_id)]
@@ -63,13 +63,15 @@ def _plan_database(database: Path, physical: Path, logical: Path):
             resolved = copied.resolve()
             if not resolved.is_relative_to(physical):
                 raise ValueError(f'Artifact escapes the copied registry: {copied}')
-            if not copied.exists():
+            if required and not copied.exists():
                 raise FileNotFoundError(f'Missing copied artifact: {copied}')
             return (logical/root_relative/relative).as_uri()
 
         runs = {}
         for run_id, experiment_id, uri in db.execute('SELECT run_uuid,experiment_id,artifact_uri FROM runs'):
-            new = artifact(uri,experiment_id)
+            # A run killed before its first log_artifact has no directory; only
+            # registered model sources must exist.
+            new = artifact(uri,experiment_id,required=False)
             runs[run_id] = experiment_id
             if uri != new:
                 changes.append(('UPDATE runs SET artifact_uri=? WHERE run_uuid=?',(new,run_id)))
