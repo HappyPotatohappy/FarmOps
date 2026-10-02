@@ -9,6 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 from copy import deepcopy
 import hashlib
 import json
+import os
 from pathlib import Path
 import shutil
 from threading import RLock
@@ -29,6 +30,13 @@ STEP_KEYS = ('collect', 'monitor', 'detect', 'trigger', 'train', 'register', 'de
 def file_sha256(path):
     with open(path, 'rb') as handle:
         return hashlib.file_digest(handle, 'sha256').hexdigest()
+      
+def _link_or_copy(source, destination):
+    # The frozen TiRex checkpoint is immutable and hash-checked; versions share it.
+    try:
+        os.link(source, destination)
+    except OSError:
+        shutil.copy2(source, destination)
 
 
 def reference_for(rows, version, source):
@@ -582,7 +590,7 @@ class TemperatureDriftCoordinator:
         promoted = False
         try:
             model.save(pending/'lstm.keras')
-            shutil.copytree(parent_folder/parent['files']['tirex2'], pending/'tirex2')
+            shutil.copytree(parent_folder/parent['files']['tirex2'], pending/'tirex2', copy_function=_link_or_copy)
             snapshot = self.runtime/'snapshots'/f'{job["snapshot_id"]}.json'
             shutil.copy2(snapshot, pending/'training_snapshot.json')
             atomic_json(pending/'evaluation.json', evidence)
@@ -644,7 +652,11 @@ class TemperatureDriftCoordinator:
                               'validation_start':training['validation_start'],'validation_end':training['validation_end']}.items():
                 client.log_param(run_id,key,json.dumps(value,sort_keys=True) if isinstance(value,(dict,list)) else value)
             for key,value in metrics.items(): client.log_metric(run_id,key,float(value))
-            client.log_artifacts(run_id,str(pending),artifact_path='bundle')
+            client.set_tag(run_id,'tirex2_checkpoint_sha256',tirex_after_sha256)
+            for path in sorted(pending.rglob('*')):
+                relative = path.relative_to(pending)
+                if path.is_file() and relative.as_posix() != 'tirex2/model.ckpt':
+                    client.log_artifact(run_id,str(path),artifact_path='/'.join(('bundle',*relative.parent.parts)))
             record = client.create_model_version(REGISTRY_ID,source=f'{run.info.artifact_uri}/bundle',run_id=run_id,
                          tags={'bundle_version':version,'parent_bundle_version':parent_version,'model_scope':'shared'})
             mlflow_version = str(record.version)
