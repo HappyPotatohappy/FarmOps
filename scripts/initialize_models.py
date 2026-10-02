@@ -15,6 +15,7 @@ import os
 from pathlib import Path
 import re
 import shutil
+import sys
 import tempfile
 
 REGISTRY = 'BeeOPS_Horizon_Weight'
@@ -97,13 +98,33 @@ def validate_models(root: Path, *, all_bundles=False):
     return {'active_version':active,'verified_files':verified_files}
 
 
+def _missing_seed_version(seed: Path, target: Path):
+    """Return the seed's active version unless the runtime holds that exact bundle."""
+    index_path=seed/'index.json'
+    if not index_path.is_file():
+        return None
+    index=json.loads(index_path.read_text())
+    active=str(index.get('default_version',''))
+    manifest=next((e.get('manifest') for e in index.get('versions',[]) if str(e.get('version'))==active),None)
+    if not manifest:
+        return None
+    seed_manifest,runtime_manifest=_inside(seed,manifest),_inside(target,manifest)
+    if runtime_manifest.is_file() and runtime_manifest.read_bytes()==seed_manifest.read_bytes():
+        return None
+    return active
+
+
 def initialize_models(seed_root: Path, artifact_root: Path):
     seed_root, artifact_root = Path(seed_root), Path(artifact_root)
     if artifact_root.is_symlink() or seed_root.is_symlink():
         raise ValueError('Model roots must not be external symbolic links')
     seed, target = seed_root.resolve(), artifact_root.resolve()
     if seed==target or (target/'index.json').is_file():
-        return {'models_root':str(target),'initialized':False,**validate_models(target)}
+        report={'models_root':str(target),'initialized':False,**validate_models(target)}
+        missing=None if seed==target else _missing_seed_version(seed,target)
+        if missing:
+            report['seed_version_missing']=missing
+        return report
     if target.exists() and (not target.is_dir() or any(target.iterdir())):
         raise ValueError(f'Existing partial model directory has no valid index; retained: {target}')
     if target.is_relative_to(seed):
@@ -143,7 +164,12 @@ def main():
     parser.add_argument('--seed',type=Path,default=root/'data/horizon_models')
     parser.add_argument('--models',type=Path,default=Path(os.environ.get('BEEOPS_HORIZON_MODELS',runtime/'horizon_models')))
     arguments=parser.parse_args()
-    print(json.dumps(initialize_models(arguments.seed,arguments.models),ensure_ascii=False))
+    report=initialize_models(arguments.seed,arguments.models)
+    print(json.dumps(report,ensure_ascii=False))
+    if report.get('seed_version_missing'):
+        print(f"경고: 이미지의 시작 모델 v{report['seed_version_missing']}이(가) 기존 실행 볼륨에 없습니다. "
+              f"기존 모델 v{report['active_version']}을(를) 계속 사용합니다. 새 시작 모델로 초기화하려면 "
+              "'docker compose down -v' 후 다시 실행하세요(관측·재학습 이력도 함께 삭제됩니다).",file=sys.stderr)
 
 
 if __name__=='__main__':
