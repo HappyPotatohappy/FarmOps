@@ -7,7 +7,7 @@ import sqlite3
 
 import pytest
 
-SCRIPT=Path(__file__).resolve().parents[1]/'scripts/initialize_runtime.py'
+SCRIPT=Path(__file__).resolve().parents[2]/'scripts/initialize_runtime.py'
 
 
 def initialize(root,runtime):

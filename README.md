@@ -111,7 +111,7 @@ docker compose exec beeops /opt/venv-service/bin/python -m pytest tests -q -p no
 화면 회귀 검사는 호스트에 Node.js 20 이상이 있다면 실행할 수 있습니다. Python 패키지 설치 없이 Node 기본 기능만 사용합니다.
 
 ```sh
-node --test tests/ui_automatic_recommendation.cjs tests/ui_dashboard_cases.cjs tests/ui_retraining_status.cjs tests/ui_practice_run.cjs
+node --test tests/ui/*.cjs
 ```
 
 GitHub 자동 검사는 모델을 내려받지 않는 가벼운 소스·패키지·UI 검사입니다. 실제 ML 추론과 재학습 검증은 Docker 실행 후 시연 순서를 통해 확인합니다. 제공한 API 점검 도구도 사용할 수 있습니다.

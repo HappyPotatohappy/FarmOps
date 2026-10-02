@@ -1,7 +1,7 @@
 /* Global retraining activity at the real frontend render / HTTP boundaries. */
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const source=fs.readFileSync(path.join(__dirname,'../app/static/app.js'),'utf8').split('init();setInterval')[0];
-const html=fs.readFileSync(path.join(__dirname,'../app/static/index.html'),'utf8');
+const source=fs.readFileSync(path.join(__dirname,'../../app/static/app.js'),'utf8').split('init();setInterval')[0];
+const html=fs.readFileSync(path.join(__dirname,'../../app/static/index.html'),'utf8');
 const clone=value=>JSON.parse(JSON.stringify(value));
 const clock='2026-10-01T08:30:00+00:00';
 const model={registry_id:'BeeOPS_Horizon_Weight',version:'3',run_id:'trained-3',context_hours:168,max_horizon_hours:168};
