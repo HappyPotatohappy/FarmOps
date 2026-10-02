@@ -10,9 +10,6 @@ import itertools
 import json
 import os
 from pathlib import Path
-import subprocess
-import sys
-import tempfile
 from threading import RLock
 import numpy as np
 import pandas as pd
@@ -63,28 +60,6 @@ def train_lightgbm(samples, seed=42):
     model.fit(x, y)
     return model.booster_, {'training_rows': len(y), 'training_horizons': hours.tolist(),
         'method': 'Direct horizon-conditioned delta regression; no recursive target lags', 'seed': seed}
-
-
-class ChronosAdapter:
-    def __init__(self, local_path):
-        self.path = Path(local_path)
-        if not self.path.is_dir():
-            raise FileNotFoundError(f'Local Chronos-2 checkpoint unavailable: {self.path}')
-
-    def predict(self, contexts, horizon=168):
-        # TensorFlow/LightGBM and Torch native runtimes conflict on some macOS
-        # builds. A separate interpreter also contains hard native failures:
-        # they become explicit inference errors instead of killing the API.
-        with tempfile.TemporaryDirectory(prefix='beeops-chronos-') as folder:
-            input_path, output_path = Path(folder)/'input.npy', Path(folder)/'output.npy'
-            np.save(input_path,np.stack(contexts),allow_pickle=False)
-            result = subprocess.run([sys.executable,'-m','app.horizon_models','--chronos-worker',
-                str(self.path.resolve()),str(input_path),str(output_path),str(horizon)],
-                cwd=Path(__file__).resolve().parents[1],capture_output=True,text=True,timeout=300,
-                env={**os.environ,'HF_HUB_OFFLINE':'1','TRANSFORMERS_OFFLINE':'1'})
-            if result.returncode != 0:
-                raise RuntimeError(f'Chronos subprocess failed ({result.returncode}): {result.stderr[-2000:]}')
-            return np.load(output_path,allow_pickle=False)
 
 
 def select_weights(predictions, validation_targets, sample_weights=None, minimum_lstm=.10):
@@ -233,8 +208,6 @@ class HorizonModelService:
                 elif name == 'lightgbm':
                     import lightgbm as lgb
                     loaded[name] = lgb.Booster(model_file=str(path))
-                elif name == 'chronos2':
-                    loaded[name] = ChronosAdapter(path)
                 elif name == 'tirex2':
                     from .tirex_adapter import TirexAdapter
                     loaded[name] = TirexAdapter(path)
@@ -262,7 +235,7 @@ class HorizonModelService:
                     features = np.concatenate([tree_features(context, origin, np.arange(1, horizon+1))
                         for context, origin in zip(contexts, origins)])
                     predictions[name] = loaded[name].predict(features, num_threads=1).reshape(len(contexts), horizon) + contexts[:, -1, 0:1]
-                elif name in ('chronos2', 'tirex2'):
+                elif name == 'tirex2':
                     predictions[name] = loaded[name].predict(contexts, horizon)
                 values = np.asarray(predictions[name])
                 if values.shape != (len(contexts), horizon) or not np.isfinite(values).all():
@@ -279,7 +252,7 @@ class HorizonModelService:
 
         Inputs have shape (N, context_hours, 2), with weight then already observed
         temperature. Callers own timestamp alignment and must exclude targets.
-        TiRex/Chronos receive the requested horizon directly; a one-hour result
+        TiRex receives the requested horizon directly; a one-hour result
         is not asserted to equal the first point of a 168-hour generation.
         """
         manifest, folder = self._manifest(version)
@@ -372,21 +345,3 @@ class HorizonModelService:
             for i,value in enumerate(trajectory[:horizon_hours])]
         result['status'] = 'ok'
         return result
-
-
-def _chronos_worker(checkpoint, input_path, output_path, horizon):
-    from chronos import Chronos2Pipeline
-    import torch
-    torch.set_num_threads(2)
-    pipeline=Chronos2Pipeline.from_pretrained(checkpoint,device_map='cpu',local_files_only=True)
-    contexts=np.load(input_path,allow_pickle=False)
-    inputs=[{'target':x[:,0].astype(np.float32),'past_covariates':{'temperature_c':x[:,1].astype(np.float32)}} for x in contexts]
-    _,medians=pipeline.predict_quantiles(inputs,prediction_length=int(horizon),quantile_levels=[.1,.5,.9],batch_size=32,cross_learning=False)
-    np.save(output_path,np.stack([value[0].detach().cpu().numpy() for value in medians]),allow_pickle=False)
-
-
-if __name__=='__main__':
-    if len(sys.argv)==6 and sys.argv[1]=='--chronos-worker':
-        _chronos_worker(*sys.argv[2:])
-    else:
-        raise SystemExit('Only the internal --chronos-worker entry point is supported')

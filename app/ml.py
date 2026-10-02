@@ -27,7 +27,7 @@ from mlflow.exceptions import MlflowException
 from mlflow.models import infer_signature
 from mlflow.tracking import MlflowClient
 import tensorflow as tf
-from .store import MINIMUM_BASELINE_GAIN, BASELINE_ZERO_TOLERANCE_KG
+from .store import MINIMUM_BASELINE_GAIN, BASELINE_ZERO_TOLERANCE_KG, atomic_json
 
 LOGGER = logging.getLogger(__name__)
 FEATURES = ["weight_kg", "temperature_c"]
@@ -561,9 +561,7 @@ class ModelService:
             self._training_lock.release()
 
     def _save_state(self):
-        temporary = self._state_path.with_suffix(".tmp")
-        temporary.write_text(json.dumps(self._state, indent=2, allow_nan=False))
-        temporary.replace(self._state_path)
+        atomic_json(self._state_path, self._state)
 
     def _set_alias_safely(self, version: str, previous: str | None):
         try:
