@@ -140,3 +140,15 @@ def test_actual_bundled_seed_initializes_all_four_registry_versions(tmp_path):
     assert len(rows(runtime/'shared_models/mlflow.db','model_versions'))==4
     assert rows(runtime/'shared_models/mlflow.db','registered_model_aliases')==[('champion',4,'BeeOPS_Common_Weight')]
     assert tree_bytes(seed)==before
+
+
+def test_failed_run_without_artifact_directory_does_not_block_startup(tmp_path):
+    # A retrain that dies after create_run but before its first artifact leaves no directory.
+    root=make_package(tmp_path);runtime=root/'runtime';initialize(root,runtime)
+    registry(runtime/'temperature_drift',runtime/'temperature_drift')
+    with sqlite3.connect(runtime/'temperature_drift/mlflow.db') as db:
+        db.execute('INSERT INTO runs VALUES(?,?,?,?)',('run-empty',1,(runtime/'temperature_drift/artifacts/run-empty/artifacts').as_uri(),'FAILED'))
+    moved=tmp_path/'moved';root.rename(moved)
+    initialize(moved,moved/'runtime')
+    uris=dict((r[0],r[2]) for r in rows(moved/'runtime/temperature_drift/mlflow.db','runs'))
+    assert uris['run-empty']==(moved/'runtime/temperature_drift/artifacts/run-empty/artifacts').resolve().as_uri()
